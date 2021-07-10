@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Visual="Material"
+             Shell.NavBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.TabBarIsVisible="False"
+             Shell.PresentationMode="ModalAnimated"
+             Title="{Binding Title}"
+             BackgroundColor="{Binding BackgroundColor}"
+             xmlns:localization="clr-namespace:hymax.Localization"
+             x:Class="hymax.View.SecureLoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="7*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1.4*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="0.6*"></RowDefinition>
+                    <RowDefinition Height="0.6*"></RowDefinition>
+                    <RowDefinition Height="0.6*"></RowDefinition>
+                    <RowDefinition Height="4*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="logowhite.png" Grid.Row="1" Grid.Column="1"
+                       Grid.ColumnSpan="3" />
+                <Image Source="panel1.png"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                       Grid.RowSpan="5"
+                       Grid.ColumnSpan="3"
+                       Aspect="Fill" />
+                <Label Text="{localization:Translate SecureHeader}" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" />
+
+                <Grid Grid.Row="4" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView Color="LightGray" Grid.Row="0" />
+                </Grid>
+                <Label Text="{localization:Translate SecureDetails}" Grid.Row="5" Grid.Column="2" HorizontalOptions="Center" />
+                <Grid 
+                    Grid.Row="6" Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Pin}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnPinTapped" NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="1" HorizontalOptions="Center" Text="{localization:Translate SecurePin}" />
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}"
+                               Source="{StaticResource Pattern}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnPatternTapped" NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="1" HorizontalOptions="Center" Text="{localization:Translate SecurePattern}" />
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="1">
+                        <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}"
+                               Source="{StaticResource FingerPrint}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnFingerPrintTapped" NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="1" HorizontalOptions="Center" Text="{localization:Translate SecureFinger}" />
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="1">
+                        <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}"
+                               Source="{StaticResource Password}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnPasswordTapped" NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="1" HorizontalOptions="Center" Text="{localization:Translate SecurePassword}" />
+                    </Grid>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

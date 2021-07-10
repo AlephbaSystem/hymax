@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Visual="Material"
+             Shell.NavBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.TabBarIsVisible="False"
+             Shell.PresentationMode="ModalAnimated"
+             Title="Verify"
+             x:Class="hymax.View.LoginVerifyPage"
+             BackgroundColor="{Binding BackgroundColor}"
+             xmlns:localization="clr-namespace:hymax.Localization">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="1.4*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height=".5*"></RowDefinition>
+                    <RowDefinition Height=".5*"></RowDefinition>
+                    <RowDefinition Height=".5*"></RowDefinition>
+                    <RowDefinition Height=".4*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="logowhite.png" Grid.Row="1" Grid.Column="1"
+                       Grid.ColumnSpan="3" />
+                <Image Source="panel1.png"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                       Grid.RowSpan="6"
+                       Grid.ColumnSpan="3" />
+                <Label Text="{localization:Translate LoginVerifyHeader}" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" />
+
+                <Grid Grid.Row="4" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView Color="LightGray" Grid.Row="0" />
+                </Grid>
+                <Label Text="{localization:Translate LoginVerifyDetails}" Grid.Row="5" Grid.Column="2" HorizontalOptions="Center" />
+                <Frame
+                    Grid.Row="6" Grid.Column="2"
+                    CornerRadius="15"
+                    Padding="0"
+                    BackgroundColor="red" 
+                    HasShadow="False" >
+                    <Label Margin="5" FontSize="11"
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"  TextColor="Black"
+        Text="{Binding PhoneNumber}" />
+                </Frame> 
+                
+                <Entry Style="{StaticResource LoginEntry}" Grid.Row="7" Grid.Column="2" x:Name="UsernameEntry" Text="{Binding VerifyCode}" />
+                <Grid Grid.Row="8" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="End" >
+                    <Button x:Name="LoginButton" Style="{StaticResource LoginGetCode}" Text="{localization:Translate LoginVerifyButton}"  Command="{Binding ExecuteVerfiy}" />
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

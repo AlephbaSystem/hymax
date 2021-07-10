@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       mc:Ignorable="d"
+       xmlns:local="clr-namespace:hymax.View" 
+       Title="hymax"
+       x:Class="hymax.AppShell">
+
+    <!--
+        The overall app visual hierarchy is defined here, along with navigation.
+    
+        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
+    -->
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Shell.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <!-- Loading/Start Page -->
+    <ShellItem Route="loading">
+        <ShellContent ContentTemplate="{DataTemplate local:LoadingPage}" />
+    </ShellItem>
+    <ShellItem Route="login">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" />
+    </ShellItem>
+    <ShellItem Route="loginverify">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginVerifyPage}" />
+    </ShellItem>
+    <ShellItem Route="securelogin">
+        <ShellContent ContentTemplate="{DataTemplate local:SecureLoginPage}" />
+    </ShellItem>
+    <ShellItem Route="setsecure">
+        <ShellContent ContentTemplate="{DataTemplate local:SetSecurePage}" />
+    </ShellItem>
+    <ShellItem Route="welcome">
+        <ShellContent ContentTemplate="{DataTemplate local:WelcomePage}" />
+    </ShellItem>  
+</Shell>

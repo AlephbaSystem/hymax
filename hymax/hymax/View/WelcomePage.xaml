@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Visual="Material"
+             Shell.NavBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.TabBarIsVisible="False"
+             Shell.PresentationMode="ModalAnimated"
+             Title="{Binding Title}"
+             BackgroundColor="{Binding BackgroundColor}"
+             xmlns:localization="clr-namespace:hymax.Localization"
+             x:Class="hymax.View.WelcomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="4*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="11*" />
+                    <RowDefinition Height="3*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <CarouselView Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3" ItemsSource="{Binding Welcomes}" IndicatorView="indicatorview" CurrentItemChanged="carouselView_CurrentItemChanged">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame HasShadow="True" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
+                                <StackLayout>
+                                    <Image Source="{Binding ImagePath}" />
+                                    <Label Text="{Binding Title}" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                                    <Label Text="{Binding Description}" FontSize="14" HorizontalTextAlignment="Center" />
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="3"
+                                            x:Name="indicatorview"
+                                            AbsoluteLayout.LayoutBounds="0.5,0.95,100,100"
+                                            AbsoluteLayout.LayoutFlags="PositionProportional"
+                                            IndicatorColor="LightGray"
+                                            IndicatorSize="10"
+                                            SelectedIndicatorColor="Black" />
+                <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource WelcomeSkip}" Text="{localization:Translate WelcomeButton}" HorizontalOptions="End" x:Name="Skip" IsVisible="false" Command="{Binding ExecuteSkip}" />
+            </Grid> 
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Visual="Material"
+             Shell.NavBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.TabBarIsVisible="False"
+             Shell.PresentationMode="ModalAnimated"
+             Title="Login"
+             x:Class="hymax.View.LoginPage"
+             BackgroundColor="{Binding BackgroundColor}"
+             xmlns:localization="clr-namespace:hymax.Localization"> 
+        <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="1.4*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height=".5*"></RowDefinition>
+                    <RowDefinition Height=".5*"></RowDefinition>
+                    <RowDefinition Height=".5*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="logowhite.png" Grid.Row="1" Grid.Column="1"
+                       Grid.ColumnSpan="3" />
+                <Image Source="panel1.png"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                       Grid.RowSpan="6"
+                       Grid.ColumnSpan="3" />
+                <Label Text="{localization:Translate LoginHeader}" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" />
+
+                <Grid Grid.Row="4" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView Color="LightGray" Grid.Row="0" />
+                </Grid>
+
+                <Label Text="{localization:Translate LoginDetails}" Grid.Row="5" Grid.Column="2" HorizontalOptions="Center" />
+                <Entry Style="{StaticResource LoginEntry}" Keyboard="Numeric" Grid.Row="6" Grid.Column="2" Placeholder="{localization:Translate LoginEntry}" x:Name="UsernameEntry" Text="{Binding PhoneNumber}" />
+                <Grid Grid.Row="7" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="End" >
+                    <Button x:Name="LoginButton" Style="{StaticResource LoginGetCode}" Text="{localization:Translate LoginButton}" Command="{Binding ExecuteLogin}" />
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

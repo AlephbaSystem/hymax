@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="BaseStyle" TargetType="Element">
+        <!--<Setter Property="Shell.BackgroundColor" Value="{StaticResource MainPrimaryColor}" />
+                <Setter Property="Shell.ForegroundColor" Value="{StaticResource MainPrimaryColor}" />-->
+        <Setter Property="Shell.TitleColor" Value="{StaticResource MainTernaryColor}" />
+        <Setter Property="Shell.DisabledColor" Value="{StaticResource MainTextTernaryColor}" />
+        <Setter Property="Shell.UnselectedColor" Value="{StaticResource MainTextSecondaryColor}" />
+        <Setter Property="Shell.BackgroundColor" Value="{StaticResource MainTernaryColor}"/>
+        <Setter Property="Shell.ForegroundColor" Value="{StaticResource MainTextTernaryColor}"/>
+        <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource MainTernaryColor}" />
+        <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource MainTextTernaryColor}"/>
+    </Style>
+    <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+    <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+    <Style TargetType="Layout"
+           Class="FlyoutItemLayoutStyle"
+           ApplyToDerivedTypes="True">
+        <Setter
+            Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup
+                    x:Name="CommonStates">
+                    <VisualState
+                        x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter
+                                Property="BackgroundColor"
+                                Value="Transparent" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState
+                        x:Name="Selected">
+                        <VisualState.Setters>
+                            <Setter
+                                Property="BackgroundColor"
+                                Value="{StaticResource MainTernaryColor}" />
+                            <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor"
+                                        Value="{StaticResource MainTextTernaryColor}"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState
+                        x:Name="Disabled">
+                        <VisualState.Setters>
+
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style> 
+</ResourceDictionary>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Visual="Material"
+             Shell.NavBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.TabBarIsVisible="False"
+             Shell.PresentationMode="ModalAnimated"
+             Title="{Binding Title}"
+             BackgroundColor="{Binding BackgroundColor}"
+             xmlns:localization="clr-namespace:hymax.Localization"
+             x:Class="hymax.View.SetSecurePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="7*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1.4*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="0.6*"></RowDefinition>
+                    <RowDefinition Height="0.6*"></RowDefinition>
+                    <RowDefinition Height="4*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="logowhite.png" Grid.Row="1" Grid.Column="1"
+                       Grid.ColumnSpan="3" />
+                <Image Source="panel1.png"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                       Grid.RowSpan="4"
+                       Grid.ColumnSpan="3"
+                       Aspect="Fill" />
+                <Label Text="{Binding Header}" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" />
+
+                <Grid Grid.Row="4" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView Color="LightGray" Grid.Row="0" />
+                </Grid>
+                <Label Text="{Binding Details}" Grid.Row="5" Grid.Column="2" HorizontalOptions="Center" />
+                <Grid 
+                    Grid.Row="5" Grid.Column="2">
+                    <Image Style="{StaticResource IndicatorsIcons}" Source="{Binding Icon}"
+                       Aspect="AspectFill" > 
+                        </Image> 
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

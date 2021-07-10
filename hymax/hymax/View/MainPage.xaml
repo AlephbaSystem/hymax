@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Visual="Material"
+             Shell.PresentationMode="ModalAnimated" 
+             Title="{Binding Title}" 
+             BackgroundColor="{Binding BackgroundColor}"  
+             x:Class="hymax.View.MainPage">
+    <Shell.TitleView>
+        <Grid HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="CenterAndExpand"
+                             BackgroundColor="{Binding BackgroundColor}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".4*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Row="0" Grid.Column="1" Source="logodark.png"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Aspect="AspectFill"/>
+            <Label Grid.Row="0" Grid.Column="2" Text="206" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+        </Grid>
+    </Shell.TitleView>
+
+
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="11*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <CarouselView Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3" ItemsSource="{Binding Cars}" CurrentItemChanged="carouselView_CurrentItemChanged">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame HasShadow="True" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
+                            <StackLayout>
+                                <Image Source="{Binding ImagePath}">
+                                    <Image.GestureRecognizers> 
+                                        <TapGestureRecognizer Tapped="OnCarTapped" NumberOfTapsRequired="1" />
+                                    </Image.GestureRecognizers>
+                                </Image>
+                                <Label Text="{Binding Status}" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                                <Label Text="{Binding UpdateTimeLabel}" FontSize="14" HorizontalTextAlignment="Center" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </Grid>
+    </StackLayout>
+</ContentPage>
