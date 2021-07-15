@@ -10,12 +10,12 @@ namespace hymax.ViewModels
     class LoadingViewModel : BaseViewModel
     {
         private readonly IRoutingService routingService;
-        private readonly ICarsService identityService; 
+        private readonly IIdentityService identityService; 
 
-        public LoadingViewModel(IRoutingService routingService = null, ICarsService identityService = null)
+        public LoadingViewModel(IRoutingService routingService = null, IIdentityService identityService = null)
         {
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
-            this.identityService = identityService ?? Locator.Current.GetService<ICarsService>();
+            this.identityService = identityService ?? Locator.Current.GetService<IIdentityService>();
         }
 
         // Called by the views OnAppearing method

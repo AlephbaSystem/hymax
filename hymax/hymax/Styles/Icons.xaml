@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xaml-comp compile="true" ?>
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                    xmlns:styles="clr-namespace:hymax.Styles;assembly=hymax">
+                    xmlns:styles="clr-namespace:hymax.Styles.Fonts;assembly=hymax">
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Colors.xaml"/>
@@ -18,7 +18,7 @@
     <x:Double x:Key="SizeHugeIcon">145</x:Double>
 
     <x:Double x:Key="SizeTabIcon">24</x:Double>
-    
+
     <OnPlatform x:Key="MaterialFontFamily"
                 x:TypeArguments="x:String">
         <OnPlatform.Platforms>
@@ -26,29 +26,43 @@
             <On Platform="iOS" Value="Material Design Icons" />
         </OnPlatform.Platforms>
     </OnPlatform>
+    <OnPlatform x:Key="FontAwesomeRegular"
+                x:TypeArguments="x:String">
+        <OnPlatform.Platforms>
+            <On Platform="Android" Value="fa.ttf#Regular" />
+            <On Platform="iOS" Value="FontAwesome5Free-Regular" />
+        </OnPlatform.Platforms>
+    </OnPlatform>
+    <OnPlatform x:Key="FontAwesomeSolid"
+                x:TypeArguments="x:String">
+        <OnPlatform.Platforms>
+            <On Platform="Android" Value="fasolid.ttf#Regular" />
+            <On Platform="iOS" Value="FontAwesome5Free-Solid" />
+        </OnPlatform.Platforms>
+    </OnPlatform>
 
     <FontImageSource x:Key="FingerPrint"
                      FontFamily="{StaticResource MaterialFontFamily}"
-                     Glyph="{x:Static styles:IconFont.Fingerprint}"
+                     Glyph="{x:Static styles:Material.Fingerprint}"
                      Size="{StaticResource SizeLargeIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
 
     <FontImageSource x:Key="Pattern"
                      FontFamily="{StaticResource MaterialFontFamily}"
-                     Glyph="{x:Static styles:IconFont.Pattern}"
+                     Glyph="{x:Static styles:Material.Pattern}"
                      Size="{StaticResource SizeLargeIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
 
     <FontImageSource x:Key="Password"
                      FontFamily="{StaticResource MaterialFontFamily}"
-                     Glyph="{x:Static styles:IconFont.Password}"
+                     Glyph="{x:Static styles:Material.Password}"
                      Size="{StaticResource SizeLargeIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
 
     <FontImageSource x:Key="Pin"
                      FontFamily="{StaticResource MaterialFontFamily}"
-                     Glyph="{x:Static styles:IconFont.Pin}"
+                     Glyph="{x:Static styles:Material.Pin}"
                      Size="{StaticResource SizeLargeIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
-     
+
 </ResourceDictionary>

@@ -20,7 +20,6 @@ namespace hymax.ViewModels
         private ObservableCollection<CarsModel> _cars;
         public MainViewModel(IRoutingService routingService = null)
         {
-            //Xamarin.Forms.SetFlags("IndicatorView_Experimental");
             this.BackgroundColor = Services.ColorServer.GetResource("MainTernaryColor");
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
             this.carService = carService ?? Locator.Current.GetService<ICarsService>();
@@ -64,7 +63,8 @@ namespace hymax.ViewModels
         }
         public void OnCarTapped(object sender, EventArgs args)
         {
-            ImageSource s = (ImageSource)sender;
+            Image img = (Image)sender;
+            ImageSource s = img.Source;
             UpdateCar(s.ClassId);
         }
     }

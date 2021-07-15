@@ -29,7 +29,7 @@ namespace hymax.View
         {
             var item = e.CurrentItem as CarsModel;
             var index = ViewModel.Cars.IndexOf(item);
-
+            ViewModel.UpdateCar(item.ID);
         }
         void OnCarTapped(object sender, EventArgs args)
         {

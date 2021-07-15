@@ -37,6 +37,7 @@ namespace hymax
             Locator.CurrentMutable.Register(() => new MapViewModel());
             Locator.CurrentMutable.Register(() => new SetSecureViewModel());
             Locator.CurrentMutable.Register(() => new WelcomeViewModel());
+            Locator.CurrentMutable.Register(() => new MainViewModel());
 
         }
 

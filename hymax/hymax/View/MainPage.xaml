@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:behaviors="http://xamarin.com/schemas/2020/toolkit"
              mc:Ignorable="d"
              Visual="Material"
              Shell.PresentationMode="ModalAnimated" 
              Title="{Binding Title}" 
-             BackgroundColor="{Binding BackgroundColor}"  
+             BackgroundColor="{Binding BackgroundColor}"
              x:Class="hymax.View.MainPage">
     <Shell.TitleView>
         <Grid HorizontalOptions="CenterAndExpand"
@@ -29,30 +29,21 @@
                            HorizontalOptions="Center"
                            VerticalOptions="Center" />
         </Grid>
-    </Shell.TitleView>
-
-
+    </Shell.TitleView> 
     <StackLayout>
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="4*" />
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="4*" />
-            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="11*" />
-                <RowDefinition Height="3*" />
-                <RowDefinition Height="1*" />
-                <RowDefinition Height="2*" />
+                <RowDefinition Height="4*" />
             </Grid.RowDefinitions>
-            <CarouselView Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3" ItemsSource="{Binding Cars}" CurrentItemChanged="carouselView_CurrentItemChanged">
+            <CarouselView Grid.Row="0" ItemsSource="{Binding Cars}" CurrentItemChanged="carouselView_CurrentItemChanged">
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
                         <Frame HasShadow="True" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
                             <StackLayout>
                                 <Image Source="{Binding ImagePath}">
-                                    <Image.GestureRecognizers> 
-                                        <TapGestureRecognizer Tapped="OnCarTapped" NumberOfTapsRequired="1" />
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnCarTapped" NumberOfTapsRequired="2" />
                                     </Image.GestureRecognizers>
                                 </Image>
                                 <Label Text="{Binding Status}" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" />
@@ -62,6 +53,94 @@
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
+
+            <behaviors:Expander Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">
+                <behaviors:Expander.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0" Grid.Column="0" Source="carkey.png"
+                           Aspect="Fill"
+                           HeightRequest="34"
+                           WidthRequest="34" />
+                        <Label Grid.Row="0" Grid.Column="0" Text="استارت" />
+
+                        <Image Grid.Row="0" Grid.Column="1" Source="volume.png"
+                           Aspect="Fill"
+                           HeightRequest="34"
+                           WidthRequest="34" />
+                        <Label Grid.Column="1" Text="خوردو یاب" />
+
+                        <Image Grid.Row="0" Grid.Column="2" Source="trunkopen.png"
+                           Aspect="Fill"
+                           HeightRequest="34"
+                           WidthRequest="34" />
+                        <Label Grid.Column="2" Text="صندوق" />
+
+                        <Image Grid.Row="0" Grid.Column="3" Source="padlock.png"
+                           Aspect="Fill"
+                           HeightRequest="34"
+                           WidthRequest="34" />
+                        <Label Grid.Row="0" Grid.Column="3" Text="بسته" />
+
+                        <Image Grid.Row="0" Grid.Column="4" Source="unlock.png"
+                           Aspect="Fill"
+                           HeightRequest="34"
+                           WidthRequest="34" />
+                        <Label Grid.Column="4" Text="باز" />
+                    </Grid>
+                </behaviors:Expander.Header>
+                
+                <Grid Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Grid.Column="0" Source="children.png"
+                           Aspect="Fill"
+                           HeightRequest="34"
+                           WidthRequest="34" />
+                    <Label Grid.Row="0" Grid.Column="0" Text="فعال" />
+
+                    <Image Grid.Row="0" Grid.Column="1" Source="satellite.png"
+                           Aspect="Fill"
+                           HeightRequest="34"
+                           WidthRequest="34" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="۳۱ ٪" />
+
+                    <Image Grid.Row="0" Grid.Column="2" Source="car.png"
+                           Aspect="Fill"
+                           HeightRequest="34"
+                           WidthRequest="34" />
+                    <Label Grid.Row="0" Grid.Column="2" Text="باز" />
+
+                    <Image Grid.Row="0" Grid.Column="3" Source="gsm.png"
+                           Aspect="Fill"
+                           HeightRequest="34"
+                           WidthRequest="34" />
+                    <Label Grid.Row="0" Grid.Column="3" Text="۶۹ ٪" />
+
+                    <Image Grid.Row="0" Grid.Column="4" Source="battery.png"
+                           Aspect="Fill"
+                           HeightRequest="34"
+                           WidthRequest="34" />
+                    <Label Grid.Row="0" Grid.Column="4" Text="۱۶.۷ V" />
+                </Grid>
+            </behaviors:Expander>
         </Grid>
     </StackLayout>
 </ContentPage>
