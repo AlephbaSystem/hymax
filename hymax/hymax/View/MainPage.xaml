@@ -33,8 +33,9 @@
     <StackLayout>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="11*" />
-                <RowDefinition Height="4*" />
+                <RowDefinition Height="6*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
             <CarouselView Grid.Row="0" ItemsSource="{Binding Cars}" CurrentItemChanged="carouselView_CurrentItemChanged">
                 <CarouselView.ItemTemplate>
@@ -53,7 +54,6 @@
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
-
             <behaviors:Expander Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">
                 <behaviors:Expander.Header>
                     <Grid>
@@ -141,6 +141,29 @@
                     <Label Grid.Row="0" Grid.Column="4" Text="۱۶.۷ V" />
                 </Grid>
             </behaviors:Expander>
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".2*" />
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height=".2*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="menu.png" Grid.Row="1" Grid.Column="0"
+                       Grid.ColumnSpan="6" Grid.RowSpan="3" Aspect="Fill" />
+                
+                <Image Source="logowhite.png" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="0" />
+                <Image Source="logowhite.png" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="1" />
+                <Image Source="logowhite.png" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="2" />
+                <Image Source="logowhite.png" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="3" />
+                <Image Source="logowhite.png" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="4" />
+            </Grid>
         </Grid>
     </StackLayout>
 </ContentPage>

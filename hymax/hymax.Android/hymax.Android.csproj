@@ -38,11 +38,12 @@
     <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidSupportedAbis />
-    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidKeyStore>false</AndroidKeyStore>
     <AndroidSigningKeyStore>D:\Users\Soroush\OneDrive\Dev\hycodebug.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>@E833xsbf</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>hycodebug</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>@E833xsbf</AndroidSigningKeyPass>
+    <MandroidI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -220,10 +221,15 @@
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\menu.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadUnhandledDeviceExceptionhymaxAndroidHideInfoBar="True" TriggeredFromHotReload="False" XamarinHotReloadDebuggerTimeoutExceptionhymaxAndroidHideInfoBar="True" />
+      <UserProperties XamarinHotReloadXFormsNugetUpgradeInfoBarhymaxAndroidHideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionhymaxAndroidHideInfoBar="True" TriggeredFromHotReload="False" XamarinHotReloadUnhandledDeviceExceptionhymaxAndroidHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
