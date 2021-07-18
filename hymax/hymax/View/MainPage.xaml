@@ -75,27 +75,42 @@
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <StackLayout Grid.Row="0" Grid.Column="1" >
-                            <Button Image="carkey.xml" />
+                            <ImageButton Source="carkey.xml" HeightRequest="34" WidthRequest="34" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            
+                            </ImageButton>
+                            <!-- <Button Image="carkey.xml" /> -->
                             <Label HorizontalOptions="Center" Text="استارت" />
                         </StackLayout>
 
                         <StackLayout Grid.Row="0" Grid.Column="2" >
-                            <Button Image="volume.xml" />
+                            <ImageButton Source="volume.xml" HeightRequest="34" WidthRequest="34" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            
+                            </ImageButton>
+                            <!-- <Button Image="volume.xml" /> -->
                             <Label HorizontalOptions="Center" Text="خوردو یاب" />
                         </StackLayout>
 
                         <StackLayout Grid.Row="0" Grid.Column="3" >
-                            <Button Image="trunkopen.xml" />
+                            <ImageButton Source="trunkopen.xml" HeightRequest="34" WidthRequest="34" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            
+                            </ImageButton>
+                            <!-- <Button Image="trunkopen.xml" /> -->
                             <Label HorizontalOptions="Center" Text="صندوق" />
                         </StackLayout>
 
                         <StackLayout Grid.Row="0" Grid.Column="4" >
-                            <Button Image="padlock.xml" />
+                            <ImageButton Source="padlock.xml" HeightRequest="34" WidthRequest="34" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            
+                            </ImageButton>
+                            <!-- <Button Image="padlock.xml" /> -->
                             <Label HorizontalOptions="Center" Text="بسته" />
                         </StackLayout>
 
                         <StackLayout Grid.Row="0" Grid.Column="5" >
-                            <Button Image="unlock.xml" />
+                            <ImageButton Source="unlock.xml" HeightRequest="34" WidthRequest="34" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            
+                            </ImageButton>
+                            <!-- <Button Image="unlock.xml" /> -->
                             <Label HorizontalOptions="Center" Text="باز" />
                         </StackLayout>
                     </Grid>
@@ -114,26 +129,41 @@
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <StackLayout Grid.Row="0" Grid.Column="1" >
-                        <Button Image="children.xml" />
+                        <ImageButton Source="children.xml" HeightRequest="34" WidthRequest="34" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        
+                        </ImageButton>
+                        <!-- <Button Image="children.xml" /> -->
                         <Label HorizontalOptions="Center" Text="فعال" />
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="2" >
-                        <Button Image="satellite.xml" />
+                        <ImageButton Source="satellite.xml" HeightRequest="34" WidthRequest="34" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        
+                        </ImageButton>
+                        <!-- <Button Image="satellite.xml" /> -->
                         <Label HorizontalOptions="Center" Text="۳۱ ٪" />
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="3" >
-                        <Button Image="car.xml" />
+                        <ImageButton Source="car.xml" HeightRequest="34" WidthRequest="34" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        
+                        </ImageButton>
+                        <!-- <Button Image="car.xml" /> -->
                         <Label HorizontalOptions="Center" Text="باز" />
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="4" >
-                        <Button Image="gsm.xml" />
+                        <ImageButton Source="gsm.xml" HeightRequest="34" WidthRequest="34" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        
+                        </ImageButton>
+                        <!-- <Button Image="gsm.xml" /> -->
                         <Label HorizontalOptions="Center" Text="۶۹ ٪" />
                     </StackLayout>
                     <StackLayout Grid.Row="0" Grid.Column="5" >
-                        <Button Image="battery.xml" />
+                        <ImageButton Source="battery.xml" HeightRequest="34" WidthRequest="34" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        
+                        </ImageButton>
+                        <!-- <Button Image="battery.xml" /> -->
                         <Label HorizontalOptions="Center" Text="۱۶.۷ V" />
                     </StackLayout>
                 </Grid>
@@ -158,26 +188,41 @@
                        Grid.ColumnSpan="9" Grid.RowSpan="6" Aspect="Fill" />
 
                 <StackLayout Grid.Row="1" Grid.Column="1" Margin="20,10,0,0">
-                        <Button Image="menu_car.xml" /> 
+                        <ImageButton Source="menu_car.xml" HeightRequest="40" WidthRequest="40" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        
+                        </ImageButton>
+                        <!-- <Button Image="menu_car.xml" />  -->
                     <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="خودرو‌ها" />
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="2"  Margin="20,10,0,0">
-                        <Button Image="menu_report.xml" />  
+                        <ImageButton Source="menu_report.xml" HeightRequest="40" WidthRequest="40" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        
+                        </ImageButton>
+                        <!-- <Button Image="menu_report.xml" />   -->
                     <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="گزارش‌ها" />
                 </StackLayout>
 
                 <StackLayout Grid.Row="0" Grid.ColumnSpan="1" Grid.Column="3" Margin="22,-25,0,0">
-                    <Button Image="menu_round.xml" />
+                    <ImageButton Source="menu_round.xml" HeightRequest="40" WidthRequest="40" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                    
+                    </ImageButton>
+                    <!-- <Button Image="menu_round.xml" /> -->
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="4" Margin="20,10,0,0">
-                        <Button Image="menu_more.xml" />   
+                        <ImageButton Source="menu_more.xml" HeightRequest="40" WidthRequest="40" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        
+                        </ImageButton>
+                        <!-- <Button Image="menu_more.xml" />    -->
                     <Label HorizontalOptions="Center"  TextColor="{StaticResource MainButtonText}" Text="پیشرفته" />
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="5" Margin="20,10,0,0">
-                        <Button Image="menu_settings.xml" />
+                        <ImageButton Source="menu_settings.xml" HeightRequest="40" WidthRequest="40" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        
+                        </ImageButton>
+                        <!-- <Button Image="menu_settings.xml" /> -->
                     <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="تنظیمات" />
                 </StackLayout>
             </Grid>
