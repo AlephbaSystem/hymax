@@ -158,18 +158,12 @@
                        Grid.ColumnSpan="9" Grid.RowSpan="6" Aspect="Fill" />
 
                 <StackLayout Grid.Row="1" Grid.Column="1" Margin="20,10,0,0">
-                    <ImageButton Source="menu_car.png"
-                           HeightRequest="40"
-                           WidthRequest="40"
-                           Aspect="Fill"/>
+                        <Button Image="menu_car.xml" /> 
                     <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="خودرو‌ها" />
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="2"  Margin="20,10,0,0">
-                    <ImageButton Source="menu_report.png"
-                           HeightRequest="40"
-                           WidthRequest="40"
-                           Aspect="Fill"/>
+                        <Button Image="menu_report.xml" />  
                     <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="گزارش‌ها" />
                 </StackLayout>
 
@@ -178,18 +172,12 @@
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="4" Margin="20,10,0,0">
-                    <ImageButton Source="menu_more.png"
-                           HeightRequest="40"
-                           WidthRequest="40"
-                           Aspect="Fill"/>
+                        <Button Image="menu_more.xml" />   
                     <Label HorizontalOptions="Center"  TextColor="{StaticResource MainButtonText}" Text="پیشرفته" />
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="5" Margin="20,10,0,0">
-                    <ImageButton Source="menu_settings.png"
-                           HeightRequest="40"
-                           WidthRequest="40"
-                           Aspect="Fill" Clicked="OnSettingsTapped">
+                        <Button Image="menu_settings.xml" />    
                     </ImageButton>
                     <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="تنظیمات" />
                 </StackLayout>
