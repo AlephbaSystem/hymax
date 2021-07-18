@@ -78,7 +78,7 @@
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <StackLayout Grid.Row="0" Grid.Column="1" >
-                            <ImageButton Source="carkey.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                            <ImageButton Source="carkey.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                             
                             </ImageButton>
                             <!-- <Button Image="carkey.xml" /> -->
@@ -86,7 +86,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="0" Grid.Column="2" >
-                            <ImageButton Source="volume.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                            <ImageButton Source="volume.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                             
                             </ImageButton>
                             <!-- <Button Image="volume.xml" /> -->
@@ -94,7 +94,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="0" Grid.Column="3" >
-                            <ImageButton Source="trunkopen.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                            <ImageButton Source="trunkopen.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                             
                             </ImageButton>
                             <!-- <Button Image="trunkopen.xml" /> -->
@@ -102,7 +102,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="0" Grid.Column="4" >
-                            <ImageButton Source="padlock.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                            <ImageButton Source="padlock.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                             
                             </ImageButton>
                             <!-- <Button Image="padlock.xml" /> -->
@@ -110,7 +110,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="0" Grid.Column="5" >
-                            <ImageButton Source="unlock.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                            <ImageButton Source="unlock.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                             
                             </ImageButton>
                             <!-- <Button Image="unlock.xml" /> -->
@@ -132,7 +132,7 @@
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <StackLayout Grid.Row="0" Grid.Column="1" >
-                        <ImageButton Source="children.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                        <ImageButton Source="children.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                         
                         </ImageButton>
                         <!-- <Button Image="children.xml" /> -->
@@ -140,7 +140,7 @@
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="2" >
-                        <ImageButton Source="satellite.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                        <ImageButton Source="satellite.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                         
                         </ImageButton>
                         <!-- <Button Image="satellite.xml" /> -->
@@ -148,7 +148,7 @@
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="3" >
-                        <ImageButton Source="car.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                        <ImageButton Source="car.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                         
                         </ImageButton>
                         <!-- <Button Image="car.xml" /> -->
@@ -156,14 +156,14 @@
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="4" >
-                        <ImageButton Source="gsm.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                        <ImageButton Source="gsm.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                         
                         </ImageButton>
                         <!-- <Button Image="gsm.xml" /> -->
                         <Label HorizontalOptions="Center" Text="۶۹ ٪" />
                     </StackLayout>
                     <StackLayout Grid.Row="0" Grid.Column="5" >
-                        <ImageButton Source="battery.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                        <ImageButton Source="battery.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                         
                         </ImageButton>
                         <!-- <Button Image="battery.xml" /> -->
@@ -188,10 +188,10 @@
                     <ColumnDefinition Width="0.1*" />
                 </Grid.ColumnDefinitions>
                 <Image Source="menu.png" Grid.Row="1" Grid.Column="0"
-                       Grid.ColumnSpan="9" Grid.RowSpan="6" Aspect="AspectFit" />
+                       Grid.ColumnSpan="9" Grid.RowSpan="6" Aspect="AspectFill" />
 
                 <StackLayout Grid.Row="1" Grid.Column="1" Margin="20,10,0,0">
-                        <ImageButton Source="menu_car.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                        <ImageButton Source="menu_car.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                         
                         </ImageButton>
                         <!-- <Button Image="menu_car.xml" />  -->
@@ -199,7 +199,7 @@
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="2"  Margin="20,10,0,0">
-                        <ImageButton Source="menu_report.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                        <ImageButton Source="menu_report.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                         
                         </ImageButton>
                         <!-- <Button Image="menu_report.xml" />   -->
@@ -207,14 +207,14 @@
                 </StackLayout>
 
                 <StackLayout Grid.Row="0" Grid.ColumnSpan="1" Grid.Column="3" Margin="22,-25,0,0">
-                    <ImageButton Source="menu_round.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                    <ImageButton Source="menu_round.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                     
                     </ImageButton>
                     <!-- <Button Image="menu_round.xml" /> -->
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="4" Margin="20,10,0,0">
-                        <ImageButton Source="menu_more.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                        <ImageButton Source="menu_more.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                         
                         </ImageButton>
                         <!-- <Button Image="menu_more.xml" />    -->
@@ -222,7 +222,7 @@
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="5" Margin="20,10,0,0">
-                        <ImageButton Source="menu_settings.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center">
+                        <ImageButton Source="menu_settings.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                         
                         </ImageButton>
                         <!-- <Button Image="menu_settings.xml" /> -->
