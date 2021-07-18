@@ -13,6 +13,9 @@
         <Style TargetType="Button">
             <Setter Property="BackgroundColor" Value="Transparent"/>
         </Style>
+        <Style TargetType="ImageButton">
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+        </Style>
     </ContentPage.Resources>
     <Shell.TitleView>
         <Grid HorizontalOptions="CenterAndExpand"
