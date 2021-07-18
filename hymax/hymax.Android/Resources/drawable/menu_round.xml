@@ -2,8 +2,7 @@
     android:viewportWidth="50"
     android:viewportHeight="50"
     android:width="50dp"
-    android:height="50dp">
-
+    android:height="50dp"> 
 	<path
         android:fillColor="#ffffff"
         android:fillType="evenOdd"
