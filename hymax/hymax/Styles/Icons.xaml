@@ -65,4 +65,46 @@
                      Size="{StaticResource SizeLargeIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
 
+    <FontImageSource x:Key="Info"
+                     FontFamily="{StaticResource MaterialFontFamily}"
+                     Glyph="{x:Static styles:Material.Info}"
+                     Size="{StaticResource SizeLargeIcon}"
+                     Color="{StaticResource MainTextPrimaryColor}" />
+
+    <FontImageSource x:Key="Arrow_back_ios"
+                     FontFamily="{StaticResource MaterialFontFamily}"
+                     Glyph="{x:Static styles:Material.Arrow_back_ios}"
+                     Size="{StaticResource SizeLargeIcon}"
+                     Color="{StaticResource MainTextPrimaryColor}" />
+
+    <FontImageSource x:Key="Account_tree"
+                     FontFamily="{StaticResource MaterialFontFamily}"
+                     Glyph="{x:Static styles:Material.Account_tree}"
+                     Size="{StaticResource SizeLargeIcon}"
+                     Color="{StaticResource MainTextPrimaryColor}" />
+
+    <FontImageSource x:Key="Book"
+                     FontFamily="{StaticResource MaterialFontFamily}"
+                     Glyph="{x:Static styles:Material.Book}"
+                     Size="{StaticResource SizeLargeIcon}"
+                     Color="{StaticResource MainTextPrimaryColor}" />
+
+    <FontImageSource x:Key="Language"
+                     FontFamily="{StaticResource MaterialFontFamily}"
+                     Glyph="{x:Static styles:Material.Language}"
+                     Size="{StaticResource SizeLargeIcon}"
+                     Color="{StaticResource MainTextPrimaryColor}" />
+
+    <FontImageSource x:Key="Support_agent"
+                     FontFamily="{StaticResource MaterialFontFamily}"
+                     Glyph="{x:Static styles:Material.Support_agent}"
+                     Size="{StaticResource SizeLargeIcon}"
+                     Color="{StaticResource MainTextPrimaryColor}" />
+
+    <FontImageSource x:Key="Account_circle"
+                     FontFamily="{StaticResource MaterialFontFamily}"
+                     Glyph="{x:Static styles:Material.Account_circle}"
+                     Size="{StaticResource SizeLargeIcon}"
+                     Color="{StaticResource MainTextPrimaryColor}" />
+
 </ResourceDictionary>

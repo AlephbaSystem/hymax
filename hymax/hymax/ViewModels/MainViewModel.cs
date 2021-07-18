@@ -10,6 +10,7 @@ using hymax.Models;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using System;
+using System.Reflection;
 
 namespace hymax.ViewModels
 {
@@ -25,7 +26,20 @@ namespace hymax.ViewModels
             this.carService = carService ?? Locator.Current.GetService<ICarsService>();
 
             var rs = hymax.Localization.Localizations.GetResource();
-            this._cars = this.carService.CarLists();
+            this._cars = this.carService.CarLists(); 
+            this._cars = this.carService.CarLists(); 
+        }
+     public void ExecuteSettings()
+        {
+            try
+            {
+                this.routingService.MasterShell();
+                  this.routingService.NavigateTo("main/settings");
+            }
+            catch (Exception ex)
+            {
+                _ = ex;
+            }
         }
         public async void UpdateCar()
         {
@@ -66,6 +80,6 @@ namespace hymax.ViewModels
             Image img = (Image)sender;
             ImageSource s = img.Source;
             UpdateCar(s.ClassId);
-        }
+        } 
     }
 }

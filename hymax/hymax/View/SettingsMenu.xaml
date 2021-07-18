@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hymax.View.SettingsMenu"
+             xmlns:localization="clr-namespace:hymax.Localization">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="تنظیمات">
+                        <EntryCell Label="جستجو" Placeholder="..." />
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Info}" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="درباره نرم افزار" HorizontalOptions="EndAndExpand"/>
+ 
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Account_tree}" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="ورژن دستگاه" HorizontalOptions="EndAndExpand"/>
+
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Book}" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="کاتالوگ دستگاه" HorizontalOptions="EndAndExpand"/>
+
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Language}" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="ورود به سامانه ردیابی" HorizontalOptions="EndAndExpand"/>
+
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Support_agent}" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="پشتیبانی" HorizontalOptions="EndAndExpand"/>
+
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Account_circle}" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="تنظیمات کاربری" HorizontalOptions="EndAndExpand"/>
+
+                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

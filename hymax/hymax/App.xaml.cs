@@ -38,7 +38,7 @@ namespace hymax
             Locator.CurrentMutable.Register(() => new SetSecureViewModel());
             Locator.CurrentMutable.Register(() => new WelcomeViewModel());
             Locator.CurrentMutable.Register(() => new MainViewModel());
-
+            Locator.CurrentMutable.Register(() => new SettingsMenuViewModel());
         }
 
         protected override void OnStart()
