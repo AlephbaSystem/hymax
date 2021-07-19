@@ -192,7 +192,7 @@
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="5" Margin="20,10,0,0">
-                        <ImageButton Source="menu_settings.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
+                        <ImageButton Source="menu_settings.xml"  Command="{Binding OpenSettingsCommand}" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
                     <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="تنظیمات" />
                 </StackLayout>
             </Grid>
