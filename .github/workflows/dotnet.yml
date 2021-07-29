@@ -26,4 +26,10 @@ jobs:
       run: nuget restore hymax.sln
 
     - name: Build
-      run: msbuild hymax/hymax.Android/hymax.Android.csproj /t:PackageForAndroid /p:Configuration=Debug /p:Platform="Any CPU" /p:OutputPath="../../publish_android/"
+      run: msbuild hymax/hymax.Android/hymax.Android.csproj /t:PackageForAndroid /p:Configuration=Debug /p:Platform="Any CPU"
+
+    - uses: actions/upload-artifact@v2
+      if: ${{ failure() && steps.diff.conclusion == 'failure' }}
+      with:
+        name: com.alephbasys.hymax.apk
+        path: dist/com.alephbasys.hymax.apk
