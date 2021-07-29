@@ -1,0 +1,19 @@
+image: chiticariu/xamarin-android
+
+stages:
+    - build
+
+before_script:
+    - export BUILD_DATE=$(date +%Y%m%d%H%M%S)
+
+build:
+    stage: build
+    only:
+        - master
+    artifacts:
+      paths:
+        - publish_android/*.apk
+    script:
+      - msbuild hymax.sln /p:AndroidSdkDirectory=/android/sdk /p:AndroidNdkDirectory=/android/sdk/ndk-bundle /p:Configuration="Release" /p:Platform="Any CPU" /restore
+      - msbuild hymax/hymax.Android/hymax.Android.csproj /p:AndroidSdkDirectory=/android/sdk /p:AndroidNdkDirectory=/android/sdk/ndk-bundle /p:Configuration="Release" /p:Platform="Any CPU" /t:PackageForAndroid /p:OutputPath="../../publish_android/"
+      - msbuild hymax/hymax.Android/hymax.Android.csproj /p:AndroidSdkDirectory=/android/sdk /p:AndroidNdkDirectory=/android/sdk/ndk-bundle /p:Configuration="Release" /p:Platform="Any CPU" /t:SignAndroidPackage /p:OutputPath="../../publish_android/"
