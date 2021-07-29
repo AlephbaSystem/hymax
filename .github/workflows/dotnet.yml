@@ -26,4 +26,4 @@ jobs:
       run: nuget restore hymax.sln
 
     - name: Build
-      run: msbuild <csproj_file_path> /t:PackageForAndroid /p:Configuration=Debug
+      run: msbuild /hymax/hymax.Android/hymax.Android.csproj /t:PackageForAndroid /p:Configuration=Debug
