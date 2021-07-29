@@ -1,4 +1,4 @@
-name: Build Xamarin.iOS app
+name: Build Xamarin.Android app
 
 on:
   push:
