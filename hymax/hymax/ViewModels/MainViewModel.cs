@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using hymax.Models;
 using System.Collections.ObjectModel;
 using System;
+using System.Windows.Input;
 
 namespace hymax.ViewModels
 {
@@ -13,6 +14,21 @@ namespace hymax.ViewModels
         private readonly IRoutingService routingService;
         private readonly ICarsService carService;
         private ObservableCollection<CarsModel> _cars;
+        public ObservableCollection<CarsModel> Cars
+        {
+            get
+            {
+                return _cars;
+            }
+            set
+            {
+                if (_cars != value)
+                {
+                    _cars = value;
+                    this.OnPropertyChanged("Cars");
+                }
+            }
+        }
 
         public ICommand OpenSettingsCommand { get; }
 
@@ -23,12 +39,11 @@ namespace hymax.ViewModels
             this.carService = carService ?? Locator.Current.GetService<ICarsService>();
 
             var rs = hymax.Localization.Localizations.GetResource();
-            this._cars = this.carService.CarLists();
-            this._cars = this.carService.CarLists();
+            this.Cars = this.carService.CarLists();
 
             OpenSettingsCommand = new Command(executeSettings);
         }
-        private async void executeSettings(object obj)
+        private async void executeSettings(object obj) 
         {
             try
             {
@@ -42,35 +57,24 @@ namespace hymax.ViewModels
 
         public async void UpdateCar()
         {
-            for (int i = 0; i < this._cars.Count; i++)
+            for (int i = 0; i < this.Cars.Count; i++)
             {
-                this._cars[i] = await this.carService.Status(this._cars[i]);
+                CarsModel current =   await this.carService.Status(this.Cars[i]);
+                this.Cars.Remove(this._cars[i]);
+                this.Cars.Add(current);
             }
         }
         public async void UpdateCar(string id)
-        {
-            for (int i = 0; i < this._cars.Count; i++)
+        { 
+            for (int i = 0; i < this.Cars.Count; i++)
             {
-                CarsModel current = this._cars[i];
+                CarsModel current = this.Cars[i];
                 if (current.ID == id)
                 {
-                    this._cars[i] = await this.carService.Status(current);
+                    current = await this.carService.Status(current);
+                    this.Cars.Remove(this.Cars[i]);
+                    this.Cars.Add(current);
                     break;
-                }
-            }
-        }
-        public ObservableCollection<CarsModel> Cars
-        {
-            get
-            {
-                return _cars;
-            }
-            set
-            {
-                if (_cars != value)
-                {
-                    _cars = value;
-                    this.OnPropertyChanged("Cars");
                 }
             }
         }
