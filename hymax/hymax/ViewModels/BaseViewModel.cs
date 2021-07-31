@@ -48,9 +48,9 @@ namespace hymax.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
-            //var changed = PropertyChanged;
-            //if (changed == null)
-            //    return;
+            var changed = PropertyChanged;
+            if (changed == null)
+                return;
 
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

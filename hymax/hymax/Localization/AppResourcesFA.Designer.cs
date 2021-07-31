@@ -196,6 +196,42 @@ namespace hymax.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to خودروها.
+        /// </summary>
+        internal static string MainCarButton {
+            get {
+                return ResourceManager.GetString("MainCarButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to پیشرفته.
+        /// </summary>
+        internal static string MainMoreButton {
+            get {
+                return ResourceManager.GetString("MainMoreButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to گزارش‌گیری.
+        /// </summary>
+        internal static string MainReportButton {
+            get {
+                return ResourceManager.GetString("MainReportButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تنظیمات.
+        /// </summary>
+        internal static string MainSettingsButton {
+            get {
+                return ResourceManager.GetString("MainSettingsButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to رمز عبور.
         /// </summary>
         internal static string Password {

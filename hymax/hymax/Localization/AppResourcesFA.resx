@@ -162,6 +162,18 @@
   <data name="LoginVerifySendSMSButton" xml:space="preserve">
     <value>ارسال مجدد پیامک</value>
   </data>
+  <data name="MainCarButton" xml:space="preserve">
+    <value>خودروها</value>
+  </data>
+  <data name="MainMoreButton" xml:space="preserve">
+    <value>پیشرفته</value>
+  </data>
+  <data name="MainReportButton" xml:space="preserve">
+    <value>گزارش‌گیری</value>
+  </data>
+  <data name="MainSettingsButton" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
   <data name="Password" xml:space="preserve">
     <value>رمز عبور</value>
   </data>

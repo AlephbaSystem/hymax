@@ -32,6 +32,10 @@ namespace hymax.View
         void OnCarTapped(object sender, EventArgs args)
         {
             ViewModel.OnCarTapped(sender, args);
-        } 
+        }
+        void OnSettingsTapped(object sender, EventArgs args)
+        {
+            ViewModel.OnSettingsTapped(sender, args);
+        }
     }
 }

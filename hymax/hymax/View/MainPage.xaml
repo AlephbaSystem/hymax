@@ -7,6 +7,7 @@
              Visual="Material"
              Shell.PresentationMode="ModalAnimated" 
              Title="{Binding BindingContext.Title}" 
+             xmlns:localization="clr-namespace:hymax.Localization"
              BackgroundColor="{Binding BindingContext.BackgroundColor}"
              x:Class="hymax.View.MainPage">
     <ContentPage.Resources>
@@ -153,53 +154,55 @@
             </behaviors:Expander>
             <Grid Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="20*" />
-                    <RowDefinition Height="60*" />
-                    <RowDefinition Height="60*" />
-                    <RowDefinition Height="4*" />
+                    <RowDefinition Height="80*" />
+                    <RowDefinition Height="240*" />
+                    <RowDefinition Height="240*" />
+                    <RowDefinition Height="16*" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.1*" />
-                    <ColumnDefinition Width="12*" />
-                    <ColumnDefinition Width="12*" />
-                    <ColumnDefinition Width="15*" />
-                    <ColumnDefinition Width="12*" />
-                    <ColumnDefinition Width="12*" />
-                    <ColumnDefinition Width="0.1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="120*" />
+                    <ColumnDefinition Width="120*" />
+                    <ColumnDefinition Width="150*" />
+                    <ColumnDefinition Width="120*" />
+                    <ColumnDefinition Width="120*" />
+                    <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
                 <Image Source="menu.png" Grid.Row="1" Grid.Column="0"
                        Grid.ColumnSpan="9" Grid.RowSpan="6" Aspect="AspectFill" />
 
                 <StackLayout Grid.Row="1" Grid.Column="1" Margin="20,10,0,0">
                     <ImageButton Source="menu_car.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
-                    <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="\u062e\u0648\u062f\u0631\u0648\u200c\u0647\u0627" />
+                    <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="{localization:Translate MainCarButton}" />
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="2"  Margin="20,10,0,0">
                     <ImageButton Source="menu_report.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
-                    <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="\u06af\u0632\u0627\u0631\u0634\u200c\u0647\u0627" />
+                    <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="{localization:Translate MainReportButton}" />
                 </StackLayout>
 
                 <StackLayout Grid.Row="0" Grid.ColumnSpan="1" Grid.Column="3" Margin="22,-25,0,0">
                     <ImageButton Source="menu_round.xml" HeightRequest="90" WidthRequest="80" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
-
                     </ImageButton>
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Grid.Column="4" Margin="20,10,0,0">
                     <ImageButton Source="menu_more.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
-                    <Label HorizontalOptions="Center"  TextColor="{StaticResource MainButtonText}" Text="\u067e\u06cc\u0634\u0631\u0641\u062a\u0647" />
+                    <Label HorizontalOptions="Center"  TextColor="{StaticResource MainButtonText}" Text="{localization:Translate MainMoreButton}" />
                 </StackLayout>
 
-                <StackLayout Grid.Row="1" Grid.Column="5" Margin="20,10,0,0" BackgroundColor="Aqua">
-                    <StackLayout.GestureRecognizers>
+                <StackLayout Grid.Row="1" Grid.Column="5" Margin="20,10,0,0">
+                    <!--<StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSettingsTapped" NumberOfTapsRequired="1" />
                         <TapGestureRecognizer Command="{Binding BindingContext.OpenSettingsCommand}" />
-                    </StackLayout.GestureRecognizers>
+                    </StackLayout.GestureRecognizers>-->
                     <Button x:Name="settingss_button" Image="menu_settings.xml" Command="{Binding BindingContext.OpenSettingsCommand}" HeightRequest="40" WidthRequest="40" VerticalOptions="Center" HorizontalOptions="Center" />
-                    <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="\u062a\u0646\u0638\u06cc\u0645\u0627\u062a">
-                        <Label.GestureRecognizers>
+                    <Label HorizontalOptions="Center" TextColor="{StaticResource MainButtonText}" Text="{localization:Translate MainSettingsButton}">
+
+                        <!--<Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSettingsTapped" NumberOfTapsRequired="1" />
                             <TapGestureRecognizer Command="{Binding BindingContext.OpenSettingsCommand}" />
-                        </Label.GestureRecognizers>
+                        </Label.GestureRecognizers>-->
                     </Label>
                 </StackLayout>
             </Grid>

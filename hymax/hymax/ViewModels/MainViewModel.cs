@@ -55,12 +55,16 @@ namespace hymax.ViewModels
             }
         }
 
+        public void OnSettingsTapped(object sender, EventArgs args)
+        {
+            executeSettings(sender);
+        }
         public async void UpdateCar()
         {
             for (int i = 0; i < this.Cars.Count; i++)
             {
                 CarsModel current =   await this.carService.Status(this.Cars[i]);
-                this.Cars.Remove(this._cars[i]);
+                //this.Cars.Remove(this._cars[i]);
                 this.Cars.Add(current);
             }
         }
@@ -72,7 +76,7 @@ namespace hymax.ViewModels
                 if (current.ID == id)
                 {
                     current = await this.carService.Status(current);
-                    this.Cars.Remove(this.Cars[i]);
+                    //this.Cars.Remove(this.Cars[i]);
                     this.Cars.Add(current);
                     break;
                 }
