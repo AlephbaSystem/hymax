@@ -28,19 +28,9 @@ jobs:
     - name: Build
       run: msbuild hymax/hymax.Android/hymax.Android.csproj /t:PackageForAndroid /p:Configuration=Debug /p:Platform="Any CPU" /p:OutputPath="../../publish_android/"
  
-    - name: 'Upload Artifact'
-      uses: actions/upload-artifact@v2
+    - name: Download Artifact'
+      uses: actions/download-artifact@v2
       if: ${{ failure() && steps.diff.conclusion == 'failure' }}
       with:
         name: com.alephbasys.hymax.apk
         path: ../../publish_android/com.alephbasys.hymax.apk
-        retention-days: 7
-
-    - uses: actions/download-artifact@v2
-        with:
-          name: hymax-artifact
-          path: ../../publish_android/com.alephbasys.hymax.apk
-            
-        - name: Display structure of downloaded files
-          run: ls -R
-          working-directory: ../../publish_android/
