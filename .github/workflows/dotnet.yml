@@ -35,3 +35,12 @@ jobs:
         name: com.alephbasys.hymax.apk
         path: ../../publish_android/com.alephbasys.hymax.apk
         retention-days: 7
+
+    - uses: actions/download-artifact@v2
+        with:
+          name: hymax-artifact
+          path: ../../publish_android/com.alephbasys.hymax.apk
+            
+        - name: Display structure of downloaded files
+          run: ls -R
+          working-directory: ../../publish_android/
