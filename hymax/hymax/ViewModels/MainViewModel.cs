@@ -14,6 +14,7 @@ namespace hymax.ViewModels
         private readonly IRoutingService routingService;
         private readonly ICarsService carService;
         private ObservableCollection<CarsModel> _cars;
+
         public ObservableCollection<CarsModel> Cars
         {
             get
@@ -29,8 +30,8 @@ namespace hymax.ViewModels
                 }
             }
         }
-
         public ICommand OpenSettingsCommand { get; }
+        public ICommand OpenAdvanceCommand { get; }
 
         public MainViewModel(IRoutingService routingService = null)
         {
@@ -39,15 +40,27 @@ namespace hymax.ViewModels
             this.carService = carService ?? Locator.Current.GetService<ICarsService>();
 
             var rs = hymax.Localization.Localizations.GetResource();
-            this.Cars = this.carService.CarLists();
+            this._cars = this.carService.CarLists();
 
             OpenSettingsCommand = new Command(executeSettings);
+            OpenAdvanceCommand = new Command(executeAdvance);
         }
-        private async void executeSettings(object obj) 
+        private async void executeSettings(object obj)
         {
             try
             {
-                await this.routingService.NavigateTo("main/settings");
+                await this.routingService.NavigateTo("///main/settings");
+            }
+            catch (Exception ex)
+            {
+                _ = ex;
+            }
+        }
+        private async void executeAdvance(object obj)
+        {
+            try
+            {
+                await this.routingService.NavigateTo("///main/advance");
             }
             catch (Exception ex)
             {
@@ -63,21 +76,21 @@ namespace hymax.ViewModels
         {
             for (int i = 0; i < this.Cars.Count; i++)
             {
-                CarsModel current =   await this.carService.Status(this.Cars[i]);
-                //this.Cars.Remove(this._cars[i]);
-                this.Cars.Add(current);
+                CarsModel current =   await this.carService.Status(this._cars[i]);
+                //this._cars.Remove(this._cars[i]);
+                this._cars.Add(current);
             }
         }
         public async void UpdateCar(string id)
         { 
             for (int i = 0; i < this.Cars.Count; i++)
             {
-                CarsModel current = this.Cars[i];
+                CarsModel current = this._cars[i];
                 if (current.ID == id)
                 {
                     current = await this.carService.Status(current);
-                    //this.Cars.Remove(this.Cars[i]);
-                    this.Cars.Add(current);
+                    //this._cars.Remove(this._cars[i]);
+                    this._cars.Add(current);
                     break;
                 }
             }

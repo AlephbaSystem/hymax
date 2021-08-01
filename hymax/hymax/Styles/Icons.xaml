@@ -8,21 +8,17 @@
     </ResourceDictionary.MergedDictionaries>
 
 
-    <Color x:Key="ColorTabIcon">Gray</Color>
-
-
-    <x:Double x:Key="SizeSmallIcon">15</x:Double>
-    <x:Double x:Key="SizeMediumSmallIcon">25</x:Double>
-    <x:Double x:Key="SizeMediumIcon">30</x:Double>
-    <x:Double x:Key="SizeLargeIcon">45</x:Double>
-    <x:Double x:Key="SizeHugeIcon">145</x:Double>
-
-    <x:Double x:Key="SizeTabIcon">24</x:Double>
-
     <OnPlatform x:Key="MaterialFontFamily"
                 x:TypeArguments="x:String">
         <OnPlatform.Platforms>
             <On Platform="Android" Value="MaterialIconsRegular.ttf#Material Design Icons" />
+            <On Platform="iOS" Value="Material Design Icons" />
+        </OnPlatform.Platforms>
+    </OnPlatform>
+    <OnPlatform x:Key="MaterialFontFamilyOutlined"
+                x:TypeArguments="x:String">
+        <OnPlatform.Platforms>
+            <On Platform="Android" Value="MaterialIconsOutlined.otf#Material Design Icons" />
             <On Platform="iOS" Value="Material Design Icons" />
         </OnPlatform.Platforms>
     </OnPlatform>
@@ -40,6 +36,17 @@
             <On Platform="iOS" Value="FontAwesome5Free-Solid" />
         </OnPlatform.Platforms>
     </OnPlatform>
+
+
+    <Color x:Key="ColorTabIcon">Gray</Color>
+
+
+    <x:Double x:Key="SizeSmallIcon">15</x:Double>
+    <x:Double x:Key="SizeMediumSmallIcon">25</x:Double>
+    <x:Double x:Key="SizeMediumIcon">30</x:Double>
+    <x:Double x:Key="SizeLargeIcon">45</x:Double>
+    <x:Double x:Key="SizeHugeIcon">145</x:Double>
+    <x:Double x:Key="SizeTabIcon">24</x:Double>
 
     <FontImageSource x:Key="FingerPrint"
                      FontFamily="{StaticResource MaterialFontFamily}"
@@ -66,45 +73,57 @@
                      Color="{StaticResource MainTextPrimaryColor}" />
 
     <FontImageSource x:Key="Info"
-                     FontFamily="{StaticResource MaterialFontFamily}"
-                     Glyph="{x:Static styles:Material.Info}"
-                     Size="{StaticResource SizeLargeIcon}"
+                     FontFamily="{StaticResource MaterialFontFamilyOutlined}"
+                     Glyph="{x:Static styles:MaterialOutlined.Info}"
+                     Size="{StaticResource SizeMediumIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
 
     <FontImageSource x:Key="Arrow_back_ios"
-                     FontFamily="{StaticResource MaterialFontFamily}"
-                     Glyph="{x:Static styles:Material.Arrow_back_ios}"
-                     Size="{StaticResource SizeLargeIcon}"
+                     FontFamily="{StaticResource MaterialFontFamilyOutlined}"
+                     Glyph="{x:Static styles:MaterialOutlined.Arrow_back_ios}"
+                     Size="{StaticResource SizeMediumIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
 
     <FontImageSource x:Key="Account_tree"
-                     FontFamily="{StaticResource MaterialFontFamily}"
-                     Glyph="{x:Static styles:Material.Account_tree}"
-                     Size="{StaticResource SizeLargeIcon}"
+                     FontFamily="{StaticResource MaterialFontFamilyOutlined}"
+                     Glyph="{x:Static styles:MaterialOutlined.Account_tree}"
+                     Size="{StaticResource SizeMediumIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
 
     <FontImageSource x:Key="Book"
-                     FontFamily="{StaticResource MaterialFontFamily}"
-                     Glyph="{x:Static styles:Material.Book}"
-                     Size="{StaticResource SizeLargeIcon}"
+                     FontFamily="{StaticResource MaterialFontFamilyOutlined}"
+                     Glyph="{x:Static styles:MaterialOutlined.Book}"
+                     Size="{StaticResource SizeMediumIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
 
     <FontImageSource x:Key="Language"
-                     FontFamily="{StaticResource MaterialFontFamily}"
-                     Glyph="{x:Static styles:Material.Language}"
-                     Size="{StaticResource SizeLargeIcon}"
+                     FontFamily="{StaticResource MaterialFontFamilyOutlined}"
+                     Glyph="{x:Static styles:MaterialOutlined.Language}"
+                     Size="{StaticResource SizeMediumIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
 
     <FontImageSource x:Key="Support_agent"
-                     FontFamily="{StaticResource MaterialFontFamily}"
-                     Glyph="{x:Static styles:Material.Support_agent}"
-                     Size="{StaticResource SizeLargeIcon}"
+                     FontFamily="{StaticResource MaterialFontFamilyOutlined}"
+                     Glyph="{x:Static styles:MaterialOutlined.Support_agent}"
+                     Size="{StaticResource SizeMediumIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
 
     <FontImageSource x:Key="Account_circle"
-                     FontFamily="{StaticResource MaterialFontFamily}"
-                     Glyph="{x:Static styles:Material.Account_circle}"
-                     Size="{StaticResource SizeLargeIcon}"
+                     FontFamily="{StaticResource MaterialFontFamilyOutlined}"
+                     Glyph="{x:Static styles:MaterialOutlined.Account_circle}"
+                     Size="{StaticResource SizeMediumIcon}"
+                     Color="{StaticResource MainTextPrimaryColor}" />
+
+    <FontImageSource x:Key="Lock_Open"
+                     FontFamily="{StaticResource MaterialFontFamilyOutlined}"
+                     Glyph="{x:Static styles:MaterialOutlined.Lock_open}"
+                     Size="{StaticResource SizeMediumIcon}"
+                     Color="{StaticResource MainTextPrimaryColor}" />
+
+    <FontImageSource x:Key="Lock"
+                     FontFamily="{StaticResource MaterialFontFamilyOutlined}"
+                     Glyph="{x:Static styles:MaterialOutlined.Lock}"
+                     Size="{StaticResource SizeMediumIcon}"
                      Color="{StaticResource MainTextPrimaryColor}" />
 
 </ResourceDictionary>

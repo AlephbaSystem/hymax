@@ -52,7 +52,7 @@ namespace hymax.ViewModels
             if (changed == null)
                 return;
 
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            changed?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
     }

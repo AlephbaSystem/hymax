@@ -2,71 +2,73 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="hymax.View.SettingsMenu"
+             FlowDirection="RightToLeft"
+             Title="تنظیمات"
              xmlns:localization="clr-namespace:hymax.Localization">
     <ContentPage.Content>
         <StackLayout>
-            <TableView Intent="Settings">
+            <TableView Intent="Settings" Margin="20,0,20,0">
                 <TableRoot>
-                    <TableSection Title="تنظیمات">
-                        <EntryCell Label="جستجو" Placeholder="..." />
+                    <TableSection>
+                        <EntryCell Label="جستجو" Placeholder="" />
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Info}" HorizontalOptions="EndAndExpand"/>
-                                <Label Text="درباره نرم افزار" HorizontalOptions="EndAndExpand"/>
+                               Source="{StaticResource Info}" />
+                                <Label Text="{localization:Translate SettingsAboutMenu}" VerticalOptions="Center" />
  
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Arrow_back_ios}" />
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand" />
                             </StackLayout>
                         </ViewCell>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Account_tree}" HorizontalOptions="EndAndExpand"/>
-                                <Label Text="ورژن دستگاه" HorizontalOptions="EndAndExpand"/>
+                               Source="{StaticResource Account_tree}" />
+                                <Label Text="{localization:Translate SettingsVersionMenu}" VerticalOptions="Center" />
 
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Arrow_back_ios}" />
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
                             </StackLayout>
                         </ViewCell>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Book}" HorizontalOptions="EndAndExpand"/>
-                                <Label Text="کاتالوگ دستگاه" HorizontalOptions="EndAndExpand"/>
+                               Source="{StaticResource Book}" />
+                                <Label Text="{localization:Translate SettingsCatalogeMenu}" VerticalOptions="Center" />
 
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Arrow_back_ios}" />
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand" />
                             </StackLayout>
                         </ViewCell>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Language}" HorizontalOptions="EndAndExpand"/>
-                                <Label Text="ورود به سامانه ردیابی" HorizontalOptions="EndAndExpand"/>
+                               Source="{StaticResource Language}" />
+                                <Label Text="{localization:Translate SettingsOpenwebMenu}" VerticalOptions="Center"/>
 
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Arrow_back_ios}" />
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
                             </StackLayout>
                         </ViewCell>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Support_agent}" HorizontalOptions="EndAndExpand"/>
-                                <Label Text="پشتیبانی" HorizontalOptions="EndAndExpand"/>
+                               Source="{StaticResource Support_agent}" />
+                                <Label Text="{localization:Translate SettingsSupportMenu}" VerticalOptions="Center"/>
 
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Arrow_back_ios}" />
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
                             </StackLayout>
                         </ViewCell>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Account_circle}" HorizontalOptions="EndAndExpand"/>
-                                <Label Text="تنظیمات کاربری" HorizontalOptions="EndAndExpand"/>
+                               Source="{StaticResource Account_circle}" />
+                                <Label Text="{localization:Translate SettingsUsersMenu}" VerticalOptions="Center"/>
 
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Arrow_back_ios}" />
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
                             </StackLayout>
                         </ViewCell>
                     </TableSection>

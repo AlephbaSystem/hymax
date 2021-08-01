@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hymax.View.AdvancePage"
+             FlowDirection="RightToLeft"
+             Title="تنظیمات پیشرفته"
+             xmlns:localization="clr-namespace:hymax.Localization">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <TableView Intent="Settings" Margin="20,0,20,0">
+                    <TableRoot>
+                        <TableSection>
+                            <EntryCell Label="جستجو" Placeholder="" />
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Info}" />
+                                    <Label Text="{localization:Translate AdvanceOpenDoorMenu}" VerticalOptions="Center" />
+
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Account_tree}" />
+                                    <Label Text="{localization:Translate AdvanceCloseDoorMenu}" VerticalOptions="Center" />
+
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}"
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}"
+                               Source="{StaticResource Book}" />
+                                    <Label Text="{localization:Translate AdvanceOpenTrunkMenu}" VerticalOptions="Center" />
+
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}"
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Language}" />
+                                    <Label Text="{localization:Translate AdvanceAlarmMenu}" VerticalOptions="Center"/>
+
+                                    <Switch Grid.Row="0" IsToggled="true" HorizontalOptions="EndAndExpand" />
+                                    <!--<Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>-->
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Support_agent}" />
+                                    <Label Text="{localization:Translate AdvanceChildLockMenu}" VerticalOptions="Center"/>
+
+                                    <Switch Grid.Row="0" IsToggled="true" HorizontalOptions="EndAndExpand" />
+                                    <!--<Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>-->
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Account_circle}" />
+                                    <Label Text="{localization:Translate AdvanceStartMenu}" VerticalOptions="Center"/>
+
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Account_circle}" />
+                                    <Label Text="{localization:Translate AdvanceCloseWindowsMenu}" VerticalOptions="Center"/>
+
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Account_circle}" />
+                                    <Label Text="{localization:Translate AdvanceRequestVoiceMenu}" VerticalOptions="Center"/>
+
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Account_circle}" />
+                                    <Label Text="{localization:Translate AdvanceRequestSpeedMenu}" VerticalOptions="Center"/>
+
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Account_circle}" />
+                                    <Label Text="{localization:Translate AdvanceForceStopMenu}" VerticalOptions="Center"/>
+
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

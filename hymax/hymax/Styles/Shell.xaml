@@ -10,7 +10,7 @@
     <Style x:Key="BaseStyle" TargetType="Element">
         <!--<Setter Property="Shell.BackgroundColor" Value="{StaticResource MainPrimaryColor}" />
                 <Setter Property="Shell.ForegroundColor" Value="{StaticResource MainPrimaryColor}" />-->
-        <Setter Property="Shell.TitleColor" Value="{StaticResource MainTernaryColor}" />
+        <Setter Property="Shell.TitleColor" Value="{StaticResource MainTextPrimaryColor}" />
         <Setter Property="Shell.DisabledColor" Value="{StaticResource MainTextTernaryColor}" />
         <Setter Property="Shell.UnselectedColor" Value="{StaticResource MainTextSecondaryColor}" />
         <Setter Property="Shell.BackgroundColor" Value="{StaticResource MainTernaryColor}"/>

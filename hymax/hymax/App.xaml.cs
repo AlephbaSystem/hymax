@@ -17,8 +17,8 @@ namespace hymax
             InitializeDi();
             InitializeComponent();
 
-            //MainPage = new AppShell();
-            MainPage = new MasterShell();
+            MainPage = new AppShell();
+            //MainPage = new MasterShell();
 
         }
         private void InitializeDi()
@@ -39,6 +39,7 @@ namespace hymax
             Locator.CurrentMutable.Register(() => new WelcomeViewModel());
             Locator.CurrentMutable.Register(() => new MainViewModel());
             Locator.CurrentMutable.Register(() => new SettingsMenuViewModel());
+            Locator.CurrentMutable.Register(() => new AdvanceViewModel());
         }
 
         protected override void OnStart()

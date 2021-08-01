@@ -37,11 +37,11 @@
     <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidSupportedAbis />
-    <AndroidKeyStore>false</AndroidKeyStore>
-    <AndroidSigningKeyStore>D:\Users\Soroush\OneDrive\Dev\hycodebug.keystore</AndroidSigningKeyStore>
-    <AndroidSigningStorePass>@E833xsbf</AndroidSigningStorePass>
+    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\alephba\Source\Repos\tspersian\hymax\hymax\my-release-key.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>e833xsbf</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>hycodebug</AndroidSigningKeyAlias>
-    <AndroidSigningKeyPass>@E833xsbf</AndroidSigningKeyPass>
+    <AndroidSigningKeyPass>e833xsbf</AndroidSigningKeyPass>
     <MandroidI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -60,6 +60,7 @@
     <AndroidLinkTool>r8</AndroidLinkTool>
     <MandroidI18n />
     <AndroidKeyStore>true</AndroidKeyStore>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -104,9 +105,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\MaterialIconsOutlined.otf" />
     <AndroidAsset Include="Assets\MaterialIconsRegular.ttf" />
-    <AndroidAsset Include="Assets\fa.ttf" />
-    <AndroidAsset Include="Assets\fasolid.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -250,6 +250,10 @@
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fa.ttf" />
+    <AndroidAsset Include="Assets\fasolid.ttf" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>

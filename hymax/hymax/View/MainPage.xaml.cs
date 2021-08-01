@@ -33,9 +33,5 @@ namespace hymax.View
         {
             ViewModel.OnCarTapped(sender, args);
         }
-        void OnSettingsTapped(object sender, EventArgs args)
-        {
-            ViewModel.OnSettingsTapped(sender, args);
-        }
     }
 }

@@ -88,6 +88,96 @@ namespace hymax.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to خودرو یاب.
+        /// </summary>
+        internal static string AdvanceAlarmMenu {
+            get {
+                return ResourceManager.GetString("AdvanceAlarmMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to قفل کودک.
+        /// </summary>
+        internal static string AdvanceChildLockMenu {
+            get {
+                return ResourceManager.GetString("AdvanceChildLockMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بستن درب خودرو.
+        /// </summary>
+        internal static string AdvanceCloseDoorMenu {
+            get {
+                return ResourceManager.GetString("AdvanceCloseDoorMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بستن پنجره ها.
+        /// </summary>
+        internal static string AdvanceCloseWindowsMenu {
+            get {
+                return ResourceManager.GetString("AdvanceCloseWindowsMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to توقف فوری.
+        /// </summary>
+        internal static string AdvanceForceStopMenu {
+            get {
+                return ResourceManager.GetString("AdvanceForceStopMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to باز کردن درب خودرو.
+        /// </summary>
+        internal static string AdvanceOpenDoorMenu {
+            get {
+                return ResourceManager.GetString("AdvanceOpenDoorMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to باز کردن صندوق عقب.
+        /// </summary>
+        internal static string AdvanceOpenTrunkMenu {
+            get {
+                return ResourceManager.GetString("AdvanceOpenTrunkMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to مشاهده سرعت خودرو.
+        /// </summary>
+        internal static string AdvanceRequestSpeedMenu {
+            get {
+                return ResourceManager.GetString("AdvanceRequestSpeedMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to درخواست شنود.
+        /// </summary>
+        internal static string AdvanceRequestVoiceMenu {
+            get {
+                return ResourceManager.GetString("AdvanceRequestVoiceMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to استارت هوشمند.
+        /// </summary>
+        internal static string AdvanceStartMenu {
+            get {
+                return ResourceManager.GetString("AdvanceStartMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تاریخ وضعیت:.
         /// </summary>
         internal static string CarDateLabel {
@@ -345,6 +435,60 @@ namespace hymax.Localization {
         internal static string SetSecureDetailsPin {
             get {
                 return ResourceManager.GetString("SetSecureDetailsPin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to درباره نرم افزار.
+        /// </summary>
+        internal static string SettingsAboutMenu {
+            get {
+                return ResourceManager.GetString("SettingsAboutMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to کاتالوگ دستگاه.
+        /// </summary>
+        internal static string SettingsCatalogeMenu {
+            get {
+                return ResourceManager.GetString("SettingsCatalogeMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ورود به سامانه ردیابی.
+        /// </summary>
+        internal static string SettingsOpenwebMenu {
+            get {
+                return ResourceManager.GetString("SettingsOpenwebMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to پشتیبانی.
+        /// </summary>
+        internal static string SettingsSupportMenu {
+            get {
+                return ResourceManager.GetString("SettingsSupportMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تنظیمات کاربری.
+        /// </summary>
+        internal static string SettingsUsersMenu {
+            get {
+                return ResourceManager.GetString("SettingsUsersMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ورژن دستگاه.
+        /// </summary>
+        internal static string SettingsVersionMenu {
+            get {
+                return ResourceManager.GetString("SettingsVersionMenu", resourceCulture);
             }
         }
         
