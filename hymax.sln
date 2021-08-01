@@ -1,4 +1,5 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -6,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hymax.Android", "hymax\hyma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hymax.iOS", "hymax\hymax.iOS\hymax.iOS.csproj", "{E937752E-90FE-489D-B34F-47DD240C6E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hymax", "hymax\hymax\hymax.csproj", "{E5919BAC-0AFB-4257-A455-447F15014B9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hymax", "hymax\hymax\hymax.csproj", "{E5919BAC-0AFB-4257-A455-447F15014B9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
