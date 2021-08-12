@@ -7,6 +7,10 @@ using Splat;
 using hymax.Services.Identity;
 using hymax.ViewModels;
 using hymax.Services.Cars;
+using hymax.Controls;
+using hymax.Services;
+using hymax.Models;
+using System.Collections.Generic;
 
 namespace hymax
 {
@@ -16,10 +20,24 @@ namespace hymax
         {
             InitializeDi();
             InitializeComponent();
+            InitializeDb();
 
-            MainPage = new AppShell();
-            //MainPage = new MasterShell();
+            MainPage = new MasterShell();
+            return;
 
+            if (Settings.UserSetting[0].Verified)
+            {
+                MainPage = new MasterShell();
+            }
+            else
+            {
+                MainPage = new AppShell();
+            }
+
+        }
+        private async void InitializeDb()
+        {
+            Settings.UserSetting = await Settings.Database.GetSettingsAsync();
         }
         private void InitializeDi()
         {
@@ -27,7 +45,7 @@ namespace hymax
             Locator.CurrentMutable.RegisterLazySingleton<IRoutingService>(() => new ShellRoutingService());
             Locator.CurrentMutable.RegisterLazySingleton<IIdentityService>(() => new IdentityServiceStub());
             Locator.CurrentMutable.RegisterLazySingleton<ICarsService>(() => new CarsServiceStub());
-            
+
 
             // ViewModels
             Locator.CurrentMutable.Register(() => new LoadingViewModel());

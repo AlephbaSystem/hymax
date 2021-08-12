@@ -56,8 +56,6 @@ namespace hymax.ViewModels
             {
                 _ = ex;
             }
-
-
         }
     }
 }

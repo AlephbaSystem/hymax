@@ -23,6 +23,7 @@ namespace hymax.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            Xamarin.FormsGoogleMaps.Init("AIzaSyA7jvfpQ6pQu9Aeii0qKJqYOpAGiPYCPGg");
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

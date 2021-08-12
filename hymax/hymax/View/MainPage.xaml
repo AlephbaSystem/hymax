@@ -6,9 +6,9 @@
              mc:Ignorable="d"
              Visual="Material"
              Shell.PresentationMode="ModalAnimated" 
-             Title="{Binding Title}" 
              xmlns:localization="clr-namespace:hymax.Localization"
              BackgroundColor="{Binding BackgroundColor}"
+             Title="{Binding Title}" 
              x:Class="hymax.View.MainPage">
     <ContentPage.Resources>
         <Style TargetType="Button">
@@ -78,39 +78,66 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-                        <StackLayout Grid.Row="0" Grid.Column="1" >
-                            <ImageButton Source="carkey.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding StartCommand}" />
+                            </StackLayout.GestureRecognizers>
+                            <ImageButton Source="carkey.xml" HeightRequest="34" WidthRequest="34" Command="{Binding StartCommand}" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
 
                             </ImageButton>
-                            <Label HorizontalOptions="Center" Text="استارت" />
+                            <Label HorizontalOptions="Center" Text="استارت">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding StartCommand}" />
+                                </Label.GestureRecognizers>
+                            </Label>
                         </StackLayout>
 
-                        <StackLayout Grid.Row="0" Grid.Column="2" >
-                            <ImageButton Source="volume.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
-
-                            </ImageButton>
-                            <Label HorizontalOptions="Center" Text="خودرویاب" />
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding PanicCommand}" />
+                            </StackLayout.GestureRecognizers>
+                            <ImageButton Source="volume.xml" HeightRequest="34" WidthRequest="34" Command="{Binding PanicCommand}" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
+                            <Label HorizontalOptions="Center" Text="خودرویاب">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding PanicCommand}" />
+                                </Label.GestureRecognizers>
+                            </Label>
                         </StackLayout>
 
                         <StackLayout Grid.Row="0" Grid.Column="3" >
-                            <ImageButton Source="trunkopen.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
-
-                            </ImageButton>
-                            <Label HorizontalOptions="Center" Text="صندوق" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenTrunkCommand}" />
+                            </StackLayout.GestureRecognizers>
+                            <ImageButton Source="trunkopen.xml" HeightRequest="34" WidthRequest="34" Command="{Binding OpenTrunkCommand}" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
+                            <Label HorizontalOptions="Center" Text="صندوق">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding OpenTrunkCommand}" />
+                                </Label.GestureRecognizers>
+                            </Label>
                         </StackLayout>
 
                         <StackLayout Grid.Row="0" Grid.Column="4" >
-                            <ImageButton Source="padlock.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
-
-                            </ImageButton>
-                            <Label HorizontalOptions="Center" Text="بسته" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LockCommand}" />
+                            </StackLayout.GestureRecognizers>
+                            <ImageButton Source="padlock.xml" HeightRequest="34" WidthRequest="34" Command="{Binding LockCommand}" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
+                            <Label HorizontalOptions="Center" Text="بسته">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding LockCommand}" />
+                                </Label.GestureRecognizers>
+                            </Label>
                         </StackLayout>
 
                         <StackLayout Grid.Row="0" Grid.Column="5" >
-                            <ImageButton Source="unlock.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
-
-                            </ImageButton>
-                            <Label HorizontalOptions="Center" Text="باز" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenCommand}" />
+                            </StackLayout.GestureRecognizers>
+                            <ImageButton Source="unlock.xml" HeightRequest="34" WidthRequest="34" Command="{Binding OpenCommand}" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
+                            <Label HorizontalOptions="Center" Text="باز">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding OpenCommand}" />
+                                </Label.GestureRecognizers>
+                            </Label>
                         </StackLayout>
                     </Grid>
                 </behaviors:Expander.Header>
@@ -127,9 +154,16 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <StackLayout Grid.Row="0" Grid.Column="1" >
-                        <ImageButton Source="children.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
-                        <Label HorizontalOptions="Center" Text="فعال" />
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ChildLockCommand}" />
+                        </StackLayout.GestureRecognizers>
+                        <ImageButton Source="children.xml" HeightRequest="34" WidthRequest="34" Command="{Binding ChildLockCommand}" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
+                        <Label HorizontalOptions="Center" Text="فعال">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding ChildLockCommand}" />
+                            </Label.GestureRecognizers>
+                        </Label>
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="2" >
@@ -137,18 +171,26 @@
                         <Label HorizontalOptions="Center" Text="31%" />
                     </StackLayout>
 
-                    <StackLayout Grid.Row="0" Grid.Column="3" >
-                        <ImageButton Source="car.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
-                        <Label HorizontalOptions="Center" Text="باز" />
+                    <StackLayout Grid.Row="0" Grid.Column="3"> 
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenCommand}" />
+                        </StackLayout.GestureRecognizers>
+                        <ImageButton Source="car.xml" HeightRequest="34" WidthRequest="34" Command="{Binding OpenCommand}" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
+                        <Label HorizontalOptions="Center" Text="باز">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenCommand}" />
+                            </Label.GestureRecognizers>
+                        </Label>
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="4" >
                         <ImageButton Source="gsm.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
                         <Label HorizontalOptions="Center" Text="69%" />
                     </StackLayout>
-                    <StackLayout Grid.Row="0" Grid.Column="5" >
+                    <StackLayout Grid.Row="0" Grid.Column="5">
                         <ImageButton Source="battery.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
-                        <Label HorizontalOptions="Center" Text="16.7 V" />
+                        <Label HorizontalOptions="Center" Text="16.7 V">
+                        </Label>
                     </StackLayout>
                 </Grid>
             </behaviors:Expander>
@@ -182,7 +224,10 @@
                 </StackLayout>
 
                 <StackLayout Grid.Row="0" Grid.ColumnSpan="1" Grid.Column="3" Margin="12,-25,0,0">
-                    <ImageButton Source="menu_round.xml" HeightRequest="90" WidthRequest="80" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenMapCommand}" />
+                    </StackLayout.GestureRecognizers>
+                    <ImageButton Source="menu_round.xml" Command="{Binding OpenMapCommand}" HeightRequest="90" WidthRequest="80" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                     </ImageButton>
                 </StackLayout>
 
@@ -190,7 +235,7 @@
                     <StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding OpenAdvanceCommand}" />
                     </StackLayout.GestureRecognizers>
-                    <ImageButton Source="menu_more.xml" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <ImageButton Source="menu_more.xml" Command="{Binding OpenAdvanceCommand}" HeightRequest="40" WidthRequest="40" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
                     <Label HorizontalOptions="Center" FontSize="10" TextColor="{StaticResource MainButtonText}" Text="{localization:Translate MainMoreButton}">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding OpenAdvanceCommand}" />
@@ -202,7 +247,7 @@
                     <StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding OpenSettingsCommand}" />
                     </StackLayout.GestureRecognizers>
-                    <Button x:Name="settingss_button" Image="menu_settings.xml" Command="{Binding OpenSettingsCommand}" HeightRequest="40" WidthRequest="40" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Button Image="menu_settings.xml" Command="{Binding OpenSettingsCommand}" HeightRequest="40" WidthRequest="40" VerticalOptions="Center" HorizontalOptions="Center" />
                     <Label HorizontalOptions="Center" FontSize="10" TextColor="{StaticResource MainButtonText}" Text="{localization:Translate MainSettingsButton}">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding OpenSettingsCommand}" />

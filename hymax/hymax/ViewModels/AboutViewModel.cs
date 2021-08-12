@@ -10,12 +10,12 @@ namespace hymax.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            DeviceNumber = "+989337554330";
-            LockCommand = new Command(LockCommandClick);
-            OpenCommand = new Command(OpenCommandClick);
-            ForceStopCommand = new Command(ForceStopCommandClick);
-            OpenTrunkCommand = new Command(OpenTrunkCommandClick);
-            LocationCommand = new Command(LocationCommandClick);
+            this.DeviceNumber = "+989337554330";
+            this.LockCommand = new Command(LockCommandClick);
+            this.OpenCommand = new Command(OpenCommandClick);
+            this.ForceStopCommand = new Command(ForceStopCommandClick);
+            this.OpenTrunkCommand = new Command(OpenTrunkCommandClick);
+            this.LocationCommand = new Command(LocationCommandClick);
         }
          
         public string DeviceNumber { get; set; }

@@ -10,16 +10,12 @@ namespace hymax.ViewModels
 {
     class MapViewModel : BaseViewModel
     {
-        private readonly MapActivityService _activityService;
         private readonly IRoutingService routingService;
-        private readonly IIdentityService identityService;
-         
+
         public MapViewModel(IRoutingService routingService = null, IIdentityService identityService = null)
         {
-            Title = "Location History";
+            Title = "Map";
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
-            this.identityService = identityService ?? Locator.Current.GetService<IIdentityService>();
-            _activityService = new MapActivityService();
         } 
 
     }
