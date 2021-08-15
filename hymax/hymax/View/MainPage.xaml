@@ -42,7 +42,7 @@
     <StackLayout>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="6*" />
+                <RowDefinition Height="5*" />
                 <RowDefinition Height="2*" />
                 <RowDefinition Height="1.4*" />
             </Grid.RowDefinitions>
@@ -63,7 +63,7 @@
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
-            <behaviors:Expander Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">
+            <behaviors:Expander Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" >
                 <behaviors:Expander.Header>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -76,9 +76,11 @@
                             <ColumnDefinition Width=".5*" />
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
+                            <RowDefinition Height="1" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-                        <StackLayout Grid.Row="0" Grid.Column="1">
+ 
+                        <StackLayout Grid.Row="1" Grid.Column="1">
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding StartCommand}" />
                             </StackLayout.GestureRecognizers>
@@ -92,7 +94,7 @@
                             </Label>
                         </StackLayout>
 
-                        <StackLayout Grid.Row="0" Grid.Column="2">
+                        <StackLayout Grid.Row="1" Grid.Column="2">
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding PanicCommand}" />
                             </StackLayout.GestureRecognizers>
@@ -104,7 +106,7 @@
                             </Label>
                         </StackLayout>
 
-                        <StackLayout Grid.Row="0" Grid.Column="3" >
+                        <StackLayout Grid.Row="1" Grid.Column="3" >
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding OpenTrunkCommand}" />
                             </StackLayout.GestureRecognizers>
@@ -116,7 +118,7 @@
                             </Label>
                         </StackLayout>
 
-                        <StackLayout Grid.Row="0" Grid.Column="4" >
+                        <StackLayout Grid.Row="1" Grid.Column="4" >
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding LockCommand}" />
                             </StackLayout.GestureRecognizers>
@@ -128,7 +130,7 @@
                             </Label>
                         </StackLayout>
 
-                        <StackLayout Grid.Row="0" Grid.Column="5" >
+                        <StackLayout Grid.Row="1" Grid.Column="5" >
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding OpenCommand}" />
                             </StackLayout.GestureRecognizers>
@@ -227,7 +229,7 @@
                     <StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding OpenMapCommand}" />
                     </StackLayout.GestureRecognizers>
-                    <ImageButton Source="menu_round.xml" Command="{Binding OpenMapCommand}" HeightRequest="90" WidthRequest="80" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
+                    <ImageButton Source="menu_round.xml" Command="{Binding OpenMapCommand}" HeightRequest="80" WidthRequest="70" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
                     </ImageButton>
                 </StackLayout>
 

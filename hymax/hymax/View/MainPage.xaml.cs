@@ -15,7 +15,7 @@ namespace hymax.View
     public partial class MainPage : ContentPage
     {
         public MainPage()
-        {
+        { 
             InitializeComponent();
             SizeChanged += MainPageSizeChanged; 
             BindingContext = ViewModel;

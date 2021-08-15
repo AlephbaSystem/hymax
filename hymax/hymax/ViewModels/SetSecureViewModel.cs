@@ -7,12 +7,13 @@ using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using hymax.Localization;
+using Plugin.Fingerprint.Abstractions;
 
 namespace hymax.ViewModels
 {
     class SetSecureViewModel : BaseViewModel
     {
-        private readonly IRoutingService routingService; 
+        private readonly IRoutingService routingService;
         public string Header { get; set; }
         public string Details { get; set; }
         public FontImageSource Icon { get; set; }
@@ -27,16 +28,24 @@ namespace hymax.ViewModels
             switch (Settings.Security)
             {
                 case Models.SecurityTypes.FingerPrint:
-                    if (await FingerPrintHandler.CheckFingers())
+                    bool at = false;
+                    FingerPrintHandler fp = new FingerPrintHandler();
+                    var authType = await Plugin.Fingerprint.CrossFingerprint.Current.GetAuthenticationTypeAsync();
+                    if (authType == AuthenticationType.Fingerprint)
+                    {
+                        at = await fp.CheckFingers("ورود با اثر انگشت فعال است. برای ورود به برنامه می بایست احراز هویت اثر انگشت انجام شود");
+                    }
+                    if (at)
                     {
                         this.Details = currentResource.GetString("SetSecureDetailsFingerPrint");
                         this.Header = currentResource.GetString("SecureFinger");
                         this.Icon = (FontImageSource)IconServer.GetResource("FingerPrint");
-                    } else
+                    }
+                    else
                     {
                         await this.routingService.GoBack();
                     }
-                  
+
                     break;
                 case Models.SecurityTypes.Password:
                     this.Details = currentResource.GetString("SetSecureDetailsPassword");
@@ -56,12 +65,13 @@ namespace hymax.ViewModels
                 default:
                     break;
             }
-            this.Icon.Size = 100; 
+            this.Icon.Size = 100;
         }
 
-        public async void waitandgo()
+
+        public async Task waitandgo()
         {
-            await Task.Delay(1037);
+            await Task.Delay(100);
             try
             {
                 await this.routingService.NavigateTo("login/welcome");

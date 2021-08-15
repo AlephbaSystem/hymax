@@ -1,4 +1,5 @@
-﻿using hymax.Services;
+﻿using hymax.Models;
+using hymax.Services;
 using hymax.Services.Identity;
 using hymax.Services.Routing;
 using hymax.View;
@@ -17,14 +18,21 @@ namespace hymax.ViewModels
         {
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
         }
-          
+
+        private async void setDB()
+        {
+            SettingsModel sm = Settings.UserSetting[0];
+            sm.SecurityType = ((int)Settings.Security);
+            await Settings.Database.UpdateSettingsAsync(sm);
+            Settings.UserSetting = Settings.Database.GetSettings();
+        }
         public async void OnPinTapped(object sender, EventArgs args)
         {
             try
             {
-                 
                 Settings.Security = Models.SecurityTypes.Pin;
                 SetSecurePage.ViewModel.Reset();
+                setDB();
                 await this.routingService.NavigateTo("login/setsecure");
             }
             catch (Exception ex)
@@ -35,10 +43,10 @@ namespace hymax.ViewModels
         public async void OnFingerPrintTapped(object sender, EventArgs args)
         {
             try
-            {
-
+            { 
                 Settings.Security = Models.SecurityTypes.FingerPrint;
                 SetSecurePage.ViewModel.Reset();
+                setDB();
                 await this.routingService.NavigateTo("login/setsecure");
             }
             catch (Exception ex)
@@ -49,10 +57,10 @@ namespace hymax.ViewModels
         public async void OnPasswordTapped(object sender, EventArgs args)
         {
             try
-            {
-
+            { 
                 Settings.Security = Models.SecurityTypes.Password;
                 SetSecurePage.ViewModel.Reset();
+                setDB();
                 await this.routingService.NavigateTo("login/setsecure");
             }
             catch (Exception ex)
@@ -63,10 +71,10 @@ namespace hymax.ViewModels
         public async void OnPatternTapped(object sender, EventArgs args)
         {
             try
-            {
-
+            { 
                 Settings.Security = Models.SecurityTypes.Pattern;
                 SetSecurePage.ViewModel.Reset();
+                setDB();
                 await this.routingService.NavigateTo("login/setsecure");
             }
             catch (Exception ex)

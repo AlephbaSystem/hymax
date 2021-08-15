@@ -12,5 +12,6 @@ namespace hymax.Models
         public DateTime LastLogin { get; set; }
         public string Phone { get; set; }
         public bool Verified { get; set; }
+        public int SecurityType { get; set; }
     }
 }

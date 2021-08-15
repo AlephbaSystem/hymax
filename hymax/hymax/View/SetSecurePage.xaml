@@ -52,8 +52,11 @@
                 <Grid 
                     Grid.Row="5" Grid.Column="2">
                     <Image Style="{StaticResource IndicatorsIcons}" Source="{Binding Icon}"
-                       Aspect="AspectFill" > 
-                        </Image> 
+                       Aspect="AspectFill" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ResetClicked" />
+                        </Image.GestureRecognizers>
+                    </Image>
                 </Grid>
             </Grid>
         </StackLayout>

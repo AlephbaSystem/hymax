@@ -24,7 +24,7 @@ namespace hymax
 
             //MainPage = new MasterShell();
             //return;
-
+            Settings.AccessToken = "";
             if (Settings.UserSetting.Count == 0)
             {
                 SettingsModel sm = new SettingsModel();
@@ -32,6 +32,7 @@ namespace hymax
                 sm.Verified = false;
                 sm.Username = Environment.MachineName;
                 sm.Phone = null;
+                sm.SecurityType = 0;
                 Settings.UserSetting = Settings.Database.GetSettings();
                 _ = Settings.Database.SaveSettingsAsync(sm);
                 MainPage = new AppShell();

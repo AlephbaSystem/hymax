@@ -4,7 +4,8 @@ using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using Plugin.Permissions;
-using Android; 
+using Android;
+using Plugin.Fingerprint;
 
 namespace hymax.Droid
 {
@@ -21,6 +22,7 @@ namespace hymax.Droid
              
             global::Xamarin.Forms.Forms.SetFlags(new string[] { "IndicatorView_Experimental", "CollectionView_Experimental" });
 
+            CrossFingerprint.SetCurrentActivityResolver(() => this);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);

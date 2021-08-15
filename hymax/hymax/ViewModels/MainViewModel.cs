@@ -82,6 +82,11 @@ namespace hymax.ViewModels
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
             this.carService = carService ?? Locator.Current.GetService<ICarsService>();
 
+            if (Settings.AccessToken == "")
+            {
+                this.routingService.NavigateTo("main/setsecure"); 
+            }
+
             var rs = hymax.Localization.Localizations.GetResource();
             this._cars = this.carService.CarLists();
 
@@ -150,7 +155,8 @@ namespace hymax.ViewModels
             for (int i = 0; i < this.Cars.Count; i++)
             {
                 CarsModel current = this._cars[i];
-                await Task.Run(() => {
+                await Task.Run(() =>
+                {
                     current.ImagePath = "caron.png";
                     Task.Delay(3000);
                     current.ImagePath = "caroff.png";
