@@ -51,7 +51,7 @@
                     <DataTemplate>
                         <Frame HasShadow="True" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
                             <StackLayout>
-                                <Image Source="{Binding ImagePath}" >
+                                <Image x:Name="CarWHeadlight" Source="{Binding ImagePath}" Aspect="AspectFill" >
                                     <Image.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="OnCarTapped" NumberOfTapsRequired="1" />
                                     </Image.GestureRecognizers>

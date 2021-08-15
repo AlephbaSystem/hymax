@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System;
 using System.Windows.Input;
 using hymax.Services;
+using System.Threading.Tasks;
 
 namespace hymax.ViewModels
 {
@@ -73,7 +74,6 @@ namespace hymax.ViewModels
         }
         private async void ChildLockCommandClick(object obj)
         {
-            return;
             await new Services.ISMSHandler().SendSms("محدوده", DeviceNumber);
         }
         public MainViewModel(IRoutingService routingService = null)
@@ -88,7 +88,6 @@ namespace hymax.ViewModels
             this.OpenSettingsCommand = new Command(executeSettings);
             this.OpenAdvanceCommand = new Command(executeAdvance);
             this.OpenMapCommand = new Command(executeMap);
-
             this.DeviceNumber = Settings.UserSetting[0].Phone;
             this.LockCommand = new Command(LockCommandClick);
             this.OpenCommand = new Command(OpenCommandClick);
@@ -151,11 +150,18 @@ namespace hymax.ViewModels
             for (int i = 0; i < this.Cars.Count; i++)
             {
                 CarsModel current = this._cars[i];
+                await Task.Run(() => {
+                    current.ImagePath = "caron.png";
+                    Task.Delay(3000);
+                    current.ImagePath = "caroff.png";
+                });
                 if (current.ID == id)
                 {
                     current = await this.carService.Status(current);
                     //this._cars.Remove(this._cars[i]);
                     this._cars.Add(current);
+
+
                     break;
                 }
             }

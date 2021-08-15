@@ -22,7 +22,7 @@ namespace hymax.Services.Cars
         public ObservableCollection<CarsModel> CarLists()
         {
             ObservableCollection<CarsModel> Cars = new ObservableCollection<CarsModel>();
-            var cr = new CarsModel { ImagePath = "car1.png" };
+            var cr = new CarsModel { ImagePath = "caroff.png" };
             cr.ImagePath.ClassId = "car1";
             cr.ID = "car1";
             Cars.Add(cr);

@@ -17,7 +17,12 @@ namespace hymax.View
         public MainPage()
         {
             InitializeComponent();
+            SizeChanged += MainPageSizeChanged; 
             BindingContext = ViewModel;
+        }
+        void MainPageSizeChanged(object sender, EventArgs e)
+        {
+
         }
         static internal MainViewModel ViewModel { get; set; } = Locator.Current.GetService<MainViewModel>();
         protected override bool OnBackButtonPressed()
@@ -25,8 +30,8 @@ namespace hymax.View
             return true;
         } 
         public void carouselView_CurrentItemChanged(object sender, CurrentItemChangedEventArgs e)
-        {
-            var item = e.CurrentItem as CarsModel;
+        {        
+            var item = e.CurrentItem as CarsModel; 
             ViewModel.UpdateCar(item.ID);
         }
         void OnCarTapped(object sender, EventArgs args)

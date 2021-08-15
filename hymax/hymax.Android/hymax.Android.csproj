@@ -34,7 +34,7 @@
     <AndroidLinkMode>None</AndroidLinkMode>
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
-    <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidSupportedAbis />
     <AndroidKeyStore>false</AndroidKeyStore>
@@ -43,7 +43,7 @@
     <AndroidSigningKeyAlias>hycodebug</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>e833xsbf</AndroidSigningKeyPass>
     <MandroidI18n />
-    <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
     <JavaMaximumHeapSize>
     </JavaMaximumHeapSize>
@@ -61,14 +61,15 @@
     <EnableLLVM>false</EnableLLVM>
     <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
-    <AndroidLinkTool>r8</AndroidLinkTool>
     <MandroidI18n />
     <AndroidKeyStore>true</AndroidKeyStore>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
-    <AndroidSigningKeyStore>C:\Users\alephba\source\repos\tspersian\hymax\hymax\my-release-key.keystore</AndroidSigningKeyStore>
+    <AndroidSigningKeyStore>C:\Users\alephba\AppData\Local\Xamarin\Mono for Android\Keystore\alephbasystem\alephbasystem.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>e833xsbf</AndroidSigningStorePass>
-    <AndroidSigningKeyAlias>aplehba-system</AndroidSigningKeyAlias>
+    <AndroidSigningKeyAlias>aplehbasystem</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>e833xsbf</AndroidSigningKeyPass>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -317,10 +318,25 @@
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\caron.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\caroff.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\headlight.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadXFormsNugetUpgradeInfoBarhymaxAndroidHideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionhymaxAndroidHideInfoBar="True" TriggeredFromHotReload="False" XamarinHotReloadUnhandledDeviceExceptionhymaxAndroidHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarhymaxAndroidHideInfoBar="True" />
+      <UserProperties XamarinHotReloadWrongLinkerErrorInfoBarhymaxAndroidHideInfoBar="True" XamarinHotReloadUnhandledDeviceExceptionhymaxAndroidHideInfoBar="True" TriggeredFromHotReload="False" XamarinHotReloadDebuggerTimeoutExceptionhymaxAndroidHideInfoBar="True" XamarinHotReloadXFormsNugetUpgradeInfoBarhymaxAndroidHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
