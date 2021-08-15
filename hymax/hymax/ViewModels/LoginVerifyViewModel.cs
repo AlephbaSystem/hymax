@@ -1,4 +1,6 @@
-﻿using hymax.Services.Identity;
+﻿using hymax.Models;
+using hymax.Services;
+using hymax.Services.Identity;
 using hymax.Services.Routing;
 using hymax.View;
 using Splat;
@@ -22,8 +24,8 @@ namespace hymax.ViewModels
         }
         public string VerifyCode { get; set; }
         public string PhoneNumber { get; set; }
-        public ICommand ExecuteVerfiy { get; set; } 
-        public ICommand ExecuteBack { get; set; } 
+        public ICommand ExecuteVerfiy { get; set; }
+        public ICommand ExecuteBack { get; set; }
 
         private async void Back()
         {
@@ -31,6 +33,11 @@ namespace hymax.ViewModels
         }
         private async void Verfiy()
         {
+            SettingsModel sm = Settings.UserSetting[0];
+            sm.Phone = this.PhoneNumber;
+            sm.Verified = true;
+            await Settings.Database.UpdateSettingsAsync(sm);
+            Settings.UserSetting = Settings.Database.GetSettings();
             await this.routingService.NavigateTo("login/securelogin");
         }
     }

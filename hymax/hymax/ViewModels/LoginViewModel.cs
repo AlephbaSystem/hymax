@@ -1,4 +1,6 @@
-﻿using hymax.Services.Identity;
+﻿using hymax.Models;
+using hymax.Services;
+using hymax.Services.Identity;
 using hymax.Services.Routing;
 using hymax.View;
 using Splat;
