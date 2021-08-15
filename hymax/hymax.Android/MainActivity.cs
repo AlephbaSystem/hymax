@@ -4,7 +4,7 @@ using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using Plugin.Permissions;
-using Android;
+using Android; 
 
 namespace hymax.Droid
 {
@@ -12,15 +12,13 @@ namespace hymax.Droid
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
-        {
-
+        {   
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            base.OnCreate(savedInstanceState);
-
-            //global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
-            //global::Xamarin.Forms.Forms.SetFlags("IndicatorView_Experimental");
+            base.OnCreate(savedInstanceState); 
+            //TypefaceUtil.overrideFont(base.ApplicationContext, "Dirooz", "Dirooz.ttf");
+             
             global::Xamarin.Forms.Forms.SetFlags(new string[] { "IndicatorView_Experimental", "CollectionView_Experimental" });
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);

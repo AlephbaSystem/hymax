@@ -7,6 +7,15 @@
              x:Class="hymax.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="Dirooz" />
+                <Setter Property="FontSize" Value="12" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="FontFamily" Value="Dirooz" />
+                <Setter Property="FontSize" Value="12" />
+            </Style>
+
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Styles/Colors.xaml" />
                 <ResourceDictionary Source="/Styles/Sizes.xaml" />
