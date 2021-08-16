@@ -13,5 +13,6 @@ namespace hymax.Models
         public string Phone { get; set; }
         public bool Verified { get; set; }
         public int SecurityType { get; set; }
+        public bool Welcome { get; set; }
     }
 }

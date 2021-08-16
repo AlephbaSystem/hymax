@@ -11,6 +11,7 @@ using hymax.Controls;
 using hymax.Services;
 using hymax.Models;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace hymax
 {
@@ -24,7 +25,8 @@ namespace hymax
 
             //MainPage = new MasterShell();
             //return;
-            Settings.AccessToken = "";
+            Settings.AccessToken = ""; 
+
             if (Settings.UserSetting.Count == 0)
             {
                 SettingsModel sm = new SettingsModel();
@@ -32,9 +34,10 @@ namespace hymax
                 sm.Verified = false;
                 sm.Username = Environment.MachineName;
                 sm.Phone = null;
+                sm.Welcome = true; 
                 sm.SecurityType = 0;
+                Settings.Database.SaveSettingsAsync(sm).Wait();
                 Settings.UserSetting = Settings.Database.GetSettings();
-                _ = Settings.Database.SaveSettingsAsync(sm);
                 MainPage = new AppShell();
             }
             else if (Settings.UserSetting[0].Phone != null)

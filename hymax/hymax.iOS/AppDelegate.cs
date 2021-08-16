@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-
+using System.Linq; 
 using Foundation;
 using UIKit;
 
@@ -22,7 +21,7 @@ namespace hymax.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+            global::Xamarin.Forms.Forms.Init(); 
             Xamarin.FormsGoogleMaps.Init("AIzaSyA7jvfpQ6pQu9Aeii0qKJqYOpAGiPYCPGg");
             LoadApplication(new App());
 

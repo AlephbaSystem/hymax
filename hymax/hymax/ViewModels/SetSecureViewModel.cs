@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using hymax.Localization;
 using Plugin.Fingerprint.Abstractions;
+using System.Threading;
 
 namespace hymax.ViewModels
 {
@@ -17,35 +18,21 @@ namespace hymax.ViewModels
         public string Header { get; set; }
         public string Details { get; set; }
         public FontImageSource Icon { get; set; }
+
         public SetSecureViewModel(IRoutingService routingService = null)
         {
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
             Reset();
         }
-        public async void Reset()
+        public void Reset()
         {
             var currentResource = Localization.Localizations.GetResource();
             switch (Settings.Security)
             {
                 case Models.SecurityTypes.FingerPrint:
-                    bool at = false;
-                    FingerPrintHandler fp = new FingerPrintHandler();
-                    var authType = await Plugin.Fingerprint.CrossFingerprint.Current.GetAuthenticationTypeAsync();
-                    if (authType == AuthenticationType.Fingerprint)
-                    {
-                        at = await fp.CheckFingers("ورود با اثر انگشت فعال است. برای ورود به برنامه می بایست احراز هویت اثر انگشت انجام شود");
-                    }
-                    if (at)
-                    {
-                        this.Details = currentResource.GetString("SetSecureDetailsFingerPrint");
-                        this.Header = currentResource.GetString("SecureFinger");
-                        this.Icon = (FontImageSource)IconServer.GetResource("FingerPrint");
-                    }
-                    else
-                    {
-                        await this.routingService.GoBack();
-                    }
-
+                    this.Details = currentResource.GetString("SetSecureDetailsFingerPrint");
+                    this.Header = currentResource.GetString("SecureFinger");
+                    this.Icon = (FontImageSource)IconServer.GetResource("FingerPrint");
                     break;
                 case Models.SecurityTypes.Password:
                     this.Details = currentResource.GetString("SetSecureDetailsPassword");
@@ -67,20 +54,46 @@ namespace hymax.ViewModels
             }
             this.Icon.Size = 100;
         }
+        public async Task waitandgoPin()
+        {
+        //xmlns: local = "clr-namespace:FormsPinView.Core;assembly=FormsPinView.Core"
 
-
-        public async Task waitandgo()
+        }
+        public async Task waitandgoFingerprint()
         {
             await Task.Delay(100);
-            try
+
+            //try
+            //{
+            bool at = false;
+            FingerPrintHandler fp = new FingerPrintHandler();
+            var authType = await Plugin.Fingerprint.CrossFingerprint.Current.GetAuthenticationTypeAsync();
+            if (authType == AuthenticationType.Fingerprint)
             {
-                await this.routingService.NavigateTo("login/welcome");
+                at = await fp.CheckFingers("ورود با اثر انگشت فعال است. برای ورود به برنامه می بایست احراز هویت اثر انگشت انجام شود");
             }
-            catch (Exception ex)
+            if (at)
             {
-                _ = ex;
-                throw;
+                if (Settings.UserSetting[0].Welcome)
+                {
+                    await this.routingService.NavigateTo("login/welcome");
+                } else
+                {
+                    this.routingService.MasterShell();
+                    await this.routingService.NavigateTo("///home");
+                }
+            }
+            else
+            {
+                await this.routingService.NavigateTo("login/securelogin");
             }
         }
+        //catch (Exception ex)
+        //{
+
+        //    _ = ex;
+        //    throw;
+        //}
+        //}
     }
 }

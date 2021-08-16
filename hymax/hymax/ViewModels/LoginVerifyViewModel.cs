@@ -20,7 +20,7 @@ namespace hymax.ViewModels
         {
             this.routingService = navigationService ?? Locator.Current.GetService<IRoutingService>();
             this.ExecuteVerfiy = new Command(() => Verfiy());
-            this.ExecuteBack = new Command(() => Back());
+            this.ExecuteBack = new Command(() => Back()); 
         }
         public string VerifyCode { get; set; }
         public string PhoneNumber { get; set; }

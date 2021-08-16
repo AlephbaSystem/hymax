@@ -8,6 +8,8 @@ using System;
 using System.Windows.Input;
 using hymax.Services;
 using System.Threading.Tasks;
+using hymax.View;
+using System.Resources;
 
 namespace hymax.ViewModels
 {
@@ -16,7 +18,7 @@ namespace hymax.ViewModels
         private readonly IRoutingService routingService;
         private readonly ICarsService carService;
         private ObservableCollection<CarsModel> _cars;
-
+        private ResourceManager rs;
         public ObservableCollection<CarsModel> Cars
         {
             get
@@ -46,35 +48,201 @@ namespace hymax.ViewModels
         public ICommand StartCommand { get; }
         private async void StartCommandClick(object obj)
         {
-            await new Services.ISMSHandler().SendSms("روشن", DeviceNumber);
+            string msg = rs.GetString("DisplayAlertForceStop");
+            string first = rs.GetString("DisplayAlertForceStopFirst");
+            string second = rs.GetString("DisplayAlertForceStopSecond");
+            string third = rs.GetString("DisplayAlertForceStopThird");
+            string action = await App.Current.MainPage.DisplayActionSheet(msg,
+                                                                          third,
+                                                                          null,
+                                                                          first,
+                                                                          second);
+            if (action == first)
+            {
+                await new Services.ISMSHandler().SendSms("خاموش", DeviceNumber);
+            }
+            else if (action == second)
+            {
+                await new Services.ISMSHandler().SendSms("روشن", DeviceNumber);
+            }
+            else if (action == third)
+            {
+            }
+            else
+            {
+            }
         }
         private async void PanicCommandClick(object obj)
         {
-            await new Services.ISMSHandler().SendSms("جستجو", DeviceNumber);
+            string msg = rs.GetString("DisplayAlertAlertCar");
+            string first = rs.GetString("DisplayAlertAlertCarFirst");
+            string second = rs.GetString("DisplayAlertAlertCarSecond");
+            string third = rs.GetString("DisplayAlertAlertCarThird");
+            bool answer = await App.Current.MainPage.DisplayAlert(msg, third, first, second);
+
+            if (answer)
+            {
+                await new Services.ISMSHandler().SendSms("جستجو", DeviceNumber);
+            }
+            else
+            {
+            }
         }
         private async void LockCommandClick(object obj)
         {
-            await new Services.ISMSHandler().SendSms("قفل", DeviceNumber);
+            string msg = rs.GetString("DisplayAlertClose");
+            string first = rs.GetString("DisplayAlertCloseFirst");
+            string second = rs.GetString("DisplayAlertCloseSecond");
+            string third = rs.GetString("DisplayAlertCloseThird");
+            string action = await App.Current.MainPage.DisplayActionSheet(msg,
+                                                                          third,
+                                                                          null,
+                                                                          first,
+                                                                          second);
+            if (action == first)
+            {
+                await new Services.ISMSHandler().SendSms("قفل", DeviceNumber);
+            }
+            else if (action == second)
+            {
+                await new Services.ISMSHandler().SendSms("0000F", DeviceNumber);
+            }
+            else if (action == third)
+            {
+            }
+            else
+            {
+            }
         }
         private async void OpenCommandClick(object obj)
         {
-            await new Services.ISMSHandler().SendSms("باز", DeviceNumber);
+            string msg = rs.GetString("DisplayAlertOpen");
+            string first = rs.GetString("DisplayAlertOpenFirst");
+            string second = rs.GetString("DisplayAlertOpenSecond");
+            string third = rs.GetString("DisplayAlertOpenThird");
+            string action = await App.Current.MainPage.DisplayActionSheet(msg,
+                                                                          third,
+                                                                          null,
+                                                                          first,
+                                                                          second);
+            if (action == first)
+            {
+                await new Services.ISMSHandler().SendSms("باز", DeviceNumber);
+            }
+            else if (action == second)
+            {
+                await new Services.ISMSHandler().SendSms("0000O", DeviceNumber);
+            }
+            else if (action == third)
+            {
+            }
+            else
+            {
+            }
         }
         private async void ForceStopCommandClick(object obj)
         {
-            await new Services.ISMSHandler().SendSms("خاموش", DeviceNumber);
+            string msg = rs.GetString("DisplayAlertForceStop");
+            string first = rs.GetString("DisplayAlertForceStopFirst");
+            string second = rs.GetString("DisplayAlertForceStopSecond");
+            string third = rs.GetString("DisplayAlertForceStopThird");
+            string action = await App.Current.MainPage.DisplayActionSheet(msg,
+                                                                          third,
+                                                                          null,
+                                                                          first,
+                                                                          second);
+            if (action == first)
+            {
+                await new Services.ISMSHandler().SendSms("خاموش", DeviceNumber);
+            }
+            else if (action == second)
+            {
+                await new Services.ISMSHandler().SendSms("روشن", DeviceNumber);
+            }
+            else if (action == third)
+            {
+            }
+            else
+            {
+            }
         }
         private async void OpenTrunkCommandClick(object obj)
         {
-            await new Services.ISMSHandler().SendSms("صندوق", DeviceNumber);
+            string msg = rs.GetString("DisplayAlertTrunk");
+            string first = rs.GetString("DisplayAlertTrunkFirst");
+            string second = rs.GetString("DisplayAlertTrunkSecond");
+            string third = rs.GetString("DisplayAlertTrunkThird");
+            string action = await App.Current.MainPage.DisplayActionSheet(msg,
+                                                                          third,
+                                                                          null,
+                                                                          first,
+                                                                          second);
+            if (action == first)
+            {
+                await new Services.ISMSHandler().SendSms("صندوق", DeviceNumber);
+            }
+            else if (action == second)
+            {
+                await new Services.ISMSHandler().SendSms("0000H", DeviceNumber);
+            }
+            else if (action == third)
+            {
+            }
+            else
+            {
+            }
         }
         private async void LocationCommandClick(object obj)
         {
-            await new Services.ISMSHandler().SendSms("محدوده", DeviceNumber);
+            string msg = rs.GetString("DisplayAlertLocation");
+            string first = rs.GetString("DisplayAlertLocationFirst");
+            string second = rs.GetString("DisplayAlertLocationSecond");
+            string third = rs.GetString("DisplayAlertLocationThird");
+            string action = await App.Current.MainPage.DisplayActionSheet(msg,
+                                                                          third,
+                                                                          null,
+                                                                          first,
+                                                                          second);
+            if (action == first)
+            {
+                await new Services.ISMSHandler().SendSms("موقعیت", DeviceNumber);
+            }
+            else if (action == second)
+            {
+                await new Services.ISMSHandler().SendSms("محدوده", DeviceNumber);
+            }
+            else if (action == third)
+            {
+            }
+            else
+            {
+            }
         }
         private async void ChildLockCommandClick(object obj)
         {
-            await new Services.ISMSHandler().SendSms("محدوده", DeviceNumber);
+            string msg = rs.GetString("DisplayAlertChildLock");
+            string first = rs.GetString("DisplayAlertChildLockFirst");
+            string second = rs.GetString("DisplayAlertChildLockSecond");
+            string third = rs.GetString("DisplayAlertChildLockThird");
+            string action = await App.Current.MainPage.DisplayActionSheet(msg,
+                                                                          third,
+                                                                          null,
+                                                                          first,
+                                                                          second);
+            if (action == first)
+            {
+                await new Services.ISMSHandler().SendSms("25", DeviceNumber);
+            } 
+            else if (action == second)
+            {
+                await new Services.ISMSHandler().SendSms("250", DeviceNumber);
+            }
+            else if (action == third)
+            {
+            }
+            else
+            {
+            }
         }
         public MainViewModel(IRoutingService routingService = null)
         {
@@ -84,10 +252,11 @@ namespace hymax.ViewModels
 
             if (Settings.AccessToken == "")
             {
-                this.routingService.NavigateTo("main/setsecure"); 
+                SetSecurePage.ViewModel.Reset();
+                this.routingService.NavigateTo("main/setsecure");
             }
 
-            var rs = hymax.Localization.Localizations.GetResource();
+            rs = hymax.Localization.Localizations.GetResource();
             this._cars = this.carService.CarLists();
 
             this.OpenSettingsCommand = new Command(executeSettings);

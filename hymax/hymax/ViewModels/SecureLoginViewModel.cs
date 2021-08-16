@@ -42,6 +42,9 @@ namespace hymax.ViewModels
         }
         public async void OnFingerPrintTapped(object sender, EventArgs args)
         {
+            Plugin.Fingerprint.CrossFingerprint fph = new Plugin.Fingerprint.CrossFingerprint();
+            
+
             try
             { 
                 Settings.Security = Models.SecurityTypes.FingerPrint;

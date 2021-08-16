@@ -87,7 +87,7 @@
                             <ImageButton Source="carkey.xml" HeightRequest="34" WidthRequest="34" Command="{Binding StartCommand}" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center">
 
                             </ImageButton>
-                            <Label HorizontalOptions="Center" Text="استارت">
+                            <Label HorizontalOptions="Center" Text="توقف‌فوری">
                                 <Label.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding StartCommand}" />
                                 </Label.GestureRecognizers>

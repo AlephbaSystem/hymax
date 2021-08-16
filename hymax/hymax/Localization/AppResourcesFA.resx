@@ -165,6 +165,102 @@
   <data name="ConfirmPassword" xml:space="preserve">
     <value>تکرار رمز عبور</value>
   </data>
+  <data name="DisplayAlertAlertCar" xml:space="preserve">
+    <value>جستجوی خودرو</value>
+  </data>
+  <data name="DisplayAlertAlertCarFirst" xml:space="preserve">
+    <value>تایید</value>
+  </data>
+  <data name="DisplayAlertAlertCarSecond" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="DisplayAlertAlertCarthird" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DisplayAlertChildLock" xml:space="preserve">
+    <value>قفل کودک</value>
+  </data>
+  <data name="DisplayAlertChildLockFirst" xml:space="preserve">
+    <value>فعال شود</value>
+  </data>
+  <data name="DisplayAlertChildLockSecond" xml:space="preserve">
+    <value>غیر فعال شود</value>
+  </data>
+  <data name="DisplayAlertChildLockthird" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="DisplayAlertClose" xml:space="preserve">
+    <value>قفل دربها و مسلح کردن دزدگیر</value>
+  </data>
+  <data name="DisplayAlertCloseFirst" xml:space="preserve">
+    <value>بصورت با صدا</value>
+  </data>
+  <data name="DisplayAlertCloseSecond" xml:space="preserve">
+    <value>بصورت بی صدا</value>
+  </data>
+  <data name="DisplayAlertClosethird" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="DisplayAlertForceStop" xml:space="preserve">
+    <value>خاموش کردن موتور</value>
+  </data>
+  <data name="DisplayAlertForceStopFirst" xml:space="preserve">
+    <value>خاموش کردن ماشین</value>
+  </data>
+  <data name="DisplayAlertForceStopSecond" xml:space="preserve">
+    <value>لغو خاموشی ماشین</value>
+  </data>
+  <data name="DisplayAlertForceStopthird" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="DisplayAlertLocation" xml:space="preserve">
+    <value>دریافت موقعیت خودرو</value>
+  </data>
+  <data name="DisplayAlertLocationFirst" xml:space="preserve">
+    <value>دریافت موقعیت ازطریق GPS</value>
+  </data>
+  <data name="DisplayAlertLocationSecond" xml:space="preserve">
+    <value>دریافت محدوده ماشین</value>
+  </data>
+  <data name="DisplayAlertLocationThird" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="DisplayAlertOpen" xml:space="preserve">
+    <value>باز کردن دربها و غیر مسلح کردن دزدگیر</value>
+  </data>
+  <data name="DisplayAlertOpenFirst" xml:space="preserve">
+    <value>بصورت با صدا</value>
+  </data>
+  <data name="DisplayAlertOpenSecond" xml:space="preserve">
+    <value>بصورت بی صدا</value>
+  </data>
+  <data name="DisplayAlertOpenthird" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="DisplayAlertTrunk" xml:space="preserve">
+    <value>باز کردن درب صندق عقب</value>
+  </data>
+  <data name="DisplayAlertTrunkFirst" xml:space="preserve">
+    <value>فقط صندوق</value>
+  </data>
+  <data name="DisplayAlertTrunkSecond" xml:space="preserve">
+    <value>صندوق+غیر مسلح</value>
+  </data>
+  <data name="DisplayAlertTrunkthird" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="DisplayAlertWindows" xml:space="preserve">
+    <value>بستن پنجره‌ها</value>
+  </data>
+  <data name="DisplayAlertWindowsFirst" xml:space="preserve">
+    <value>تایید</value>
+  </data>
+  <data name="DisplayAlertWindowsSecond" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="DisplayAlertWindowsthird" xml:space="preserve">
+    <value />
+  </data>
   <data name="LoginButton" xml:space="preserve">
     <value>دریافت کد</value>
   </data>

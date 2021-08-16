@@ -205,6 +205,294 @@ namespace hymax.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to جستجوی خودرو.
+        /// </summary>
+        internal static string DisplayAlertAlertCar {
+            get {
+                return ResourceManager.GetString("DisplayAlertAlertCar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تایید.
+        /// </summary>
+        internal static string DisplayAlertAlertCarFirst {
+            get {
+                return ResourceManager.GetString("DisplayAlertAlertCarFirst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انصراف.
+        /// </summary>
+        internal static string DisplayAlertAlertCarSecond {
+            get {
+                return ResourceManager.GetString("DisplayAlertAlertCarSecond", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string DisplayAlertAlertCarthird {
+            get {
+                return ResourceManager.GetString("DisplayAlertAlertCarthird", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to قفل کودک.
+        /// </summary>
+        internal static string DisplayAlertChildLock {
+            get {
+                return ResourceManager.GetString("DisplayAlertChildLock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فعال شود.
+        /// </summary>
+        internal static string DisplayAlertChildLockFirst {
+            get {
+                return ResourceManager.GetString("DisplayAlertChildLockFirst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to غیر فعال شود.
+        /// </summary>
+        internal static string DisplayAlertChildLockSecond {
+            get {
+                return ResourceManager.GetString("DisplayAlertChildLockSecond", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انصراف.
+        /// </summary>
+        internal static string DisplayAlertChildLockthird {
+            get {
+                return ResourceManager.GetString("DisplayAlertChildLockthird", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to قفل دربها و مسلح کردن دزدگیر.
+        /// </summary>
+        internal static string DisplayAlertClose {
+            get {
+                return ResourceManager.GetString("DisplayAlertClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بصورت با صدا.
+        /// </summary>
+        internal static string DisplayAlertCloseFirst {
+            get {
+                return ResourceManager.GetString("DisplayAlertCloseFirst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بصورت بی صدا.
+        /// </summary>
+        internal static string DisplayAlertCloseSecond {
+            get {
+                return ResourceManager.GetString("DisplayAlertCloseSecond", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انصراف.
+        /// </summary>
+        internal static string DisplayAlertClosethird {
+            get {
+                return ResourceManager.GetString("DisplayAlertClosethird", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to خاموش کردن موتور.
+        /// </summary>
+        internal static string DisplayAlertForceStop {
+            get {
+                return ResourceManager.GetString("DisplayAlertForceStop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to خاموش کردن ماشین.
+        /// </summary>
+        internal static string DisplayAlertForceStopFirst {
+            get {
+                return ResourceManager.GetString("DisplayAlertForceStopFirst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to لغو خاموشی ماشین.
+        /// </summary>
+        internal static string DisplayAlertForceStopSecond {
+            get {
+                return ResourceManager.GetString("DisplayAlertForceStopSecond", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انصراف.
+        /// </summary>
+        internal static string DisplayAlertForceStopthird {
+            get {
+                return ResourceManager.GetString("DisplayAlertForceStopthird", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to دریافت موقعیت خودرو.
+        /// </summary>
+        internal static string DisplayAlertLocation {
+            get {
+                return ResourceManager.GetString("DisplayAlertLocation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to دریافت موقعیت ازطریق GPS.
+        /// </summary>
+        internal static string DisplayAlertLocationFirst {
+            get {
+                return ResourceManager.GetString("DisplayAlertLocationFirst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to دریافت محدوده ماشین.
+        /// </summary>
+        internal static string DisplayAlertLocationSecond {
+            get {
+                return ResourceManager.GetString("DisplayAlertLocationSecond", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انصراف.
+        /// </summary>
+        internal static string DisplayAlertLocationThird {
+            get {
+                return ResourceManager.GetString("DisplayAlertLocationThird", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to باز کردن دربها و غیر مسلح کردن دزدگیر.
+        /// </summary>
+        internal static string DisplayAlertOpen {
+            get {
+                return ResourceManager.GetString("DisplayAlertOpen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بصورت با صدا.
+        /// </summary>
+        internal static string DisplayAlertOpenFirst {
+            get {
+                return ResourceManager.GetString("DisplayAlertOpenFirst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بصورت بی صدا.
+        /// </summary>
+        internal static string DisplayAlertOpenSecond {
+            get {
+                return ResourceManager.GetString("DisplayAlertOpenSecond", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انصراف.
+        /// </summary>
+        internal static string DisplayAlertOpenthird {
+            get {
+                return ResourceManager.GetString("DisplayAlertOpenthird", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to باز کردن درب صندق عقب.
+        /// </summary>
+        internal static string DisplayAlertTrunk {
+            get {
+                return ResourceManager.GetString("DisplayAlertTrunk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فقط صندوق.
+        /// </summary>
+        internal static string DisplayAlertTrunkFirst {
+            get {
+                return ResourceManager.GetString("DisplayAlertTrunkFirst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to صندوق+غیر مسلح.
+        /// </summary>
+        internal static string DisplayAlertTrunkSecond {
+            get {
+                return ResourceManager.GetString("DisplayAlertTrunkSecond", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انصراف.
+        /// </summary>
+        internal static string DisplayAlertTrunkthird {
+            get {
+                return ResourceManager.GetString("DisplayAlertTrunkthird", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بستن پنجره‌ها.
+        /// </summary>
+        internal static string DisplayAlertWindows {
+            get {
+                return ResourceManager.GetString("DisplayAlertWindows", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تایید.
+        /// </summary>
+        internal static string DisplayAlertWindowsFirst {
+            get {
+                return ResourceManager.GetString("DisplayAlertWindowsFirst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انصراف.
+        /// </summary>
+        internal static string DisplayAlertWindowsSecond {
+            get {
+                return ResourceManager.GetString("DisplayAlertWindowsSecond", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string DisplayAlertWindowsthird {
+            get {
+                return ResourceManager.GetString("DisplayAlertWindowsthird", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to دریافت کد.
         /// </summary>
         internal static string LoginButton {

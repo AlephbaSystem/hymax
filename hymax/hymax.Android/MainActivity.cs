@@ -5,7 +5,7 @@ using Android.Runtime;
 using Android.OS;
 using Plugin.Permissions;
 using Android;
-using Plugin.Fingerprint;
+using Plugin.Fingerprint; 
 
 namespace hymax.Droid
 {
@@ -25,8 +25,9 @@ namespace hymax.Droid
             CrossFingerprint.SetCurrentActivityResolver(() => this);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
+            Xamarin.FormsGoogleMaps.Init(this, savedInstanceState); 
             LoadApplication(new App());
+             
         }
         protected override void OnStart()
         {

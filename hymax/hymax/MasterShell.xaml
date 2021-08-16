@@ -15,26 +15,14 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Shell.Resources>
-
+ 
     <ShellItem Route="home">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </ShellItem>
     <ShellItem Route="map">
         <ShellContent ContentTemplate="{DataTemplate local:MapPage}" />
     </ShellItem>
-
-    <!--<FlyoutItem Route="main"
-                FlyoutDisplayOptions="AsMultipleItems" IsTabStop="False">
-        <ShellContent Route="home"
-                      IsTabStop="False"
-                      ContentTemplate="{DataTemplate local:MainPage}"
-                      Title="Home" />
-        
-        <ShellContent Route=""
-                      IsTabStop="False"
-                      ContentTemplate="{DataTemplate local:MapPage}"
-                      Title="Home" />
-    </FlyoutItem>--> 
+ 
     <MenuItem Text="Logout"
               Command="{Binding ExecuteLogout}" />
 </Shell>

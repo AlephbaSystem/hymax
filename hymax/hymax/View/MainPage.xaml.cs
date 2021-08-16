@@ -32,7 +32,7 @@ namespace hymax.View
         public void carouselView_CurrentItemChanged(object sender, CurrentItemChangedEventArgs e)
         {        
             var item = e.CurrentItem as CarsModel; 
-            ViewModel.UpdateCar(item.ID);
+            ViewModel.UpdateCar(item.ID); 
         }
         void OnCarTapped(object sender, EventArgs args)
         {

@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -35,11 +36,27 @@ namespace hymax.View
         }
         protected override bool OnBackButtonPressed()
         {
-            return base.OnBackButtonPressed();
+            return true;
+            //return base.OnBackButtonPressed();
         }
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
+            switch (Settings.Security)
+            {
+                case Models.SecurityTypes.Pin:
+                    await ViewModel.waitandgoPin();
+                    break;
+                case Models.SecurityTypes.Pattern:
+                    break;
+                case Models.SecurityTypes.Password:
+                    break;
+                case Models.SecurityTypes.FingerPrint:
+                    await ViewModel.waitandgoFingerprint();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
