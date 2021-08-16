@@ -25,6 +25,1536 @@ namespace hymax.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::FormsPinView.Droid.Resource.Animation.abc_fade_in = global::hymax.Droid.Resource.Animation.abc_fade_in;
+			global::FormsPinView.Droid.Resource.Animation.abc_fade_out = global::hymax.Droid.Resource.Animation.abc_fade_out;
+			global::FormsPinView.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::hymax.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::FormsPinView.Droid.Resource.Animation.abc_popup_enter = global::hymax.Droid.Resource.Animation.abc_popup_enter;
+			global::FormsPinView.Droid.Resource.Animation.abc_popup_exit = global::hymax.Droid.Resource.Animation.abc_popup_exit;
+			global::FormsPinView.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom = global::hymax.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::FormsPinView.Droid.Resource.Animation.abc_slide_in_bottom = global::hymax.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::FormsPinView.Droid.Resource.Animation.abc_slide_in_top = global::hymax.Droid.Resource.Animation.abc_slide_in_top;
+			global::FormsPinView.Droid.Resource.Animation.abc_slide_out_bottom = global::hymax.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::FormsPinView.Droid.Resource.Animation.abc_slide_out_top = global::hymax.Droid.Resource.Animation.abc_slide_out_top;
+			global::FormsPinView.Droid.Resource.Animation.design_bottom_sheet_slide_in = global::hymax.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::FormsPinView.Droid.Resource.Animation.design_bottom_sheet_slide_out = global::hymax.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::FormsPinView.Droid.Resource.Animation.design_snackbar_in = global::hymax.Droid.Resource.Animation.design_snackbar_in;
+			global::FormsPinView.Droid.Resource.Animation.design_snackbar_out = global::hymax.Droid.Resource.Animation.design_snackbar_out;
+			global::FormsPinView.Droid.Resource.Attribute.actionBarDivider = global::hymax.Droid.Resource.Attribute.actionBarDivider;
+			global::FormsPinView.Droid.Resource.Attribute.actionBarItemBackground = global::hymax.Droid.Resource.Attribute.actionBarItemBackground;
+			global::FormsPinView.Droid.Resource.Attribute.actionBarPopupTheme = global::hymax.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::FormsPinView.Droid.Resource.Attribute.actionBarSize = global::hymax.Droid.Resource.Attribute.actionBarSize;
+			global::FormsPinView.Droid.Resource.Attribute.actionBarSplitStyle = global::hymax.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionBarStyle = global::hymax.Droid.Resource.Attribute.actionBarStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionBarTabBarStyle = global::hymax.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionBarTabStyle = global::hymax.Droid.Resource.Attribute.actionBarTabStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionBarTabTextStyle = global::hymax.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionBarTheme = global::hymax.Droid.Resource.Attribute.actionBarTheme;
+			global::FormsPinView.Droid.Resource.Attribute.actionBarWidgetTheme = global::hymax.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::FormsPinView.Droid.Resource.Attribute.actionButtonStyle = global::hymax.Droid.Resource.Attribute.actionButtonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionDropDownStyle = global::hymax.Droid.Resource.Attribute.actionDropDownStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionLayout = global::hymax.Droid.Resource.Attribute.actionLayout;
+			global::FormsPinView.Droid.Resource.Attribute.actionMenuTextAppearance = global::hymax.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.actionMenuTextColor = global::hymax.Droid.Resource.Attribute.actionMenuTextColor;
+			global::FormsPinView.Droid.Resource.Attribute.actionModeBackground = global::hymax.Droid.Resource.Attribute.actionModeBackground;
+			global::FormsPinView.Droid.Resource.Attribute.actionModeCloseButtonStyle = global::hymax.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionModeCloseDrawable = global::hymax.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::FormsPinView.Droid.Resource.Attribute.actionModeCopyDrawable = global::hymax.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::FormsPinView.Droid.Resource.Attribute.actionModeCutDrawable = global::hymax.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::FormsPinView.Droid.Resource.Attribute.actionModeFindDrawable = global::hymax.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::FormsPinView.Droid.Resource.Attribute.actionModePasteDrawable = global::hymax.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::FormsPinView.Droid.Resource.Attribute.actionModePopupWindowStyle = global::hymax.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionModeSelectAllDrawable = global::hymax.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::FormsPinView.Droid.Resource.Attribute.actionModeShareDrawable = global::hymax.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::FormsPinView.Droid.Resource.Attribute.actionModeSplitBackground = global::hymax.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::FormsPinView.Droid.Resource.Attribute.actionModeStyle = global::hymax.Droid.Resource.Attribute.actionModeStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionModeWebSearchDrawable = global::hymax.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::FormsPinView.Droid.Resource.Attribute.actionOverflowButtonStyle = global::hymax.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionOverflowMenuStyle = global::hymax.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::FormsPinView.Droid.Resource.Attribute.actionProviderClass = global::hymax.Droid.Resource.Attribute.actionProviderClass;
+			global::FormsPinView.Droid.Resource.Attribute.actionViewClass = global::hymax.Droid.Resource.Attribute.actionViewClass;
+			global::FormsPinView.Droid.Resource.Attribute.activityChooserViewStyle = global::hymax.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::FormsPinView.Droid.Resource.Attribute.alertDialogButtonGroupStyle = global::hymax.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::FormsPinView.Droid.Resource.Attribute.alertDialogCenterButtons = global::hymax.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::FormsPinView.Droid.Resource.Attribute.alertDialogStyle = global::hymax.Droid.Resource.Attribute.alertDialogStyle;
+			global::FormsPinView.Droid.Resource.Attribute.alertDialogTheme = global::hymax.Droid.Resource.Attribute.alertDialogTheme;
+			global::FormsPinView.Droid.Resource.Attribute.allowStacking = global::hymax.Droid.Resource.Attribute.allowStacking;
+			global::FormsPinView.Droid.Resource.Attribute.arrowHeadLength = global::hymax.Droid.Resource.Attribute.arrowHeadLength;
+			global::FormsPinView.Droid.Resource.Attribute.arrowShaftLength = global::hymax.Droid.Resource.Attribute.arrowShaftLength;
+			global::FormsPinView.Droid.Resource.Attribute.autoCompleteTextViewStyle = global::hymax.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::FormsPinView.Droid.Resource.Attribute.background = global::hymax.Droid.Resource.Attribute.background;
+			global::FormsPinView.Droid.Resource.Attribute.backgroundSplit = global::hymax.Droid.Resource.Attribute.backgroundSplit;
+			global::FormsPinView.Droid.Resource.Attribute.backgroundStacked = global::hymax.Droid.Resource.Attribute.backgroundStacked;
+			global::FormsPinView.Droid.Resource.Attribute.backgroundTint = global::hymax.Droid.Resource.Attribute.backgroundTint;
+			global::FormsPinView.Droid.Resource.Attribute.backgroundTintMode = global::hymax.Droid.Resource.Attribute.backgroundTintMode;
+			global::FormsPinView.Droid.Resource.Attribute.barLength = global::hymax.Droid.Resource.Attribute.barLength;
+			global::FormsPinView.Droid.Resource.Attribute.behavior_hideable = global::hymax.Droid.Resource.Attribute.behavior_hideable;
+			global::FormsPinView.Droid.Resource.Attribute.behavior_overlapTop = global::hymax.Droid.Resource.Attribute.behavior_overlapTop;
+			global::FormsPinView.Droid.Resource.Attribute.behavior_peekHeight = global::hymax.Droid.Resource.Attribute.behavior_peekHeight;
+			global::FormsPinView.Droid.Resource.Attribute.borderWidth = global::hymax.Droid.Resource.Attribute.borderWidth;
+			global::FormsPinView.Droid.Resource.Attribute.borderlessButtonStyle = global::hymax.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.bottomSheetDialogTheme = global::hymax.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::FormsPinView.Droid.Resource.Attribute.bottomSheetStyle = global::hymax.Droid.Resource.Attribute.bottomSheetStyle;
+			global::FormsPinView.Droid.Resource.Attribute.buttonBarButtonStyle = global::hymax.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.buttonBarNegativeButtonStyle = global::hymax.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.buttonBarNeutralButtonStyle = global::hymax.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.buttonBarPositiveButtonStyle = global::hymax.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.buttonBarStyle = global::hymax.Droid.Resource.Attribute.buttonBarStyle;
+			global::FormsPinView.Droid.Resource.Attribute.buttonPanelSideLayout = global::hymax.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::FormsPinView.Droid.Resource.Attribute.buttonStyle = global::hymax.Droid.Resource.Attribute.buttonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.buttonStyleSmall = global::hymax.Droid.Resource.Attribute.buttonStyleSmall;
+			global::FormsPinView.Droid.Resource.Attribute.buttonTint = global::hymax.Droid.Resource.Attribute.buttonTint;
+			global::FormsPinView.Droid.Resource.Attribute.buttonTintMode = global::hymax.Droid.Resource.Attribute.buttonTintMode;
+			global::FormsPinView.Droid.Resource.Attribute.cardBackgroundColor = global::hymax.Droid.Resource.Attribute.cardBackgroundColor;
+			global::FormsPinView.Droid.Resource.Attribute.cardCornerRadius = global::hymax.Droid.Resource.Attribute.cardCornerRadius;
+			global::FormsPinView.Droid.Resource.Attribute.cardElevation = global::hymax.Droid.Resource.Attribute.cardElevation;
+			global::FormsPinView.Droid.Resource.Attribute.cardMaxElevation = global::hymax.Droid.Resource.Attribute.cardMaxElevation;
+			global::FormsPinView.Droid.Resource.Attribute.cardPreventCornerOverlap = global::hymax.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::FormsPinView.Droid.Resource.Attribute.cardUseCompatPadding = global::hymax.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::FormsPinView.Droid.Resource.Attribute.checkboxStyle = global::hymax.Droid.Resource.Attribute.checkboxStyle;
+			global::FormsPinView.Droid.Resource.Attribute.checkedTextViewStyle = global::hymax.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::FormsPinView.Droid.Resource.Attribute.closeIcon = global::hymax.Droid.Resource.Attribute.closeIcon;
+			global::FormsPinView.Droid.Resource.Attribute.closeItemLayout = global::hymax.Droid.Resource.Attribute.closeItemLayout;
+			global::FormsPinView.Droid.Resource.Attribute.collapseContentDescription = global::hymax.Droid.Resource.Attribute.collapseContentDescription;
+			global::FormsPinView.Droid.Resource.Attribute.collapseIcon = global::hymax.Droid.Resource.Attribute.collapseIcon;
+			global::FormsPinView.Droid.Resource.Attribute.collapsedTitleGravity = global::hymax.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::FormsPinView.Droid.Resource.Attribute.collapsedTitleTextAppearance = global::hymax.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.color = global::hymax.Droid.Resource.Attribute.color;
+			global::FormsPinView.Droid.Resource.Attribute.colorAccent = global::hymax.Droid.Resource.Attribute.colorAccent;
+			global::FormsPinView.Droid.Resource.Attribute.colorButtonNormal = global::hymax.Droid.Resource.Attribute.colorButtonNormal;
+			global::FormsPinView.Droid.Resource.Attribute.colorControlActivated = global::hymax.Droid.Resource.Attribute.colorControlActivated;
+			global::FormsPinView.Droid.Resource.Attribute.colorControlHighlight = global::hymax.Droid.Resource.Attribute.colorControlHighlight;
+			global::FormsPinView.Droid.Resource.Attribute.colorControlNormal = global::hymax.Droid.Resource.Attribute.colorControlNormal;
+			global::FormsPinView.Droid.Resource.Attribute.colorPrimary = global::hymax.Droid.Resource.Attribute.colorPrimary;
+			global::FormsPinView.Droid.Resource.Attribute.colorPrimaryDark = global::hymax.Droid.Resource.Attribute.colorPrimaryDark;
+			global::FormsPinView.Droid.Resource.Attribute.colorSwitchThumbNormal = global::hymax.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::FormsPinView.Droid.Resource.Attribute.commitIcon = global::hymax.Droid.Resource.Attribute.commitIcon;
+			global::FormsPinView.Droid.Resource.Attribute.contentInsetEnd = global::hymax.Droid.Resource.Attribute.contentInsetEnd;
+			global::FormsPinView.Droid.Resource.Attribute.contentInsetLeft = global::hymax.Droid.Resource.Attribute.contentInsetLeft;
+			global::FormsPinView.Droid.Resource.Attribute.contentInsetRight = global::hymax.Droid.Resource.Attribute.contentInsetRight;
+			global::FormsPinView.Droid.Resource.Attribute.contentInsetStart = global::hymax.Droid.Resource.Attribute.contentInsetStart;
+			global::FormsPinView.Droid.Resource.Attribute.contentPadding = global::hymax.Droid.Resource.Attribute.contentPadding;
+			global::FormsPinView.Droid.Resource.Attribute.contentPaddingBottom = global::hymax.Droid.Resource.Attribute.contentPaddingBottom;
+			global::FormsPinView.Droid.Resource.Attribute.contentPaddingLeft = global::hymax.Droid.Resource.Attribute.contentPaddingLeft;
+			global::FormsPinView.Droid.Resource.Attribute.contentPaddingRight = global::hymax.Droid.Resource.Attribute.contentPaddingRight;
+			global::FormsPinView.Droid.Resource.Attribute.contentPaddingTop = global::hymax.Droid.Resource.Attribute.contentPaddingTop;
+			global::FormsPinView.Droid.Resource.Attribute.contentScrim = global::hymax.Droid.Resource.Attribute.contentScrim;
+			global::FormsPinView.Droid.Resource.Attribute.controlBackground = global::hymax.Droid.Resource.Attribute.controlBackground;
+			global::FormsPinView.Droid.Resource.Attribute.counterEnabled = global::hymax.Droid.Resource.Attribute.counterEnabled;
+			global::FormsPinView.Droid.Resource.Attribute.counterMaxLength = global::hymax.Droid.Resource.Attribute.counterMaxLength;
+			global::FormsPinView.Droid.Resource.Attribute.counterOverflowTextAppearance = global::hymax.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.counterTextAppearance = global::hymax.Droid.Resource.Attribute.counterTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.customNavigationLayout = global::hymax.Droid.Resource.Attribute.customNavigationLayout;
+			global::FormsPinView.Droid.Resource.Attribute.defaultQueryHint = global::hymax.Droid.Resource.Attribute.defaultQueryHint;
+			global::FormsPinView.Droid.Resource.Attribute.dialogPreferredPadding = global::hymax.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::FormsPinView.Droid.Resource.Attribute.dialogTheme = global::hymax.Droid.Resource.Attribute.dialogTheme;
+			global::FormsPinView.Droid.Resource.Attribute.displayOptions = global::hymax.Droid.Resource.Attribute.displayOptions;
+			global::FormsPinView.Droid.Resource.Attribute.divider = global::hymax.Droid.Resource.Attribute.divider;
+			global::FormsPinView.Droid.Resource.Attribute.dividerHorizontal = global::hymax.Droid.Resource.Attribute.dividerHorizontal;
+			global::FormsPinView.Droid.Resource.Attribute.dividerPadding = global::hymax.Droid.Resource.Attribute.dividerPadding;
+			global::FormsPinView.Droid.Resource.Attribute.dividerVertical = global::hymax.Droid.Resource.Attribute.dividerVertical;
+			global::FormsPinView.Droid.Resource.Attribute.drawableSize = global::hymax.Droid.Resource.Attribute.drawableSize;
+			global::FormsPinView.Droid.Resource.Attribute.drawerArrowStyle = global::hymax.Droid.Resource.Attribute.drawerArrowStyle;
+			global::FormsPinView.Droid.Resource.Attribute.dropDownListViewStyle = global::hymax.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::FormsPinView.Droid.Resource.Attribute.dropdownListPreferredItemHeight = global::hymax.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::FormsPinView.Droid.Resource.Attribute.editTextBackground = global::hymax.Droid.Resource.Attribute.editTextBackground;
+			global::FormsPinView.Droid.Resource.Attribute.editTextColor = global::hymax.Droid.Resource.Attribute.editTextColor;
+			global::FormsPinView.Droid.Resource.Attribute.editTextStyle = global::hymax.Droid.Resource.Attribute.editTextStyle;
+			global::FormsPinView.Droid.Resource.Attribute.elevation = global::hymax.Droid.Resource.Attribute.elevation;
+			global::FormsPinView.Droid.Resource.Attribute.errorEnabled = global::hymax.Droid.Resource.Attribute.errorEnabled;
+			global::FormsPinView.Droid.Resource.Attribute.errorTextAppearance = global::hymax.Droid.Resource.Attribute.errorTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable = global::hymax.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::FormsPinView.Droid.Resource.Attribute.expanded = global::hymax.Droid.Resource.Attribute.expanded;
+			global::FormsPinView.Droid.Resource.Attribute.expandedTitleGravity = global::hymax.Droid.Resource.Attribute.expandedTitleGravity;
+			global::FormsPinView.Droid.Resource.Attribute.expandedTitleMargin = global::hymax.Droid.Resource.Attribute.expandedTitleMargin;
+			global::FormsPinView.Droid.Resource.Attribute.expandedTitleMarginBottom = global::hymax.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::FormsPinView.Droid.Resource.Attribute.expandedTitleMarginEnd = global::hymax.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::FormsPinView.Droid.Resource.Attribute.expandedTitleMarginStart = global::hymax.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::FormsPinView.Droid.Resource.Attribute.expandedTitleMarginTop = global::hymax.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::FormsPinView.Droid.Resource.Attribute.expandedTitleTextAppearance = global::hymax.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.fabSize = global::hymax.Droid.Resource.Attribute.fabSize;
+			global::FormsPinView.Droid.Resource.Attribute.foregroundInsidePadding = global::hymax.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::FormsPinView.Droid.Resource.Attribute.gapBetweenBars = global::hymax.Droid.Resource.Attribute.gapBetweenBars;
+			global::FormsPinView.Droid.Resource.Attribute.goIcon = global::hymax.Droid.Resource.Attribute.goIcon;
+			global::FormsPinView.Droid.Resource.Attribute.headerLayout = global::hymax.Droid.Resource.Attribute.headerLayout;
+			global::FormsPinView.Droid.Resource.Attribute.height = global::hymax.Droid.Resource.Attribute.height;
+			global::FormsPinView.Droid.Resource.Attribute.hideOnContentScroll = global::hymax.Droid.Resource.Attribute.hideOnContentScroll;
+			global::FormsPinView.Droid.Resource.Attribute.hintAnimationEnabled = global::hymax.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::FormsPinView.Droid.Resource.Attribute.hintEnabled = global::hymax.Droid.Resource.Attribute.hintEnabled;
+			global::FormsPinView.Droid.Resource.Attribute.hintTextAppearance = global::hymax.Droid.Resource.Attribute.hintTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.homeAsUpIndicator = global::hymax.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::FormsPinView.Droid.Resource.Attribute.homeLayout = global::hymax.Droid.Resource.Attribute.homeLayout;
+			global::FormsPinView.Droid.Resource.Attribute.icon = global::hymax.Droid.Resource.Attribute.icon;
+			global::FormsPinView.Droid.Resource.Attribute.iconifiedByDefault = global::hymax.Droid.Resource.Attribute.iconifiedByDefault;
+			global::FormsPinView.Droid.Resource.Attribute.imageButtonStyle = global::hymax.Droid.Resource.Attribute.imageButtonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.indeterminateProgressStyle = global::hymax.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::FormsPinView.Droid.Resource.Attribute.initialActivityCount = global::hymax.Droid.Resource.Attribute.initialActivityCount;
+			global::FormsPinView.Droid.Resource.Attribute.insetForeground = global::hymax.Droid.Resource.Attribute.insetForeground;
+			global::FormsPinView.Droid.Resource.Attribute.isLightTheme = global::hymax.Droid.Resource.Attribute.isLightTheme;
+			global::FormsPinView.Droid.Resource.Attribute.itemBackground = global::hymax.Droid.Resource.Attribute.itemBackground;
+			global::FormsPinView.Droid.Resource.Attribute.itemIconTint = global::hymax.Droid.Resource.Attribute.itemIconTint;
+			global::FormsPinView.Droid.Resource.Attribute.itemPadding = global::hymax.Droid.Resource.Attribute.itemPadding;
+			global::FormsPinView.Droid.Resource.Attribute.itemTextAppearance = global::hymax.Droid.Resource.Attribute.itemTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.itemTextColor = global::hymax.Droid.Resource.Attribute.itemTextColor;
+			global::FormsPinView.Droid.Resource.Attribute.keylines = global::hymax.Droid.Resource.Attribute.keylines;
+			global::FormsPinView.Droid.Resource.Attribute.layout = global::hymax.Droid.Resource.Attribute.layout;
+			global::FormsPinView.Droid.Resource.Attribute.layoutManager = global::hymax.Droid.Resource.Attribute.layoutManager;
+			global::FormsPinView.Droid.Resource.Attribute.layout_anchor = global::hymax.Droid.Resource.Attribute.layout_anchor;
+			global::FormsPinView.Droid.Resource.Attribute.layout_anchorGravity = global::hymax.Droid.Resource.Attribute.layout_anchorGravity;
+			global::FormsPinView.Droid.Resource.Attribute.layout_behavior = global::hymax.Droid.Resource.Attribute.layout_behavior;
+			global::FormsPinView.Droid.Resource.Attribute.layout_collapseMode = global::hymax.Droid.Resource.Attribute.layout_collapseMode;
+			global::FormsPinView.Droid.Resource.Attribute.layout_collapseParallaxMultiplier = global::hymax.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::FormsPinView.Droid.Resource.Attribute.layout_keyline = global::hymax.Droid.Resource.Attribute.layout_keyline;
+			global::FormsPinView.Droid.Resource.Attribute.layout_scrollFlags = global::hymax.Droid.Resource.Attribute.layout_scrollFlags;
+			global::FormsPinView.Droid.Resource.Attribute.layout_scrollInterpolator = global::hymax.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::FormsPinView.Droid.Resource.Attribute.listChoiceBackgroundIndicator = global::hymax.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::FormsPinView.Droid.Resource.Attribute.listDividerAlertDialog = global::hymax.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::FormsPinView.Droid.Resource.Attribute.listItemLayout = global::hymax.Droid.Resource.Attribute.listItemLayout;
+			global::FormsPinView.Droid.Resource.Attribute.listLayout = global::hymax.Droid.Resource.Attribute.listLayout;
+			global::FormsPinView.Droid.Resource.Attribute.listPopupWindowStyle = global::hymax.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::FormsPinView.Droid.Resource.Attribute.listPreferredItemHeight = global::hymax.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::FormsPinView.Droid.Resource.Attribute.listPreferredItemHeightLarge = global::hymax.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::FormsPinView.Droid.Resource.Attribute.listPreferredItemHeightSmall = global::hymax.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::FormsPinView.Droid.Resource.Attribute.listPreferredItemPaddingLeft = global::hymax.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::FormsPinView.Droid.Resource.Attribute.listPreferredItemPaddingRight = global::hymax.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::FormsPinView.Droid.Resource.Attribute.logo = global::hymax.Droid.Resource.Attribute.logo;
+			global::FormsPinView.Droid.Resource.Attribute.logoDescription = global::hymax.Droid.Resource.Attribute.logoDescription;
+			global::FormsPinView.Droid.Resource.Attribute.maxActionInlineWidth = global::hymax.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::FormsPinView.Droid.Resource.Attribute.maxButtonHeight = global::hymax.Droid.Resource.Attribute.maxButtonHeight;
+			global::FormsPinView.Droid.Resource.Attribute.measureWithLargestChild = global::hymax.Droid.Resource.Attribute.measureWithLargestChild;
+			global::FormsPinView.Droid.Resource.Attribute.menu = global::hymax.Droid.Resource.Attribute.menu;
+			global::FormsPinView.Droid.Resource.Attribute.multiChoiceItemLayout = global::hymax.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::FormsPinView.Droid.Resource.Attribute.navigationContentDescription = global::hymax.Droid.Resource.Attribute.navigationContentDescription;
+			global::FormsPinView.Droid.Resource.Attribute.navigationIcon = global::hymax.Droid.Resource.Attribute.navigationIcon;
+			global::FormsPinView.Droid.Resource.Attribute.navigationMode = global::hymax.Droid.Resource.Attribute.navigationMode;
+			global::FormsPinView.Droid.Resource.Attribute.overlapAnchor = global::hymax.Droid.Resource.Attribute.overlapAnchor;
+			global::FormsPinView.Droid.Resource.Attribute.paddingEnd = global::hymax.Droid.Resource.Attribute.paddingEnd;
+			global::FormsPinView.Droid.Resource.Attribute.paddingStart = global::hymax.Droid.Resource.Attribute.paddingStart;
+			global::FormsPinView.Droid.Resource.Attribute.panelBackground = global::hymax.Droid.Resource.Attribute.panelBackground;
+			global::FormsPinView.Droid.Resource.Attribute.panelMenuListTheme = global::hymax.Droid.Resource.Attribute.panelMenuListTheme;
+			global::FormsPinView.Droid.Resource.Attribute.panelMenuListWidth = global::hymax.Droid.Resource.Attribute.panelMenuListWidth;
+			global::FormsPinView.Droid.Resource.Attribute.popupMenuStyle = global::hymax.Droid.Resource.Attribute.popupMenuStyle;
+			global::FormsPinView.Droid.Resource.Attribute.popupTheme = global::hymax.Droid.Resource.Attribute.popupTheme;
+			global::FormsPinView.Droid.Resource.Attribute.popupWindowStyle = global::hymax.Droid.Resource.Attribute.popupWindowStyle;
+			global::FormsPinView.Droid.Resource.Attribute.preserveIconSpacing = global::hymax.Droid.Resource.Attribute.preserveIconSpacing;
+			global::FormsPinView.Droid.Resource.Attribute.pressedTranslationZ = global::hymax.Droid.Resource.Attribute.pressedTranslationZ;
+			global::FormsPinView.Droid.Resource.Attribute.progressBarPadding = global::hymax.Droid.Resource.Attribute.progressBarPadding;
+			global::FormsPinView.Droid.Resource.Attribute.progressBarStyle = global::hymax.Droid.Resource.Attribute.progressBarStyle;
+			global::FormsPinView.Droid.Resource.Attribute.queryBackground = global::hymax.Droid.Resource.Attribute.queryBackground;
+			global::FormsPinView.Droid.Resource.Attribute.queryHint = global::hymax.Droid.Resource.Attribute.queryHint;
+			global::FormsPinView.Droid.Resource.Attribute.radioButtonStyle = global::hymax.Droid.Resource.Attribute.radioButtonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.ratingBarStyle = global::hymax.Droid.Resource.Attribute.ratingBarStyle;
+			global::FormsPinView.Droid.Resource.Attribute.ratingBarStyleIndicator = global::hymax.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::FormsPinView.Droid.Resource.Attribute.ratingBarStyleSmall = global::hymax.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::FormsPinView.Droid.Resource.Attribute.reverseLayout = global::hymax.Droid.Resource.Attribute.reverseLayout;
+			global::FormsPinView.Droid.Resource.Attribute.rippleColor = global::hymax.Droid.Resource.Attribute.rippleColor;
+			global::FormsPinView.Droid.Resource.Attribute.searchHintIcon = global::hymax.Droid.Resource.Attribute.searchHintIcon;
+			global::FormsPinView.Droid.Resource.Attribute.searchIcon = global::hymax.Droid.Resource.Attribute.searchIcon;
+			global::FormsPinView.Droid.Resource.Attribute.searchViewStyle = global::hymax.Droid.Resource.Attribute.searchViewStyle;
+			global::FormsPinView.Droid.Resource.Attribute.seekBarStyle = global::hymax.Droid.Resource.Attribute.seekBarStyle;
+			global::FormsPinView.Droid.Resource.Attribute.selectableItemBackground = global::hymax.Droid.Resource.Attribute.selectableItemBackground;
+			global::FormsPinView.Droid.Resource.Attribute.selectableItemBackgroundBorderless = global::hymax.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::FormsPinView.Droid.Resource.Attribute.showAsAction = global::hymax.Droid.Resource.Attribute.showAsAction;
+			global::FormsPinView.Droid.Resource.Attribute.showDividers = global::hymax.Droid.Resource.Attribute.showDividers;
+			global::FormsPinView.Droid.Resource.Attribute.showText = global::hymax.Droid.Resource.Attribute.showText;
+			global::FormsPinView.Droid.Resource.Attribute.singleChoiceItemLayout = global::hymax.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::FormsPinView.Droid.Resource.Attribute.spanCount = global::hymax.Droid.Resource.Attribute.spanCount;
+			global::FormsPinView.Droid.Resource.Attribute.spinBars = global::hymax.Droid.Resource.Attribute.spinBars;
+			global::FormsPinView.Droid.Resource.Attribute.spinnerDropDownItemStyle = global::hymax.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::FormsPinView.Droid.Resource.Attribute.spinnerStyle = global::hymax.Droid.Resource.Attribute.spinnerStyle;
+			global::FormsPinView.Droid.Resource.Attribute.splitTrack = global::hymax.Droid.Resource.Attribute.splitTrack;
+			global::FormsPinView.Droid.Resource.Attribute.srcCompat = global::hymax.Droid.Resource.Attribute.srcCompat;
+			global::FormsPinView.Droid.Resource.Attribute.stackFromEnd = global::hymax.Droid.Resource.Attribute.stackFromEnd;
+			global::FormsPinView.Droid.Resource.Attribute.state_above_anchor = global::hymax.Droid.Resource.Attribute.state_above_anchor;
+			global::FormsPinView.Droid.Resource.Attribute.statusBarBackground = global::hymax.Droid.Resource.Attribute.statusBarBackground;
+			global::FormsPinView.Droid.Resource.Attribute.statusBarScrim = global::hymax.Droid.Resource.Attribute.statusBarScrim;
+			global::FormsPinView.Droid.Resource.Attribute.submitBackground = global::hymax.Droid.Resource.Attribute.submitBackground;
+			global::FormsPinView.Droid.Resource.Attribute.subtitle = global::hymax.Droid.Resource.Attribute.subtitle;
+			global::FormsPinView.Droid.Resource.Attribute.subtitleTextAppearance = global::hymax.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.subtitleTextColor = global::hymax.Droid.Resource.Attribute.subtitleTextColor;
+			global::FormsPinView.Droid.Resource.Attribute.subtitleTextStyle = global::hymax.Droid.Resource.Attribute.subtitleTextStyle;
+			global::FormsPinView.Droid.Resource.Attribute.suggestionRowLayout = global::hymax.Droid.Resource.Attribute.suggestionRowLayout;
+			global::FormsPinView.Droid.Resource.Attribute.switchMinWidth = global::hymax.Droid.Resource.Attribute.switchMinWidth;
+			global::FormsPinView.Droid.Resource.Attribute.switchPadding = global::hymax.Droid.Resource.Attribute.switchPadding;
+			global::FormsPinView.Droid.Resource.Attribute.switchStyle = global::hymax.Droid.Resource.Attribute.switchStyle;
+			global::FormsPinView.Droid.Resource.Attribute.switchTextAppearance = global::hymax.Droid.Resource.Attribute.switchTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.tabBackground = global::hymax.Droid.Resource.Attribute.tabBackground;
+			global::FormsPinView.Droid.Resource.Attribute.tabContentStart = global::hymax.Droid.Resource.Attribute.tabContentStart;
+			global::FormsPinView.Droid.Resource.Attribute.tabGravity = global::hymax.Droid.Resource.Attribute.tabGravity;
+			global::FormsPinView.Droid.Resource.Attribute.tabIndicatorColor = global::hymax.Droid.Resource.Attribute.tabIndicatorColor;
+			global::FormsPinView.Droid.Resource.Attribute.tabIndicatorHeight = global::hymax.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::FormsPinView.Droid.Resource.Attribute.tabMaxWidth = global::hymax.Droid.Resource.Attribute.tabMaxWidth;
+			global::FormsPinView.Droid.Resource.Attribute.tabMinWidth = global::hymax.Droid.Resource.Attribute.tabMinWidth;
+			global::FormsPinView.Droid.Resource.Attribute.tabMode = global::hymax.Droid.Resource.Attribute.tabMode;
+			global::FormsPinView.Droid.Resource.Attribute.tabPadding = global::hymax.Droid.Resource.Attribute.tabPadding;
+			global::FormsPinView.Droid.Resource.Attribute.tabPaddingBottom = global::hymax.Droid.Resource.Attribute.tabPaddingBottom;
+			global::FormsPinView.Droid.Resource.Attribute.tabPaddingEnd = global::hymax.Droid.Resource.Attribute.tabPaddingEnd;
+			global::FormsPinView.Droid.Resource.Attribute.tabPaddingStart = global::hymax.Droid.Resource.Attribute.tabPaddingStart;
+			global::FormsPinView.Droid.Resource.Attribute.tabPaddingTop = global::hymax.Droid.Resource.Attribute.tabPaddingTop;
+			global::FormsPinView.Droid.Resource.Attribute.tabSelectedTextColor = global::hymax.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::FormsPinView.Droid.Resource.Attribute.tabTextAppearance = global::hymax.Droid.Resource.Attribute.tabTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.tabTextColor = global::hymax.Droid.Resource.Attribute.tabTextColor;
+			global::FormsPinView.Droid.Resource.Attribute.textAllCaps = global::hymax.Droid.Resource.Attribute.textAllCaps;
+			global::FormsPinView.Droid.Resource.Attribute.textAppearanceLargePopupMenu = global::hymax.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::FormsPinView.Droid.Resource.Attribute.textAppearanceListItem = global::hymax.Droid.Resource.Attribute.textAppearanceListItem;
+			global::FormsPinView.Droid.Resource.Attribute.textAppearanceListItemSmall = global::hymax.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::FormsPinView.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle = global::hymax.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::FormsPinView.Droid.Resource.Attribute.textAppearanceSearchResultTitle = global::hymax.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::FormsPinView.Droid.Resource.Attribute.textAppearanceSmallPopupMenu = global::hymax.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::FormsPinView.Droid.Resource.Attribute.textColorAlertDialogListItem = global::hymax.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::FormsPinView.Droid.Resource.Attribute.textColorSearchUrl = global::hymax.Droid.Resource.Attribute.textColorSearchUrl;
+			global::FormsPinView.Droid.Resource.Attribute.theme = global::hymax.Droid.Resource.Attribute.theme;
+			global::FormsPinView.Droid.Resource.Attribute.thickness = global::hymax.Droid.Resource.Attribute.thickness;
+			global::FormsPinView.Droid.Resource.Attribute.thumbTextPadding = global::hymax.Droid.Resource.Attribute.thumbTextPadding;
+			global::FormsPinView.Droid.Resource.Attribute.title = global::hymax.Droid.Resource.Attribute.title;
+			global::FormsPinView.Droid.Resource.Attribute.titleEnabled = global::hymax.Droid.Resource.Attribute.titleEnabled;
+			global::FormsPinView.Droid.Resource.Attribute.titleMarginBottom = global::hymax.Droid.Resource.Attribute.titleMarginBottom;
+			global::FormsPinView.Droid.Resource.Attribute.titleMarginEnd = global::hymax.Droid.Resource.Attribute.titleMarginEnd;
+			global::FormsPinView.Droid.Resource.Attribute.titleMarginStart = global::hymax.Droid.Resource.Attribute.titleMarginStart;
+			global::FormsPinView.Droid.Resource.Attribute.titleMarginTop = global::hymax.Droid.Resource.Attribute.titleMarginTop;
+			global::FormsPinView.Droid.Resource.Attribute.titleMargins = global::hymax.Droid.Resource.Attribute.titleMargins;
+			global::FormsPinView.Droid.Resource.Attribute.titleTextAppearance = global::hymax.Droid.Resource.Attribute.titleTextAppearance;
+			global::FormsPinView.Droid.Resource.Attribute.titleTextColor = global::hymax.Droid.Resource.Attribute.titleTextColor;
+			global::FormsPinView.Droid.Resource.Attribute.titleTextStyle = global::hymax.Droid.Resource.Attribute.titleTextStyle;
+			global::FormsPinView.Droid.Resource.Attribute.toolbarId = global::hymax.Droid.Resource.Attribute.toolbarId;
+			global::FormsPinView.Droid.Resource.Attribute.toolbarNavigationButtonStyle = global::hymax.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::FormsPinView.Droid.Resource.Attribute.toolbarStyle = global::hymax.Droid.Resource.Attribute.toolbarStyle;
+			global::FormsPinView.Droid.Resource.Attribute.track = global::hymax.Droid.Resource.Attribute.track;
+			global::FormsPinView.Droid.Resource.Attribute.useCompatPadding = global::hymax.Droid.Resource.Attribute.useCompatPadding;
+			global::FormsPinView.Droid.Resource.Attribute.voiceIcon = global::hymax.Droid.Resource.Attribute.voiceIcon;
+			global::FormsPinView.Droid.Resource.Attribute.windowActionBar = global::hymax.Droid.Resource.Attribute.windowActionBar;
+			global::FormsPinView.Droid.Resource.Attribute.windowActionBarOverlay = global::hymax.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::FormsPinView.Droid.Resource.Attribute.windowActionModeOverlay = global::hymax.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::FormsPinView.Droid.Resource.Attribute.windowFixedHeightMajor = global::hymax.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::FormsPinView.Droid.Resource.Attribute.windowFixedHeightMinor = global::hymax.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::FormsPinView.Droid.Resource.Attribute.windowFixedWidthMajor = global::hymax.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::FormsPinView.Droid.Resource.Attribute.windowFixedWidthMinor = global::hymax.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::FormsPinView.Droid.Resource.Attribute.windowMinWidthMajor = global::hymax.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::FormsPinView.Droid.Resource.Attribute.windowMinWidthMinor = global::hymax.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::FormsPinView.Droid.Resource.Attribute.windowNoTitle = global::hymax.Droid.Resource.Attribute.windowNoTitle;
+			global::FormsPinView.Droid.Resource.Boolean.abc_action_bar_embed_tabs = global::hymax.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::FormsPinView.Droid.Resource.Boolean.abc_allow_stacked_button_bar = global::hymax.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::FormsPinView.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::hymax.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::FormsPinView.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark = global::hymax.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::FormsPinView.Droid.Resource.Color.abc_background_cache_hint_selector_material_light = global::hymax.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::FormsPinView.Droid.Resource.Color.abc_color_highlight_material = global::hymax.Droid.Resource.Color.abc_color_highlight_material;
+			global::FormsPinView.Droid.Resource.Color.abc_primary_text_disable_only_material_dark = global::hymax.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::FormsPinView.Droid.Resource.Color.abc_primary_text_disable_only_material_light = global::hymax.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::FormsPinView.Droid.Resource.Color.abc_primary_text_material_dark = global::hymax.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::FormsPinView.Droid.Resource.Color.abc_primary_text_material_light = global::hymax.Droid.Resource.Color.abc_primary_text_material_light;
+			global::FormsPinView.Droid.Resource.Color.abc_search_url_text = global::hymax.Droid.Resource.Color.abc_search_url_text;
+			global::FormsPinView.Droid.Resource.Color.abc_search_url_text_normal = global::hymax.Droid.Resource.Color.abc_search_url_text_normal;
+			global::FormsPinView.Droid.Resource.Color.abc_search_url_text_pressed = global::hymax.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::FormsPinView.Droid.Resource.Color.abc_search_url_text_selected = global::hymax.Droid.Resource.Color.abc_search_url_text_selected;
+			global::FormsPinView.Droid.Resource.Color.abc_secondary_text_material_dark = global::hymax.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::FormsPinView.Droid.Resource.Color.abc_secondary_text_material_light = global::hymax.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::FormsPinView.Droid.Resource.Color.accent_material_dark = global::hymax.Droid.Resource.Color.accent_material_dark;
+			global::FormsPinView.Droid.Resource.Color.accent_material_light = global::hymax.Droid.Resource.Color.accent_material_light;
+			global::FormsPinView.Droid.Resource.Color.background_floating_material_dark = global::hymax.Droid.Resource.Color.background_floating_material_dark;
+			global::FormsPinView.Droid.Resource.Color.background_floating_material_light = global::hymax.Droid.Resource.Color.background_floating_material_light;
+			global::FormsPinView.Droid.Resource.Color.background_material_dark = global::hymax.Droid.Resource.Color.background_material_dark;
+			global::FormsPinView.Droid.Resource.Color.background_material_light = global::hymax.Droid.Resource.Color.background_material_light;
+			global::FormsPinView.Droid.Resource.Color.bright_foreground_disabled_material_dark = global::hymax.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::FormsPinView.Droid.Resource.Color.bright_foreground_disabled_material_light = global::hymax.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::FormsPinView.Droid.Resource.Color.bright_foreground_inverse_material_dark = global::hymax.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::FormsPinView.Droid.Resource.Color.bright_foreground_inverse_material_light = global::hymax.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::FormsPinView.Droid.Resource.Color.bright_foreground_material_dark = global::hymax.Droid.Resource.Color.bright_foreground_material_dark;
+			global::FormsPinView.Droid.Resource.Color.bright_foreground_material_light = global::hymax.Droid.Resource.Color.bright_foreground_material_light;
+			global::FormsPinView.Droid.Resource.Color.button_material_dark = global::hymax.Droid.Resource.Color.button_material_dark;
+			global::FormsPinView.Droid.Resource.Color.button_material_light = global::hymax.Droid.Resource.Color.button_material_light;
+			global::FormsPinView.Droid.Resource.Color.cardview_dark_background = global::hymax.Droid.Resource.Color.cardview_dark_background;
+			global::FormsPinView.Droid.Resource.Color.cardview_light_background = global::hymax.Droid.Resource.Color.cardview_light_background;
+			global::FormsPinView.Droid.Resource.Color.cardview_shadow_end_color = global::hymax.Droid.Resource.Color.cardview_shadow_end_color;
+			global::FormsPinView.Droid.Resource.Color.cardview_shadow_start_color = global::hymax.Droid.Resource.Color.cardview_shadow_start_color;
+			global::FormsPinView.Droid.Resource.Color.design_fab_shadow_end_color = global::hymax.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::FormsPinView.Droid.Resource.Color.design_fab_shadow_mid_color = global::hymax.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::FormsPinView.Droid.Resource.Color.design_fab_shadow_start_color = global::hymax.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::FormsPinView.Droid.Resource.Color.design_fab_stroke_end_inner_color = global::hymax.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::FormsPinView.Droid.Resource.Color.design_fab_stroke_end_outer_color = global::hymax.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::FormsPinView.Droid.Resource.Color.design_fab_stroke_top_inner_color = global::hymax.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::FormsPinView.Droid.Resource.Color.design_fab_stroke_top_outer_color = global::hymax.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::FormsPinView.Droid.Resource.Color.design_snackbar_background_color = global::hymax.Droid.Resource.Color.design_snackbar_background_color;
+			global::FormsPinView.Droid.Resource.Color.dim_foreground_disabled_material_dark = global::hymax.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::FormsPinView.Droid.Resource.Color.dim_foreground_disabled_material_light = global::hymax.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::FormsPinView.Droid.Resource.Color.dim_foreground_material_dark = global::hymax.Droid.Resource.Color.dim_foreground_material_dark;
+			global::FormsPinView.Droid.Resource.Color.dim_foreground_material_light = global::hymax.Droid.Resource.Color.dim_foreground_material_light;
+			global::FormsPinView.Droid.Resource.Color.foreground_material_dark = global::hymax.Droid.Resource.Color.foreground_material_dark;
+			global::FormsPinView.Droid.Resource.Color.foreground_material_light = global::hymax.Droid.Resource.Color.foreground_material_light;
+			global::FormsPinView.Droid.Resource.Color.highlighted_text_material_dark = global::hymax.Droid.Resource.Color.highlighted_text_material_dark;
+			global::FormsPinView.Droid.Resource.Color.highlighted_text_material_light = global::hymax.Droid.Resource.Color.highlighted_text_material_light;
+			global::FormsPinView.Droid.Resource.Color.material_blue_grey_800 = global::hymax.Droid.Resource.Color.material_blue_grey_800;
+			global::FormsPinView.Droid.Resource.Color.material_blue_grey_900 = global::hymax.Droid.Resource.Color.material_blue_grey_900;
+			global::FormsPinView.Droid.Resource.Color.material_blue_grey_950 = global::hymax.Droid.Resource.Color.material_blue_grey_950;
+			global::FormsPinView.Droid.Resource.Color.material_deep_teal_200 = global::hymax.Droid.Resource.Color.material_deep_teal_200;
+			global::FormsPinView.Droid.Resource.Color.material_deep_teal_500 = global::hymax.Droid.Resource.Color.material_deep_teal_500;
+			global::FormsPinView.Droid.Resource.Color.material_grey_100 = global::hymax.Droid.Resource.Color.material_grey_100;
+			global::FormsPinView.Droid.Resource.Color.material_grey_300 = global::hymax.Droid.Resource.Color.material_grey_300;
+			global::FormsPinView.Droid.Resource.Color.material_grey_50 = global::hymax.Droid.Resource.Color.material_grey_50;
+			global::FormsPinView.Droid.Resource.Color.material_grey_600 = global::hymax.Droid.Resource.Color.material_grey_600;
+			global::FormsPinView.Droid.Resource.Color.material_grey_800 = global::hymax.Droid.Resource.Color.material_grey_800;
+			global::FormsPinView.Droid.Resource.Color.material_grey_850 = global::hymax.Droid.Resource.Color.material_grey_850;
+			global::FormsPinView.Droid.Resource.Color.material_grey_900 = global::hymax.Droid.Resource.Color.material_grey_900;
+			global::FormsPinView.Droid.Resource.Color.primary_dark_material_dark = global::hymax.Droid.Resource.Color.primary_dark_material_dark;
+			global::FormsPinView.Droid.Resource.Color.primary_dark_material_light = global::hymax.Droid.Resource.Color.primary_dark_material_light;
+			global::FormsPinView.Droid.Resource.Color.primary_material_dark = global::hymax.Droid.Resource.Color.primary_material_dark;
+			global::FormsPinView.Droid.Resource.Color.primary_material_light = global::hymax.Droid.Resource.Color.primary_material_light;
+			global::FormsPinView.Droid.Resource.Color.primary_text_default_material_dark = global::hymax.Droid.Resource.Color.primary_text_default_material_dark;
+			global::FormsPinView.Droid.Resource.Color.primary_text_default_material_light = global::hymax.Droid.Resource.Color.primary_text_default_material_light;
+			global::FormsPinView.Droid.Resource.Color.primary_text_disabled_material_dark = global::hymax.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::FormsPinView.Droid.Resource.Color.primary_text_disabled_material_light = global::hymax.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::FormsPinView.Droid.Resource.Color.ripple_material_dark = global::hymax.Droid.Resource.Color.ripple_material_dark;
+			global::FormsPinView.Droid.Resource.Color.ripple_material_light = global::hymax.Droid.Resource.Color.ripple_material_light;
+			global::FormsPinView.Droid.Resource.Color.secondary_text_default_material_dark = global::hymax.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::FormsPinView.Droid.Resource.Color.secondary_text_default_material_light = global::hymax.Droid.Resource.Color.secondary_text_default_material_light;
+			global::FormsPinView.Droid.Resource.Color.secondary_text_disabled_material_dark = global::hymax.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::FormsPinView.Droid.Resource.Color.secondary_text_disabled_material_light = global::hymax.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::FormsPinView.Droid.Resource.Color.switch_thumb_disabled_material_dark = global::hymax.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::FormsPinView.Droid.Resource.Color.switch_thumb_disabled_material_light = global::hymax.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::FormsPinView.Droid.Resource.Color.switch_thumb_material_dark = global::hymax.Droid.Resource.Color.switch_thumb_material_dark;
+			global::FormsPinView.Droid.Resource.Color.switch_thumb_material_light = global::hymax.Droid.Resource.Color.switch_thumb_material_light;
+			global::FormsPinView.Droid.Resource.Color.switch_thumb_normal_material_dark = global::hymax.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::FormsPinView.Droid.Resource.Color.switch_thumb_normal_material_light = global::hymax.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_bar_content_inset_material = global::hymax.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_bar_default_height_material = global::hymax.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material = global::hymax.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material = global::hymax.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::hymax.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::hymax.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::hymax.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_bar_stacked_max_height = global::hymax.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::hymax.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::hymax.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::hymax.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_button_min_height_material = global::hymax.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_button_min_width_material = global::hymax.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material = global::hymax.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height = global::hymax.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::FormsPinView.Droid.Resource.Dimension.abc_button_inset_horizontal_material = global::hymax.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_button_inset_vertical_material = global::hymax.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_button_padding_horizontal_material = global::hymax.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_button_padding_vertical_material = global::hymax.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_config_prefDialogWidth = global::hymax.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::FormsPinView.Droid.Resource.Dimension.abc_control_corner_material = global::hymax.Droid.Resource.Dimension.abc_control_corner_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_control_inset_material = global::hymax.Droid.Resource.Dimension.abc_control_inset_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_control_padding_material = global::hymax.Droid.Resource.Dimension.abc_control_padding_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_dialog_fixed_height_major = global::hymax.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::FormsPinView.Droid.Resource.Dimension.abc_dialog_fixed_height_minor = global::hymax.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::FormsPinView.Droid.Resource.Dimension.abc_dialog_fixed_width_major = global::hymax.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::FormsPinView.Droid.Resource.Dimension.abc_dialog_fixed_width_minor = global::hymax.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::FormsPinView.Droid.Resource.Dimension.abc_dialog_min_width_major = global::hymax.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::FormsPinView.Droid.Resource.Dimension.abc_dialog_min_width_minor = global::hymax.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::FormsPinView.Droid.Resource.Dimension.abc_dialog_padding_material = global::hymax.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_dialog_padding_top_material = global::hymax.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_disabled_alpha_material_dark = global::hymax.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::FormsPinView.Droid.Resource.Dimension.abc_disabled_alpha_material_light = global::hymax.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::FormsPinView.Droid.Resource.Dimension.abc_dropdownitem_icon_width = global::hymax.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::FormsPinView.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left = global::hymax.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::FormsPinView.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right = global::hymax.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::FormsPinView.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material = global::hymax.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::hymax.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_edit_text_inset_top_material = global::hymax.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_floating_window_z = global::hymax.Droid.Resource.Dimension.abc_floating_window_z;
+			global::FormsPinView.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material = global::hymax.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_panel_menu_list_width = global::hymax.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::FormsPinView.Droid.Resource.Dimension.abc_search_view_preferred_width = global::hymax.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::FormsPinView.Droid.Resource.Dimension.abc_seekbar_track_background_height_material = global::hymax.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material = global::hymax.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_select_dialog_padding_start_material = global::hymax.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_switch_padding = global::hymax.Droid.Resource.Dimension.abc_switch_padding;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_body_1_material = global::hymax.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_body_2_material = global::hymax.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_button_material = global::hymax.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_caption_material = global::hymax.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_display_1_material = global::hymax.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_display_2_material = global::hymax.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_display_3_material = global::hymax.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_display_4_material = global::hymax.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_headline_material = global::hymax.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_large_material = global::hymax.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_medium_material = global::hymax.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_menu_material = global::hymax.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_small_material = global::hymax.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_subhead_material = global::hymax.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::hymax.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_title_material = global::hymax.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::FormsPinView.Droid.Resource.Dimension.abc_text_size_title_material_toolbar = global::hymax.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::FormsPinView.Droid.Resource.Dimension.cardview_compat_inset_shadow = global::hymax.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::FormsPinView.Droid.Resource.Dimension.cardview_default_elevation = global::hymax.Droid.Resource.Dimension.cardview_default_elevation;
+			global::FormsPinView.Droid.Resource.Dimension.cardview_default_radius = global::hymax.Droid.Resource.Dimension.cardview_default_radius;
+			global::FormsPinView.Droid.Resource.Dimension.design_appbar_elevation = global::hymax.Droid.Resource.Dimension.design_appbar_elevation;
+			global::FormsPinView.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation = global::hymax.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::FormsPinView.Droid.Resource.Dimension.design_fab_border_width = global::hymax.Droid.Resource.Dimension.design_fab_border_width;
+			global::FormsPinView.Droid.Resource.Dimension.design_fab_elevation = global::hymax.Droid.Resource.Dimension.design_fab_elevation;
+			global::FormsPinView.Droid.Resource.Dimension.design_fab_image_size = global::hymax.Droid.Resource.Dimension.design_fab_image_size;
+			global::FormsPinView.Droid.Resource.Dimension.design_fab_size_mini = global::hymax.Droid.Resource.Dimension.design_fab_size_mini;
+			global::FormsPinView.Droid.Resource.Dimension.design_fab_size_normal = global::hymax.Droid.Resource.Dimension.design_fab_size_normal;
+			global::FormsPinView.Droid.Resource.Dimension.design_fab_translation_z_pressed = global::hymax.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::FormsPinView.Droid.Resource.Dimension.design_navigation_elevation = global::hymax.Droid.Resource.Dimension.design_navigation_elevation;
+			global::FormsPinView.Droid.Resource.Dimension.design_navigation_icon_padding = global::hymax.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::FormsPinView.Droid.Resource.Dimension.design_navigation_icon_size = global::hymax.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::FormsPinView.Droid.Resource.Dimension.design_navigation_max_width = global::hymax.Droid.Resource.Dimension.design_navigation_max_width;
+			global::FormsPinView.Droid.Resource.Dimension.design_navigation_padding_bottom = global::hymax.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::FormsPinView.Droid.Resource.Dimension.design_navigation_separator_vertical_padding = global::hymax.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::FormsPinView.Droid.Resource.Dimension.design_snackbar_action_inline_max_width = global::hymax.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::FormsPinView.Droid.Resource.Dimension.design_snackbar_background_corner_radius = global::hymax.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::FormsPinView.Droid.Resource.Dimension.design_snackbar_elevation = global::hymax.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::FormsPinView.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::hymax.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::FormsPinView.Droid.Resource.Dimension.design_snackbar_max_width = global::hymax.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::FormsPinView.Droid.Resource.Dimension.design_snackbar_min_width = global::hymax.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::FormsPinView.Droid.Resource.Dimension.design_snackbar_padding_horizontal = global::hymax.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::FormsPinView.Droid.Resource.Dimension.design_snackbar_padding_vertical = global::hymax.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::FormsPinView.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::hymax.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::FormsPinView.Droid.Resource.Dimension.design_snackbar_text_size = global::hymax.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::FormsPinView.Droid.Resource.Dimension.design_tab_max_width = global::hymax.Droid.Resource.Dimension.design_tab_max_width;
+			global::FormsPinView.Droid.Resource.Dimension.design_tab_scrollable_min_width = global::hymax.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::FormsPinView.Droid.Resource.Dimension.design_tab_text_size = global::hymax.Droid.Resource.Dimension.design_tab_text_size;
+			global::FormsPinView.Droid.Resource.Dimension.design_tab_text_size_2line = global::hymax.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::FormsPinView.Droid.Resource.Dimension.disabled_alpha_material_dark = global::hymax.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::FormsPinView.Droid.Resource.Dimension.disabled_alpha_material_light = global::hymax.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::FormsPinView.Droid.Resource.Dimension.highlight_alpha_material_colored = global::hymax.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::FormsPinView.Droid.Resource.Dimension.highlight_alpha_material_dark = global::hymax.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::FormsPinView.Droid.Resource.Dimension.highlight_alpha_material_light = global::hymax.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::FormsPinView.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::hymax.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::FormsPinView.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::hymax.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::FormsPinView.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::hymax.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::FormsPinView.Droid.Resource.Dimension.notification_large_icon_height = global::hymax.Droid.Resource.Dimension.notification_large_icon_height;
+			global::FormsPinView.Droid.Resource.Dimension.notification_large_icon_width = global::hymax.Droid.Resource.Dimension.notification_large_icon_width;
+			global::FormsPinView.Droid.Resource.Dimension.notification_subtext_size = global::hymax.Droid.Resource.Dimension.notification_subtext_size;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_action_bar_item_background_material = global::hymax.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_btn_borderless_material = global::hymax.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_btn_check_material = global::hymax.Droid.Resource.Drawable.abc_btn_check_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::hymax.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::FormsPinView.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::hymax.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::FormsPinView.Droid.Resource.Drawable.abc_btn_colored_material = global::hymax.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_btn_default_mtrl_shape = global::hymax.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::FormsPinView.Droid.Resource.Drawable.abc_btn_radio_material = global::hymax.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::hymax.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::FormsPinView.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::hymax.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::FormsPinView.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::hymax.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::FormsPinView.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::hymax.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::FormsPinView.Droid.Resource.Drawable.abc_cab_background_internal_bg = global::hymax.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::FormsPinView.Droid.Resource.Drawable.abc_cab_background_top_material = global::hymax.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_control_background_material = global::hymax.Droid.Resource.Drawable.abc_control_background_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_edit_text_material = global::hymax.Droid.Resource.Drawable.abc_edit_text_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::hymax.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::hymax.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ic_star_black_16dp = global::hymax.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ic_star_black_36dp = global::hymax.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ic_star_half_black_16dp = global::hymax.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ic_star_half_black_36dp = global::hymax.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::FormsPinView.Droid.Resource.Drawable.abc_item_background_holo_dark = global::hymax.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::FormsPinView.Droid.Resource.Drawable.abc_item_background_holo_light = global::hymax.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::FormsPinView.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_list_focused_holo = global::hymax.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::FormsPinView.Droid.Resource.Drawable.abc_list_longpressed_holo = global::hymax.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::FormsPinView.Droid.Resource.Drawable.abc_list_pressed_holo_dark = global::hymax.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::FormsPinView.Droid.Resource.Drawable.abc_list_pressed_holo_light = global::hymax.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::FormsPinView.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::hymax.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::FormsPinView.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::hymax.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::FormsPinView.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::hymax.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::FormsPinView.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light = global::hymax.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::FormsPinView.Droid.Resource.Drawable.abc_list_selector_holo_dark = global::hymax.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::FormsPinView.Droid.Resource.Drawable.abc_list_selector_holo_light = global::hymax.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::FormsPinView.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::hymax.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::FormsPinView.Droid.Resource.Drawable.abc_popup_background_mtrl_mult = global::hymax.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ratingbar_indicator_material = global::hymax.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_ratingbar_small_material = global::hymax.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::hymax.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::FormsPinView.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::hymax.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::FormsPinView.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_seekbar_thumb_material = global::hymax.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_seekbar_track_material = global::hymax.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::hymax.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_spinner_textfield_background_material = global::hymax.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_switch_thumb_material = global::hymax.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_tab_indicator_material = global::hymax.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_text_cursor_material = global::hymax.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::FormsPinView.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::hymax.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::FormsPinView.Droid.Resource.Drawable.abc_textfield_search_material = global::hymax.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::FormsPinView.Droid.Resource.Drawable.bkg_roundedview = global::hymax.Droid.Resource.Drawable.bkg_roundedview;
+			global::FormsPinView.Droid.Resource.Drawable.design_fab_background = global::hymax.Droid.Resource.Drawable.design_fab_background;
+			global::FormsPinView.Droid.Resource.Drawable.design_snackbar_background = global::hymax.Droid.Resource.Drawable.design_snackbar_background;
+			global::FormsPinView.Droid.Resource.Drawable.img_circle = global::hymax.Droid.Resource.Drawable.img_circle;
+			global::FormsPinView.Droid.Resource.Drawable.img_circle_filled = global::hymax.Droid.Resource.Drawable.img_circle_filled;
+			global::FormsPinView.Droid.Resource.Drawable.notification_template_icon_bg = global::hymax.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::FormsPinView.Droid.Resource.Id.action0 = global::hymax.Droid.Resource.Id.action0;
+			global::FormsPinView.Droid.Resource.Id.action_bar = global::hymax.Droid.Resource.Id.action_bar;
+			global::FormsPinView.Droid.Resource.Id.action_bar_activity_content = global::hymax.Droid.Resource.Id.action_bar_activity_content;
+			global::FormsPinView.Droid.Resource.Id.action_bar_container = global::hymax.Droid.Resource.Id.action_bar_container;
+			global::FormsPinView.Droid.Resource.Id.action_bar_root = global::hymax.Droid.Resource.Id.action_bar_root;
+			global::FormsPinView.Droid.Resource.Id.action_bar_spinner = global::hymax.Droid.Resource.Id.action_bar_spinner;
+			global::FormsPinView.Droid.Resource.Id.action_bar_subtitle = global::hymax.Droid.Resource.Id.action_bar_subtitle;
+			global::FormsPinView.Droid.Resource.Id.action_bar_title = global::hymax.Droid.Resource.Id.action_bar_title;
+			global::FormsPinView.Droid.Resource.Id.action_context_bar = global::hymax.Droid.Resource.Id.action_context_bar;
+			global::FormsPinView.Droid.Resource.Id.action_divider = global::hymax.Droid.Resource.Id.action_divider;
+			global::FormsPinView.Droid.Resource.Id.action_menu_divider = global::hymax.Droid.Resource.Id.action_menu_divider;
+			global::FormsPinView.Droid.Resource.Id.action_menu_presenter = global::hymax.Droid.Resource.Id.action_menu_presenter;
+			global::FormsPinView.Droid.Resource.Id.action_mode_bar = global::hymax.Droid.Resource.Id.action_mode_bar;
+			global::FormsPinView.Droid.Resource.Id.action_mode_bar_stub = global::hymax.Droid.Resource.Id.action_mode_bar_stub;
+			global::FormsPinView.Droid.Resource.Id.action_mode_close_button = global::hymax.Droid.Resource.Id.action_mode_close_button;
+			global::FormsPinView.Droid.Resource.Id.activity_chooser_view_content = global::hymax.Droid.Resource.Id.activity_chooser_view_content;
+			global::FormsPinView.Droid.Resource.Id.alertTitle = global::hymax.Droid.Resource.Id.alertTitle;
+			global::FormsPinView.Droid.Resource.Id.always = global::hymax.Droid.Resource.Id.always;
+			global::FormsPinView.Droid.Resource.Id.beginning = global::hymax.Droid.Resource.Id.beginning;
+			global::FormsPinView.Droid.Resource.Id.bottom = global::hymax.Droid.Resource.Id.bottom;
+			global::FormsPinView.Droid.Resource.Id.buttonPanel = global::hymax.Droid.Resource.Id.buttonPanel;
+			global::FormsPinView.Droid.Resource.Id.cancel_action = global::hymax.Droid.Resource.Id.cancel_action;
+			global::FormsPinView.Droid.Resource.Id.center = global::hymax.Droid.Resource.Id.center;
+			global::FormsPinView.Droid.Resource.Id.center_horizontal = global::hymax.Droid.Resource.Id.center_horizontal;
+			global::FormsPinView.Droid.Resource.Id.center_vertical = global::hymax.Droid.Resource.Id.center_vertical;
+			global::FormsPinView.Droid.Resource.Id.checkbox = global::hymax.Droid.Resource.Id.checkbox;
+			global::FormsPinView.Droid.Resource.Id.chronometer = global::hymax.Droid.Resource.Id.chronometer;
+			global::FormsPinView.Droid.Resource.Id.clip_horizontal = global::hymax.Droid.Resource.Id.clip_horizontal;
+			global::FormsPinView.Droid.Resource.Id.clip_vertical = global::hymax.Droid.Resource.Id.clip_vertical;
+			global::FormsPinView.Droid.Resource.Id.collapseActionView = global::hymax.Droid.Resource.Id.collapseActionView;
+			global::FormsPinView.Droid.Resource.Id.contentPanel = global::hymax.Droid.Resource.Id.contentPanel;
+			global::FormsPinView.Droid.Resource.Id.custom = global::hymax.Droid.Resource.Id.custom;
+			global::FormsPinView.Droid.Resource.Id.customPanel = global::hymax.Droid.Resource.Id.customPanel;
+			global::FormsPinView.Droid.Resource.Id.decor_content_parent = global::hymax.Droid.Resource.Id.decor_content_parent;
+			global::FormsPinView.Droid.Resource.Id.default_activity_button = global::hymax.Droid.Resource.Id.default_activity_button;
+			global::FormsPinView.Droid.Resource.Id.design_bottom_sheet = global::hymax.Droid.Resource.Id.design_bottom_sheet;
+			global::FormsPinView.Droid.Resource.Id.design_menu_item_action_area = global::hymax.Droid.Resource.Id.design_menu_item_action_area;
+			global::FormsPinView.Droid.Resource.Id.design_menu_item_action_area_stub = global::hymax.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::FormsPinView.Droid.Resource.Id.design_menu_item_text = global::hymax.Droid.Resource.Id.design_menu_item_text;
+			global::FormsPinView.Droid.Resource.Id.design_navigation_view = global::hymax.Droid.Resource.Id.design_navigation_view;
+			global::FormsPinView.Droid.Resource.Id.disableHome = global::hymax.Droid.Resource.Id.disableHome;
+			global::FormsPinView.Droid.Resource.Id.edit_query = global::hymax.Droid.Resource.Id.edit_query;
+			global::FormsPinView.Droid.Resource.Id.end = global::hymax.Droid.Resource.Id.end;
+			global::FormsPinView.Droid.Resource.Id.end_padder = global::hymax.Droid.Resource.Id.end_padder;
+			global::FormsPinView.Droid.Resource.Id.enterAlways = global::hymax.Droid.Resource.Id.enterAlways;
+			global::FormsPinView.Droid.Resource.Id.enterAlwaysCollapsed = global::hymax.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::FormsPinView.Droid.Resource.Id.exitUntilCollapsed = global::hymax.Droid.Resource.Id.exitUntilCollapsed;
+			global::FormsPinView.Droid.Resource.Id.expand_activities_button = global::hymax.Droid.Resource.Id.expand_activities_button;
+			global::FormsPinView.Droid.Resource.Id.expanded_menu = global::hymax.Droid.Resource.Id.expanded_menu;
+			global::FormsPinView.Droid.Resource.Id.fill = global::hymax.Droid.Resource.Id.fill;
+			global::FormsPinView.Droid.Resource.Id.fill_horizontal = global::hymax.Droid.Resource.Id.fill_horizontal;
+			global::FormsPinView.Droid.Resource.Id.fill_vertical = global::hymax.Droid.Resource.Id.fill_vertical;
+			global::FormsPinView.Droid.Resource.Id.@fixed = global::hymax.Droid.Resource.Id.@fixed;
+			global::FormsPinView.Droid.Resource.Id.home = global::hymax.Droid.Resource.Id.home;
+			global::FormsPinView.Droid.Resource.Id.homeAsUp = global::hymax.Droid.Resource.Id.homeAsUp;
+			global::FormsPinView.Droid.Resource.Id.icon = global::hymax.Droid.Resource.Id.icon;
+			global::FormsPinView.Droid.Resource.Id.ifRoom = global::hymax.Droid.Resource.Id.ifRoom;
+			global::FormsPinView.Droid.Resource.Id.image = global::hymax.Droid.Resource.Id.image;
+			global::FormsPinView.Droid.Resource.Id.info = global::hymax.Droid.Resource.Id.info;
+			global::FormsPinView.Droid.Resource.Id.item_touch_helper_previous_elevation = global::hymax.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::FormsPinView.Droid.Resource.Id.left = global::hymax.Droid.Resource.Id.left;
+			global::FormsPinView.Droid.Resource.Id.line1 = global::hymax.Droid.Resource.Id.line1;
+			global::FormsPinView.Droid.Resource.Id.line3 = global::hymax.Droid.Resource.Id.line3;
+			global::FormsPinView.Droid.Resource.Id.listMode = global::hymax.Droid.Resource.Id.listMode;
+			global::FormsPinView.Droid.Resource.Id.list_item = global::hymax.Droid.Resource.Id.list_item;
+			global::FormsPinView.Droid.Resource.Id.media_actions = global::hymax.Droid.Resource.Id.media_actions;
+			global::FormsPinView.Droid.Resource.Id.middle = global::hymax.Droid.Resource.Id.middle;
+			global::FormsPinView.Droid.Resource.Id.mini = global::hymax.Droid.Resource.Id.mini;
+			global::FormsPinView.Droid.Resource.Id.multiply = global::hymax.Droid.Resource.Id.multiply;
+			global::FormsPinView.Droid.Resource.Id.navigation_header_container = global::hymax.Droid.Resource.Id.navigation_header_container;
+			global::FormsPinView.Droid.Resource.Id.never = global::hymax.Droid.Resource.Id.never;
+			global::FormsPinView.Droid.Resource.Id.none = global::hymax.Droid.Resource.Id.none;
+			global::FormsPinView.Droid.Resource.Id.normal = global::hymax.Droid.Resource.Id.normal;
+			global::FormsPinView.Droid.Resource.Id.parallax = global::hymax.Droid.Resource.Id.parallax;
+			global::FormsPinView.Droid.Resource.Id.parentPanel = global::hymax.Droid.Resource.Id.parentPanel;
+			global::FormsPinView.Droid.Resource.Id.pin = global::hymax.Droid.Resource.Id.pin;
+			global::FormsPinView.Droid.Resource.Id.progress_circular = global::hymax.Droid.Resource.Id.progress_circular;
+			global::FormsPinView.Droid.Resource.Id.progress_horizontal = global::hymax.Droid.Resource.Id.progress_horizontal;
+			global::FormsPinView.Droid.Resource.Id.radio = global::hymax.Droid.Resource.Id.radio;
+			global::FormsPinView.Droid.Resource.Id.right = global::hymax.Droid.Resource.Id.right;
+			global::FormsPinView.Droid.Resource.Id.screen = global::hymax.Droid.Resource.Id.screen;
+			global::FormsPinView.Droid.Resource.Id.scroll = global::hymax.Droid.Resource.Id.scroll;
+			global::FormsPinView.Droid.Resource.Id.scrollIndicatorDown = global::hymax.Droid.Resource.Id.scrollIndicatorDown;
+			global::FormsPinView.Droid.Resource.Id.scrollIndicatorUp = global::hymax.Droid.Resource.Id.scrollIndicatorUp;
+			global::FormsPinView.Droid.Resource.Id.scrollView = global::hymax.Droid.Resource.Id.scrollView;
+			global::FormsPinView.Droid.Resource.Id.scrollable = global::hymax.Droid.Resource.Id.scrollable;
+			global::FormsPinView.Droid.Resource.Id.search_badge = global::hymax.Droid.Resource.Id.search_badge;
+			global::FormsPinView.Droid.Resource.Id.search_bar = global::hymax.Droid.Resource.Id.search_bar;
+			global::FormsPinView.Droid.Resource.Id.search_button = global::hymax.Droid.Resource.Id.search_button;
+			global::FormsPinView.Droid.Resource.Id.search_close_btn = global::hymax.Droid.Resource.Id.search_close_btn;
+			global::FormsPinView.Droid.Resource.Id.search_edit_frame = global::hymax.Droid.Resource.Id.search_edit_frame;
+			global::FormsPinView.Droid.Resource.Id.search_go_btn = global::hymax.Droid.Resource.Id.search_go_btn;
+			global::FormsPinView.Droid.Resource.Id.search_mag_icon = global::hymax.Droid.Resource.Id.search_mag_icon;
+			global::FormsPinView.Droid.Resource.Id.search_plate = global::hymax.Droid.Resource.Id.search_plate;
+			global::FormsPinView.Droid.Resource.Id.search_src_text = global::hymax.Droid.Resource.Id.search_src_text;
+			global::FormsPinView.Droid.Resource.Id.search_voice_btn = global::hymax.Droid.Resource.Id.search_voice_btn;
+			global::FormsPinView.Droid.Resource.Id.select_dialog_listview = global::hymax.Droid.Resource.Id.select_dialog_listview;
+			global::FormsPinView.Droid.Resource.Id.shortcut = global::hymax.Droid.Resource.Id.shortcut;
+			global::FormsPinView.Droid.Resource.Id.showCustom = global::hymax.Droid.Resource.Id.showCustom;
+			global::FormsPinView.Droid.Resource.Id.showHome = global::hymax.Droid.Resource.Id.showHome;
+			global::FormsPinView.Droid.Resource.Id.showTitle = global::hymax.Droid.Resource.Id.showTitle;
+			global::FormsPinView.Droid.Resource.Id.snackbar_action = global::hymax.Droid.Resource.Id.snackbar_action;
+			global::FormsPinView.Droid.Resource.Id.snackbar_text = global::hymax.Droid.Resource.Id.snackbar_text;
+			global::FormsPinView.Droid.Resource.Id.snap = global::hymax.Droid.Resource.Id.snap;
+			global::FormsPinView.Droid.Resource.Id.spacer = global::hymax.Droid.Resource.Id.spacer;
+			global::FormsPinView.Droid.Resource.Id.split_action_bar = global::hymax.Droid.Resource.Id.split_action_bar;
+			global::FormsPinView.Droid.Resource.Id.src_atop = global::hymax.Droid.Resource.Id.src_atop;
+			global::FormsPinView.Droid.Resource.Id.src_in = global::hymax.Droid.Resource.Id.src_in;
+			global::FormsPinView.Droid.Resource.Id.src_over = global::hymax.Droid.Resource.Id.src_over;
+			global::FormsPinView.Droid.Resource.Id.start = global::hymax.Droid.Resource.Id.start;
+			global::FormsPinView.Droid.Resource.Id.status_bar_latest_event_content = global::hymax.Droid.Resource.Id.status_bar_latest_event_content;
+			global::FormsPinView.Droid.Resource.Id.submit_area = global::hymax.Droid.Resource.Id.submit_area;
+			global::FormsPinView.Droid.Resource.Id.tabMode = global::hymax.Droid.Resource.Id.tabMode;
+			global::FormsPinView.Droid.Resource.Id.text = global::hymax.Droid.Resource.Id.text;
+			global::FormsPinView.Droid.Resource.Id.text2 = global::hymax.Droid.Resource.Id.text2;
+			global::FormsPinView.Droid.Resource.Id.textSpacerNoButtons = global::hymax.Droid.Resource.Id.textSpacerNoButtons;
+			global::FormsPinView.Droid.Resource.Id.time = global::hymax.Droid.Resource.Id.time;
+			global::FormsPinView.Droid.Resource.Id.title = global::hymax.Droid.Resource.Id.title;
+			global::FormsPinView.Droid.Resource.Id.title_template = global::hymax.Droid.Resource.Id.title_template;
+			global::FormsPinView.Droid.Resource.Id.top = global::hymax.Droid.Resource.Id.top;
+			global::FormsPinView.Droid.Resource.Id.topPanel = global::hymax.Droid.Resource.Id.topPanel;
+			global::FormsPinView.Droid.Resource.Id.touch_outside = global::hymax.Droid.Resource.Id.touch_outside;
+			global::FormsPinView.Droid.Resource.Id.up = global::hymax.Droid.Resource.Id.up;
+			global::FormsPinView.Droid.Resource.Id.useLogo = global::hymax.Droid.Resource.Id.useLogo;
+			global::FormsPinView.Droid.Resource.Id.view_offset_helper = global::hymax.Droid.Resource.Id.view_offset_helper;
+			global::FormsPinView.Droid.Resource.Id.withText = global::hymax.Droid.Resource.Id.withText;
+			global::FormsPinView.Droid.Resource.Id.wrap_content = global::hymax.Droid.Resource.Id.wrap_content;
+			global::FormsPinView.Droid.Resource.Integer.abc_config_activityDefaultDur = global::hymax.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::FormsPinView.Droid.Resource.Integer.abc_config_activityShortDur = global::hymax.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::FormsPinView.Droid.Resource.Integer.bottom_sheet_slide_duration = global::hymax.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::FormsPinView.Droid.Resource.Integer.cancel_button_image_alpha = global::hymax.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::FormsPinView.Droid.Resource.Integer.design_snackbar_text_max_lines = global::hymax.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::FormsPinView.Droid.Resource.Integer.status_bar_notification_info_maxnum = global::hymax.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::FormsPinView.Droid.Resource.Layout.abc_action_bar_title_item = global::hymax.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::FormsPinView.Droid.Resource.Layout.abc_action_bar_up_container = global::hymax.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::FormsPinView.Droid.Resource.Layout.abc_action_menu_item_layout = global::hymax.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::FormsPinView.Droid.Resource.Layout.abc_action_menu_layout = global::hymax.Droid.Resource.Layout.abc_action_menu_layout;
+			global::FormsPinView.Droid.Resource.Layout.abc_action_mode_bar = global::hymax.Droid.Resource.Layout.abc_action_mode_bar;
+			global::FormsPinView.Droid.Resource.Layout.abc_action_mode_close_item_material = global::hymax.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::FormsPinView.Droid.Resource.Layout.abc_activity_chooser_view = global::hymax.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::FormsPinView.Droid.Resource.Layout.abc_activity_chooser_view_list_item = global::hymax.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::FormsPinView.Droid.Resource.Layout.abc_alert_dialog_button_bar_material = global::hymax.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::FormsPinView.Droid.Resource.Layout.abc_alert_dialog_material = global::hymax.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::FormsPinView.Droid.Resource.Layout.abc_dialog_title_material = global::hymax.Droid.Resource.Layout.abc_dialog_title_material;
+			global::FormsPinView.Droid.Resource.Layout.abc_expanded_menu_layout = global::hymax.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::FormsPinView.Droid.Resource.Layout.abc_list_menu_item_checkbox = global::hymax.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::FormsPinView.Droid.Resource.Layout.abc_list_menu_item_icon = global::hymax.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::FormsPinView.Droid.Resource.Layout.abc_list_menu_item_layout = global::hymax.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::FormsPinView.Droid.Resource.Layout.abc_list_menu_item_radio = global::hymax.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::FormsPinView.Droid.Resource.Layout.abc_popup_menu_item_layout = global::hymax.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::FormsPinView.Droid.Resource.Layout.abc_screen_content_include = global::hymax.Droid.Resource.Layout.abc_screen_content_include;
+			global::FormsPinView.Droid.Resource.Layout.abc_screen_simple = global::hymax.Droid.Resource.Layout.abc_screen_simple;
+			global::FormsPinView.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode = global::hymax.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::FormsPinView.Droid.Resource.Layout.abc_screen_toolbar = global::hymax.Droid.Resource.Layout.abc_screen_toolbar;
+			global::FormsPinView.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line = global::hymax.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::FormsPinView.Droid.Resource.Layout.abc_search_view = global::hymax.Droid.Resource.Layout.abc_search_view;
+			global::FormsPinView.Droid.Resource.Layout.abc_select_dialog_material = global::hymax.Droid.Resource.Layout.abc_select_dialog_material;
+			global::FormsPinView.Droid.Resource.Layout.design_bottom_sheet_dialog = global::hymax.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::FormsPinView.Droid.Resource.Layout.design_layout_snackbar = global::hymax.Droid.Resource.Layout.design_layout_snackbar;
+			global::FormsPinView.Droid.Resource.Layout.design_layout_snackbar_include = global::hymax.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::FormsPinView.Droid.Resource.Layout.design_layout_tab_icon = global::hymax.Droid.Resource.Layout.design_layout_tab_icon;
+			global::FormsPinView.Droid.Resource.Layout.design_layout_tab_text = global::hymax.Droid.Resource.Layout.design_layout_tab_text;
+			global::FormsPinView.Droid.Resource.Layout.design_menu_item_action_area = global::hymax.Droid.Resource.Layout.design_menu_item_action_area;
+			global::FormsPinView.Droid.Resource.Layout.design_navigation_item = global::hymax.Droid.Resource.Layout.design_navigation_item;
+			global::FormsPinView.Droid.Resource.Layout.design_navigation_item_header = global::hymax.Droid.Resource.Layout.design_navigation_item_header;
+			global::FormsPinView.Droid.Resource.Layout.design_navigation_item_separator = global::hymax.Droid.Resource.Layout.design_navigation_item_separator;
+			global::FormsPinView.Droid.Resource.Layout.design_navigation_item_subheader = global::hymax.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::FormsPinView.Droid.Resource.Layout.design_navigation_menu = global::hymax.Droid.Resource.Layout.design_navigation_menu;
+			global::FormsPinView.Droid.Resource.Layout.design_navigation_menu_item = global::hymax.Droid.Resource.Layout.design_navigation_menu_item;
+			global::FormsPinView.Droid.Resource.Layout.notification_media_action = global::hymax.Droid.Resource.Layout.notification_media_action;
+			global::FormsPinView.Droid.Resource.Layout.notification_media_cancel_action = global::hymax.Droid.Resource.Layout.notification_media_cancel_action;
+			global::FormsPinView.Droid.Resource.Layout.notification_template_big_media = global::hymax.Droid.Resource.Layout.notification_template_big_media;
+			global::FormsPinView.Droid.Resource.Layout.notification_template_big_media_narrow = global::hymax.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::FormsPinView.Droid.Resource.Layout.notification_template_media = global::hymax.Droid.Resource.Layout.notification_template_media;
+			global::FormsPinView.Droid.Resource.Layout.notification_template_part_chronometer = global::hymax.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::FormsPinView.Droid.Resource.Layout.notification_template_part_time = global::hymax.Droid.Resource.Layout.notification_template_part_time;
+			global::FormsPinView.Droid.Resource.Layout.select_dialog_item_material = global::hymax.Droid.Resource.Layout.select_dialog_item_material;
+			global::FormsPinView.Droid.Resource.Layout.select_dialog_multichoice_material = global::hymax.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::FormsPinView.Droid.Resource.Layout.select_dialog_singlechoice_material = global::hymax.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::FormsPinView.Droid.Resource.Layout.support_simple_spinner_dropdown_item = global::hymax.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::FormsPinView.Droid.Resource.String.abc_action_bar_home_description = global::hymax.Droid.Resource.String.abc_action_bar_home_description;
+			global::FormsPinView.Droid.Resource.String.abc_action_bar_up_description = global::hymax.Droid.Resource.String.abc_action_bar_up_description;
+			global::FormsPinView.Droid.Resource.String.abc_action_menu_overflow_description = global::hymax.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::FormsPinView.Droid.Resource.String.abc_action_mode_done = global::hymax.Droid.Resource.String.abc_action_mode_done;
+			global::FormsPinView.Droid.Resource.String.abc_activity_chooser_view_see_all = global::hymax.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::FormsPinView.Droid.Resource.String.abc_activitychooserview_choose_application = global::hymax.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::FormsPinView.Droid.Resource.String.abc_capital_off = global::hymax.Droid.Resource.String.abc_capital_off;
+			global::FormsPinView.Droid.Resource.String.abc_capital_on = global::hymax.Droid.Resource.String.abc_capital_on;
+			global::FormsPinView.Droid.Resource.String.abc_search_hint = global::hymax.Droid.Resource.String.abc_search_hint;
+			global::FormsPinView.Droid.Resource.String.abc_searchview_description_clear = global::hymax.Droid.Resource.String.abc_searchview_description_clear;
+			global::FormsPinView.Droid.Resource.String.abc_searchview_description_query = global::hymax.Droid.Resource.String.abc_searchview_description_query;
+			global::FormsPinView.Droid.Resource.String.abc_searchview_description_search = global::hymax.Droid.Resource.String.abc_searchview_description_search;
+			global::FormsPinView.Droid.Resource.String.abc_searchview_description_submit = global::hymax.Droid.Resource.String.abc_searchview_description_submit;
+			global::FormsPinView.Droid.Resource.String.abc_searchview_description_voice = global::hymax.Droid.Resource.String.abc_searchview_description_voice;
+			global::FormsPinView.Droid.Resource.String.abc_shareactionprovider_share_with = global::hymax.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::FormsPinView.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::hymax.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::FormsPinView.Droid.Resource.String.abc_toolbar_collapse_description = global::hymax.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::FormsPinView.Droid.Resource.String.appbar_scrolling_view_behavior = global::hymax.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::FormsPinView.Droid.Resource.String.bottom_sheet_behavior = global::hymax.Droid.Resource.String.bottom_sheet_behavior;
+			global::FormsPinView.Droid.Resource.String.character_counter_pattern = global::hymax.Droid.Resource.String.character_counter_pattern;
+			global::FormsPinView.Droid.Resource.String.library_name = global::hymax.Droid.Resource.String.library_name;
+			global::FormsPinView.Droid.Resource.String.status_bar_notification_info_overflow = global::hymax.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::FormsPinView.Droid.Resource.Style.AlertDialog_AppCompat = global::hymax.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::hymax.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Animation_AppCompat_Dialog = global::hymax.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::FormsPinView.Droid.Resource.Style.Animation_AppCompat_DropDownUp = global::hymax.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::FormsPinView.Droid.Resource.Style.Animation_Design_BottomSheetDialog = global::hymax.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::FormsPinView.Droid.Resource.Style.Base_AlertDialog_AppCompat = global::hymax.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light = global::hymax.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Base_Animation_AppCompat_Dialog = global::hymax.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::FormsPinView.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::hymax.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::FormsPinView.Droid.Resource.Style.Base_CardView = global::hymax.Droid.Resource.Style.Base_CardView;
+			global::FormsPinView.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::hymax.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::hymax.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::hymax.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::hymax.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::hymax.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::FormsPinView.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::hymax.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::FormsPinView.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::hymax.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::FormsPinView.Droid.Resource.Style.Base_ThemeOverlay_AppCompat = global::hymax.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::hymax.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::hymax.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::FormsPinView.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::hymax.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::hymax.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Base_V21_Theme_AppCompat = global::hymax.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::hymax.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::FormsPinView.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light = global::hymax.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::hymax.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::FormsPinView.Droid.Resource.Style.Base_V22_Theme_AppCompat = global::hymax.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light = global::hymax.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Base_V23_Theme_AppCompat = global::hymax.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light = global::hymax.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Base_V7_Theme_AppCompat = global::hymax.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::hymax.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::FormsPinView.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light = global::hymax.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::hymax.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::FormsPinView.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::hymax.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::FormsPinView.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::hymax.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Button = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_EditText = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ListView = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_SearchView = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Spinner = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::hymax.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::FormsPinView.Droid.Resource.Style.Base_Widget_Design_TabLayout = global::hymax.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::FormsPinView.Droid.Resource.Style.CardView = global::hymax.Droid.Resource.Style.CardView;
+			global::FormsPinView.Droid.Resource.Style.CardView_Dark = global::hymax.Droid.Resource.Style.CardView_Dark;
+			global::FormsPinView.Droid.Resource.Style.CardView_Light = global::hymax.Droid.Resource.Style.CardView_Light;
+			global::FormsPinView.Droid.Resource.Style.Platform_AppCompat = global::hymax.Droid.Resource.Style.Platform_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Platform_AppCompat_Light = global::hymax.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat = global::hymax.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::hymax.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::FormsPinView.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::hymax.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner = global::hymax.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::hymax.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::hymax.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::hymax.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::hymax.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::hymax.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::hymax.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::hymax.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::hymax.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::hymax.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::hymax.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::hymax.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::FormsPinView.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::hymax.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::FormsPinView.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::hymax.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::FormsPinView.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::hymax.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Body1 = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Body2 = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Button = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Caption = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Display1 = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Display2 = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Display3 = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Display4 = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Headline = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Inverse = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Large = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Medium = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Menu = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Small = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Subhead = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Title = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::hymax.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::hymax.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_Design_Counter = global::hymax.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow = global::hymax.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_Design_Error = global::hymax.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_Design_Hint = global::hymax.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message = global::hymax.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_Design_Tab = global::hymax.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::hymax.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::hymax.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::FormsPinView.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::hymax.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat = global::hymax.Droid.Resource.Style.Theme_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::hymax.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_DayNight = global::hymax.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::hymax.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::hymax.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::hymax.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::hymax.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::hymax.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::hymax.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_Dialog = global::hymax.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::hymax.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::hymax.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::hymax.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_Light = global::hymax.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::hymax.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::hymax.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::hymax.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::hymax.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::hymax.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::hymax.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::FormsPinView.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::hymax.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::FormsPinView.Droid.Resource.Style.Theme_Design = global::hymax.Droid.Resource.Style.Theme_Design;
+			global::FormsPinView.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::hymax.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::FormsPinView.Droid.Resource.Style.Theme_Design_Light = global::hymax.Droid.Resource.Style.Theme_Design_Light;
+			global::FormsPinView.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::hymax.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::FormsPinView.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::hymax.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::FormsPinView.Droid.Resource.Style.Theme_Design_NoActionBar = global::hymax.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::FormsPinView.Droid.Resource.Style.ThemeOverlay_AppCompat = global::hymax.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::FormsPinView.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::hymax.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark = global::hymax.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::FormsPinView.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::hymax.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.ThemeOverlay_AppCompat_Light = global::hymax.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ActionBar = global::hymax.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::hymax.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::hymax.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::hymax.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::hymax.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ActionButton = global::hymax.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::hymax.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::hymax.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ActionMode = global::hymax.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView = global::hymax.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::hymax.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Button = global::hymax.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Button_Borderless = global::hymax.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::hymax.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::hymax.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Button_Colored = global::hymax.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Button_Small = global::hymax.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::hymax.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::hymax.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::hymax.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::hymax.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::hymax.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::hymax.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::hymax.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_EditText = global::hymax.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ImageButton = global::hymax.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_SearchView = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::hymax.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow = global::hymax.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ListView = global::hymax.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown = global::hymax.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ListView_Menu = global::hymax.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_PopupMenu = global::hymax.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::hymax.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_PopupWindow = global::hymax.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ProgressBar = global::hymax.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::hymax.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_RatingBar = global::hymax.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::hymax.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small = global::hymax.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_SearchView = global::hymax.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::hymax.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_SeekBar = global::hymax.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Spinner = global::hymax.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::hymax.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::hymax.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::hymax.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::hymax.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Toolbar = global::hymax.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::FormsPinView.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::hymax.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::FormsPinView.Droid.Resource.Style.Widget_Design_AppBarLayout = global::hymax.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::FormsPinView.Droid.Resource.Style.Widget_Design_BottomSheet_Modal = global::hymax.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::FormsPinView.Droid.Resource.Style.Widget_Design_CollapsingToolbar = global::hymax.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::FormsPinView.Droid.Resource.Style.Widget_Design_FloatingActionButton = global::hymax.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::FormsPinView.Droid.Resource.Style.Widget_Design_NavigationView = global::hymax.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::FormsPinView.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::hymax.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::FormsPinView.Droid.Resource.Style.Widget_Design_Snackbar = global::hymax.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::FormsPinView.Droid.Resource.Style.Widget_Design_TabLayout = global::hymax.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::FormsPinView.Droid.Resource.Style.Widget_Design_TextInputLayout = global::hymax.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar = global::hymax.Droid.Resource.Styleable.ActionBar;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_background = global::hymax.Droid.Resource.Styleable.ActionBar_background;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_backgroundSplit = global::hymax.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_backgroundStacked = global::hymax.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_contentInsetEnd = global::hymax.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_contentInsetLeft = global::hymax.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_contentInsetRight = global::hymax.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_contentInsetStart = global::hymax.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_customNavigationLayout = global::hymax.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_displayOptions = global::hymax.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_divider = global::hymax.Droid.Resource.Styleable.ActionBar_divider;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_elevation = global::hymax.Droid.Resource.Styleable.ActionBar_elevation;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_height = global::hymax.Droid.Resource.Styleable.ActionBar_height;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_hideOnContentScroll = global::hymax.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator = global::hymax.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_homeLayout = global::hymax.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_icon = global::hymax.Droid.Resource.Styleable.ActionBar_icon;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::hymax.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_itemPadding = global::hymax.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_logo = global::hymax.Droid.Resource.Styleable.ActionBar_logo;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_navigationMode = global::hymax.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_popupTheme = global::hymax.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_progressBarPadding = global::hymax.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_progressBarStyle = global::hymax.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_subtitle = global::hymax.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_subtitleTextStyle = global::hymax.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_title = global::hymax.Droid.Resource.Styleable.ActionBar_title;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBar_titleTextStyle = global::hymax.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBarLayout = global::hymax.Droid.Resource.Styleable.ActionBarLayout;
+			global::FormsPinView.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::hymax.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::FormsPinView.Droid.Resource.Styleable.ActionMenuItemView = global::hymax.Droid.Resource.Styleable.ActionMenuItemView;
+			global::FormsPinView.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth = global::hymax.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::FormsPinView.Droid.Resource.Styleable.ActionMenuView = global::hymax.Droid.Resource.Styleable.ActionMenuView;
+			global::FormsPinView.Droid.Resource.Styleable.ActionMode = global::hymax.Droid.Resource.Styleable.ActionMode;
+			global::FormsPinView.Droid.Resource.Styleable.ActionMode_background = global::hymax.Droid.Resource.Styleable.ActionMode_background;
+			global::FormsPinView.Droid.Resource.Styleable.ActionMode_backgroundSplit = global::hymax.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::FormsPinView.Droid.Resource.Styleable.ActionMode_closeItemLayout = global::hymax.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::FormsPinView.Droid.Resource.Styleable.ActionMode_height = global::hymax.Droid.Resource.Styleable.ActionMode_height;
+			global::FormsPinView.Droid.Resource.Styleable.ActionMode_subtitleTextStyle = global::hymax.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::FormsPinView.Droid.Resource.Styleable.ActionMode_titleTextStyle = global::hymax.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::FormsPinView.Droid.Resource.Styleable.ActivityChooserView = global::hymax.Droid.Resource.Styleable.ActivityChooserView;
+			global::FormsPinView.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::hymax.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::FormsPinView.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount = global::hymax.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::FormsPinView.Droid.Resource.Styleable.AlertDialog = global::hymax.Droid.Resource.Styleable.AlertDialog;
+			global::FormsPinView.Droid.Resource.Styleable.AlertDialog_android_layout = global::hymax.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::FormsPinView.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::hymax.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::FormsPinView.Droid.Resource.Styleable.AlertDialog_listItemLayout = global::hymax.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::FormsPinView.Droid.Resource.Styleable.AlertDialog_listLayout = global::hymax.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::FormsPinView.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::hymax.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::FormsPinView.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::hymax.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::FormsPinView.Droid.Resource.Styleable.AppBarLayout = global::hymax.Droid.Resource.Styleable.AppBarLayout;
+			global::FormsPinView.Droid.Resource.Styleable.AppBarLayout_android_background = global::hymax.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::FormsPinView.Droid.Resource.Styleable.AppBarLayout_elevation = global::hymax.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::FormsPinView.Droid.Resource.Styleable.AppBarLayout_expanded = global::hymax.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatImageView = global::hymax.Droid.Resource.Styleable.AppCompatImageView;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatImageView_android_src = global::hymax.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatImageView_srcCompat = global::hymax.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTextView = global::hymax.Droid.Resource.Styleable.AppCompatTextView;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance = global::hymax.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTextView_textAllCaps = global::hymax.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme = global::hymax.Droid.Resource.Styleable.AppCompatTheme;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionBarSize = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::hymax.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::hymax.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::hymax.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_buttonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::hymax.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_colorAccent = global::hymax.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::hymax.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated = global::hymax.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::hymax.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal = global::hymax.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_colorPrimary = global::hymax.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::hymax.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::hymax.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_controlBackground = global::hymax.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::hymax.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_dialogTheme = global::hymax.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::hymax.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_dividerVertical = global::hymax.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::hymax.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_editTextBackground = global::hymax.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_editTextColor = global::hymax.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_editTextStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::hymax.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::hymax.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::hymax.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::hymax.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::hymax.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::hymax.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::hymax.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::hymax.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_panelBackground = global::hymax.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::hymax.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::hymax.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::hymax.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::hymax.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::hymax.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::hymax.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_switchStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::hymax.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::hymax.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::hymax.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::hymax.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::hymax.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::hymax.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_windowActionBar = global::hymax.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::hymax.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::hymax.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::hymax.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::hymax.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::hymax.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::hymax.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::hymax.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::hymax.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::FormsPinView.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle = global::hymax.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::FormsPinView.Droid.Resource.Styleable.ButtonBarLayout = global::hymax.Droid.Resource.Styleable.ButtonBarLayout;
+			global::FormsPinView.Droid.Resource.Styleable.ButtonBarLayout_allowStacking = global::hymax.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::FormsPinView.Droid.Resource.Styleable.CardView = global::hymax.Droid.Resource.Styleable.CardView;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_android_minHeight = global::hymax.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_android_minWidth = global::hymax.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_cardBackgroundColor = global::hymax.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_cardCornerRadius = global::hymax.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_cardElevation = global::hymax.Droid.Resource.Styleable.CardView_cardElevation;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_cardMaxElevation = global::hymax.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap = global::hymax.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_cardUseCompatPadding = global::hymax.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_contentPadding = global::hymax.Droid.Resource.Styleable.CardView_contentPadding;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_contentPaddingBottom = global::hymax.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_contentPaddingLeft = global::hymax.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_contentPaddingRight = global::hymax.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::FormsPinView.Droid.Resource.Styleable.CardView_contentPaddingTop = global::hymax.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_title = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::FormsPinView.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::hymax.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::FormsPinView.Droid.Resource.Styleable.CompoundButton = global::hymax.Droid.Resource.Styleable.CompoundButton;
+			global::FormsPinView.Droid.Resource.Styleable.CompoundButton_android_button = global::hymax.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::FormsPinView.Droid.Resource.Styleable.CompoundButton_buttonTint = global::hymax.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::FormsPinView.Droid.Resource.Styleable.CompoundButton_buttonTintMode = global::hymax.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::FormsPinView.Droid.Resource.Styleable.CoordinatorLayout = global::hymax.Droid.Resource.Styleable.CoordinatorLayout;
+			global::FormsPinView.Droid.Resource.Styleable.CoordinatorLayout_keylines = global::hymax.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::FormsPinView.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::hymax.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::FormsPinView.Droid.Resource.Styleable.DrawerArrowToggle = global::hymax.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::FormsPinView.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::hymax.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::FormsPinView.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::hymax.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::FormsPinView.Droid.Resource.Styleable.DrawerArrowToggle_barLength = global::hymax.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::FormsPinView.Droid.Resource.Styleable.DrawerArrowToggle_color = global::hymax.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::FormsPinView.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize = global::hymax.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::FormsPinView.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::hymax.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::FormsPinView.Droid.Resource.Styleable.DrawerArrowToggle_spinBars = global::hymax.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::FormsPinView.Droid.Resource.Styleable.DrawerArrowToggle_thickness = global::hymax.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::FormsPinView.Droid.Resource.Styleable.FloatingActionButton = global::hymax.Droid.Resource.Styleable.FloatingActionButton;
+			global::FormsPinView.Droid.Resource.Styleable.FloatingActionButton_backgroundTint = global::hymax.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::FormsPinView.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::hymax.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::FormsPinView.Droid.Resource.Styleable.FloatingActionButton_borderWidth = global::hymax.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::FormsPinView.Droid.Resource.Styleable.FloatingActionButton_elevation = global::hymax.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::FormsPinView.Droid.Resource.Styleable.FloatingActionButton_fabSize = global::hymax.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::FormsPinView.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::hymax.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::FormsPinView.Droid.Resource.Styleable.FloatingActionButton_rippleColor = global::hymax.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::FormsPinView.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding = global::hymax.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::FormsPinView.Droid.Resource.Styleable.ForegroundLinearLayout = global::hymax.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::FormsPinView.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::hymax.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::FormsPinView.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::hymax.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::FormsPinView.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::hymax.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_divider = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_Layout = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::FormsPinView.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::hymax.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::FormsPinView.Droid.Resource.Styleable.ListPopupWindow = global::hymax.Droid.Resource.Styleable.ListPopupWindow;
+			global::FormsPinView.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::hymax.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::FormsPinView.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::hymax.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::FormsPinView.Droid.Resource.Styleable.MenuGroup = global::hymax.Droid.Resource.Styleable.MenuGroup;
+			global::FormsPinView.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior = global::hymax.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::FormsPinView.Droid.Resource.Styleable.MenuGroup_android_enabled = global::hymax.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::FormsPinView.Droid.Resource.Styleable.MenuGroup_android_id = global::hymax.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::FormsPinView.Droid.Resource.Styleable.MenuGroup_android_menuCategory = global::hymax.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::FormsPinView.Droid.Resource.Styleable.MenuGroup_android_orderInCategory = global::hymax.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::FormsPinView.Droid.Resource.Styleable.MenuGroup_android_visible = global::hymax.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem = global::hymax.Droid.Resource.Styleable.MenuItem;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_actionLayout = global::hymax.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_actionProviderClass = global::hymax.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_actionViewClass = global::hymax.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::hymax.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_checkable = global::hymax.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_checked = global::hymax.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_enabled = global::hymax.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_icon = global::hymax.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_id = global::hymax.Droid.Resource.Styleable.MenuItem_android_id;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_menuCategory = global::hymax.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_numericShortcut = global::hymax.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_onClick = global::hymax.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_orderInCategory = global::hymax.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_title = global::hymax.Droid.Resource.Styleable.MenuItem_android_title;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_titleCondensed = global::hymax.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_android_visible = global::hymax.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::FormsPinView.Droid.Resource.Styleable.MenuItem_showAsAction = global::hymax.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::FormsPinView.Droid.Resource.Styleable.MenuView = global::hymax.Droid.Resource.Styleable.MenuView;
+			global::FormsPinView.Droid.Resource.Styleable.MenuView_android_headerBackground = global::hymax.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::FormsPinView.Droid.Resource.Styleable.MenuView_android_horizontalDivider = global::hymax.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::FormsPinView.Droid.Resource.Styleable.MenuView_android_itemBackground = global::hymax.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::FormsPinView.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::hymax.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::FormsPinView.Droid.Resource.Styleable.MenuView_android_itemTextAppearance = global::hymax.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.MenuView_android_verticalDivider = global::hymax.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::FormsPinView.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle = global::hymax.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::FormsPinView.Droid.Resource.Styleable.MenuView_preserveIconSpacing = global::hymax.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::FormsPinView.Droid.Resource.Styleable.NavigationView = global::hymax.Droid.Resource.Styleable.NavigationView;
+			global::FormsPinView.Droid.Resource.Styleable.NavigationView_android_background = global::hymax.Droid.Resource.Styleable.NavigationView_android_background;
+			global::FormsPinView.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::hymax.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::FormsPinView.Droid.Resource.Styleable.NavigationView_android_maxWidth = global::hymax.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::FormsPinView.Droid.Resource.Styleable.NavigationView_elevation = global::hymax.Droid.Resource.Styleable.NavigationView_elevation;
+			global::FormsPinView.Droid.Resource.Styleable.NavigationView_headerLayout = global::hymax.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::FormsPinView.Droid.Resource.Styleable.NavigationView_itemBackground = global::hymax.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::FormsPinView.Droid.Resource.Styleable.NavigationView_itemIconTint = global::hymax.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::FormsPinView.Droid.Resource.Styleable.NavigationView_itemTextAppearance = global::hymax.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.NavigationView_itemTextColor = global::hymax.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::FormsPinView.Droid.Resource.Styleable.NavigationView_menu = global::hymax.Droid.Resource.Styleable.NavigationView_menu;
+			global::FormsPinView.Droid.Resource.Styleable.PopupWindow = global::hymax.Droid.Resource.Styleable.PopupWindow;
+			global::FormsPinView.Droid.Resource.Styleable.PopupWindow_android_popupBackground = global::hymax.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::FormsPinView.Droid.Resource.Styleable.PopupWindow_overlapAnchor = global::hymax.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::FormsPinView.Droid.Resource.Styleable.PopupWindowBackgroundState = global::hymax.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::FormsPinView.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::hymax.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::FormsPinView.Droid.Resource.Styleable.RecyclerView = global::hymax.Droid.Resource.Styleable.RecyclerView;
+			global::FormsPinView.Droid.Resource.Styleable.RecyclerView_android_orientation = global::hymax.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::FormsPinView.Droid.Resource.Styleable.RecyclerView_layoutManager = global::hymax.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::FormsPinView.Droid.Resource.Styleable.RecyclerView_reverseLayout = global::hymax.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::FormsPinView.Droid.Resource.Styleable.RecyclerView_spanCount = global::hymax.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::FormsPinView.Droid.Resource.Styleable.RecyclerView_stackFromEnd = global::hymax.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::FormsPinView.Droid.Resource.Styleable.ScrimInsetsFrameLayout = global::hymax.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::FormsPinView.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::hymax.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView = global::hymax.Droid.Resource.Styleable.SearchView;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_android_focusable = global::hymax.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_android_imeOptions = global::hymax.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_android_inputType = global::hymax.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_android_maxWidth = global::hymax.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_closeIcon = global::hymax.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_commitIcon = global::hymax.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_defaultQueryHint = global::hymax.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_goIcon = global::hymax.Droid.Resource.Styleable.SearchView_goIcon;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_iconifiedByDefault = global::hymax.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_layout = global::hymax.Droid.Resource.Styleable.SearchView_layout;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_queryBackground = global::hymax.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_queryHint = global::hymax.Droid.Resource.Styleable.SearchView_queryHint;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_searchHintIcon = global::hymax.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_searchIcon = global::hymax.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_submitBackground = global::hymax.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_suggestionRowLayout = global::hymax.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::FormsPinView.Droid.Resource.Styleable.SearchView_voiceIcon = global::hymax.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::FormsPinView.Droid.Resource.Styleable.SnackbarLayout = global::hymax.Droid.Resource.Styleable.SnackbarLayout;
+			global::FormsPinView.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth = global::hymax.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::FormsPinView.Droid.Resource.Styleable.SnackbarLayout_elevation = global::hymax.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::FormsPinView.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::hymax.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::FormsPinView.Droid.Resource.Styleable.Spinner = global::hymax.Droid.Resource.Styleable.Spinner;
+			global::FormsPinView.Droid.Resource.Styleable.Spinner_android_dropDownWidth = global::hymax.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::FormsPinView.Droid.Resource.Styleable.Spinner_android_entries = global::hymax.Droid.Resource.Styleable.Spinner_android_entries;
+			global::FormsPinView.Droid.Resource.Styleable.Spinner_android_popupBackground = global::hymax.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::FormsPinView.Droid.Resource.Styleable.Spinner_android_prompt = global::hymax.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::FormsPinView.Droid.Resource.Styleable.Spinner_popupTheme = global::hymax.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::FormsPinView.Droid.Resource.Styleable.SwitchCompat = global::hymax.Droid.Resource.Styleable.SwitchCompat;
+			global::FormsPinView.Droid.Resource.Styleable.SwitchCompat_android_textOff = global::hymax.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::FormsPinView.Droid.Resource.Styleable.SwitchCompat_android_textOn = global::hymax.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::FormsPinView.Droid.Resource.Styleable.SwitchCompat_android_thumb = global::hymax.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::FormsPinView.Droid.Resource.Styleable.SwitchCompat_showText = global::hymax.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::FormsPinView.Droid.Resource.Styleable.SwitchCompat_splitTrack = global::hymax.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::FormsPinView.Droid.Resource.Styleable.SwitchCompat_switchMinWidth = global::hymax.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::FormsPinView.Droid.Resource.Styleable.SwitchCompat_switchPadding = global::hymax.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::FormsPinView.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance = global::hymax.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding = global::hymax.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::FormsPinView.Droid.Resource.Styleable.SwitchCompat_track = global::hymax.Droid.Resource.Styleable.SwitchCompat_track;
+			global::FormsPinView.Droid.Resource.Styleable.TabItem = global::hymax.Droid.Resource.Styleable.TabItem;
+			global::FormsPinView.Droid.Resource.Styleable.TabItem_android_icon = global::hymax.Droid.Resource.Styleable.TabItem_android_icon;
+			global::FormsPinView.Droid.Resource.Styleable.TabItem_android_layout = global::hymax.Droid.Resource.Styleable.TabItem_android_layout;
+			global::FormsPinView.Droid.Resource.Styleable.TabItem_android_text = global::hymax.Droid.Resource.Styleable.TabItem_android_text;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout = global::hymax.Droid.Resource.Styleable.TabLayout;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabBackground = global::hymax.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabContentStart = global::hymax.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabGravity = global::hymax.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabIndicatorColor = global::hymax.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight = global::hymax.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabMaxWidth = global::hymax.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabMinWidth = global::hymax.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabMode = global::hymax.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabPadding = global::hymax.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabPaddingBottom = global::hymax.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabPaddingEnd = global::hymax.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabPaddingStart = global::hymax.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabPaddingTop = global::hymax.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor = global::hymax.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabTextAppearance = global::hymax.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.TabLayout_tabTextColor = global::hymax.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::FormsPinView.Droid.Resource.Styleable.TextAppearance = global::hymax.Droid.Resource.Styleable.TextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.TextAppearance_android_shadowColor = global::hymax.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::FormsPinView.Droid.Resource.Styleable.TextAppearance_android_shadowDx = global::hymax.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::FormsPinView.Droid.Resource.Styleable.TextAppearance_android_shadowDy = global::hymax.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::FormsPinView.Droid.Resource.Styleable.TextAppearance_android_shadowRadius = global::hymax.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::FormsPinView.Droid.Resource.Styleable.TextAppearance_android_textColor = global::hymax.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::FormsPinView.Droid.Resource.Styleable.TextAppearance_android_textSize = global::hymax.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::FormsPinView.Droid.Resource.Styleable.TextAppearance_android_textStyle = global::hymax.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::FormsPinView.Droid.Resource.Styleable.TextAppearance_android_typeface = global::hymax.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::FormsPinView.Droid.Resource.Styleable.TextAppearance_textAllCaps = global::hymax.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout = global::hymax.Droid.Resource.Styleable.TextInputLayout;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout_android_hint = global::hymax.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout_android_textColorHint = global::hymax.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout_counterEnabled = global::hymax.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout_counterMaxLength = global::hymax.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::hymax.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance = global::hymax.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout_errorEnabled = global::hymax.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance = global::hymax.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::hymax.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout_hintEnabled = global::hymax.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::FormsPinView.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance = global::hymax.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar = global::hymax.Droid.Resource.Styleable.Toolbar;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_android_gravity = global::hymax.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_android_minHeight = global::hymax.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_collapseContentDescription = global::hymax.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_collapseIcon = global::hymax.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_contentInsetEnd = global::hymax.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_contentInsetLeft = global::hymax.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_contentInsetRight = global::hymax.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_contentInsetStart = global::hymax.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_logo = global::hymax.Droid.Resource.Styleable.Toolbar_logo;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_logoDescription = global::hymax.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_maxButtonHeight = global::hymax.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_navigationContentDescription = global::hymax.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_navigationIcon = global::hymax.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_popupTheme = global::hymax.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_subtitle = global::hymax.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance = global::hymax.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_subtitleTextColor = global::hymax.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_title = global::hymax.Droid.Resource.Styleable.Toolbar_title;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_titleMarginBottom = global::hymax.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_titleMarginEnd = global::hymax.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_titleMarginStart = global::hymax.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_titleMarginTop = global::hymax.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_titleMargins = global::hymax.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_titleTextAppearance = global::hymax.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::FormsPinView.Droid.Resource.Styleable.Toolbar_titleTextColor = global::hymax.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::FormsPinView.Droid.Resource.Styleable.View = global::hymax.Droid.Resource.Styleable.View;
+			global::FormsPinView.Droid.Resource.Styleable.View_android_focusable = global::hymax.Droid.Resource.Styleable.View_android_focusable;
+			global::FormsPinView.Droid.Resource.Styleable.View_android_theme = global::hymax.Droid.Resource.Styleable.View_android_theme;
+			global::FormsPinView.Droid.Resource.Styleable.View_paddingEnd = global::hymax.Droid.Resource.Styleable.View_paddingEnd;
+			global::FormsPinView.Droid.Resource.Styleable.View_paddingStart = global::hymax.Droid.Resource.Styleable.View_paddingStart;
+			global::FormsPinView.Droid.Resource.Styleable.View_theme = global::hymax.Droid.Resource.Styleable.View_theme;
+			global::FormsPinView.Droid.Resource.Styleable.ViewBackgroundHelper = global::hymax.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::FormsPinView.Droid.Resource.Styleable.ViewBackgroundHelper_android_background = global::hymax.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::FormsPinView.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::hymax.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::FormsPinView.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::hymax.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::FormsPinView.Droid.Resource.Styleable.ViewStubCompat = global::hymax.Droid.Resource.Styleable.ViewStubCompat;
+			global::FormsPinView.Droid.Resource.Styleable.ViewStubCompat_android_id = global::hymax.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::FormsPinView.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::hymax.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::FormsPinView.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::hymax.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Plugin.Fingerprint.Resource.Attribute.alpha = global::hymax.Droid.Resource.Attribute.alpha;
 			global::Plugin.Fingerprint.Resource.Attribute.font = global::hymax.Droid.Resource.Attribute.font;
 			global::Plugin.Fingerprint.Resource.Attribute.fontProviderAuthority = global::hymax.Droid.Resource.Attribute.fontProviderAuthority;
@@ -18746,331 +20276,340 @@ namespace hymax.Droid
 			public const int battery = 2131230814;
 			
 			// aapt resource value: 0x7F08005F
-			public const int btn_checkbox_checked_mtrl = 2131230815;
+			public const int bkg_roundedview = 2131230815;
 			
 			// aapt resource value: 0x7F080060
-			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131230816;
+			public const int btn_checkbox_checked_mtrl = 2131230816;
 			
 			// aapt resource value: 0x7F080061
-			public const int btn_checkbox_unchecked_mtrl = 2131230817;
+			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131230817;
 			
 			// aapt resource value: 0x7F080062
-			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131230818;
+			public const int btn_checkbox_unchecked_mtrl = 2131230818;
 			
 			// aapt resource value: 0x7F080063
-			public const int btn_radio_off_mtrl = 2131230819;
+			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131230819;
 			
 			// aapt resource value: 0x7F080064
-			public const int btn_radio_off_to_on_mtrl_animation = 2131230820;
+			public const int btn_radio_off_mtrl = 2131230820;
 			
 			// aapt resource value: 0x7F080065
-			public const int btn_radio_on_mtrl = 2131230821;
+			public const int btn_radio_off_to_on_mtrl_animation = 2131230821;
 			
 			// aapt resource value: 0x7F080066
-			public const int btn_radio_on_to_off_mtrl_animation = 2131230822;
+			public const int btn_radio_on_mtrl = 2131230822;
 			
 			// aapt resource value: 0x7F080067
-			public const int car = 2131230823;
+			public const int btn_radio_on_to_off_mtrl_animation = 2131230823;
 			
 			// aapt resource value: 0x7F080068
-			public const int car1 = 2131230824;
+			public const int car = 2131230824;
 			
 			// aapt resource value: 0x7F080069
-			public const int carkey = 2131230825;
+			public const int car1 = 2131230825;
 			
 			// aapt resource value: 0x7F08006A
-			public const int caroff = 2131230826;
+			public const int carkey = 2131230826;
 			
 			// aapt resource value: 0x7F08006B
-			public const int caron = 2131230827;
+			public const int caroff = 2131230827;
 			
 			// aapt resource value: 0x7F08006C
-			public const int catalog = 2131230828;
+			public const int caron = 2131230828;
 			
 			// aapt resource value: 0x7F08006D
-			public const int children = 2131230829;
+			public const int catalog = 2131230829;
 			
 			// aapt resource value: 0x7F08006E
-			public const int common_full_open_on_phone = 2131230830;
+			public const int children = 2131230830;
 			
 			// aapt resource value: 0x7F08006F
-			public const int common_google_signin_btn_icon_dark = 2131230831;
+			public const int common_full_open_on_phone = 2131230831;
 			
 			// aapt resource value: 0x7F080070
-			public const int common_google_signin_btn_icon_dark_focused = 2131230832;
+			public const int common_google_signin_btn_icon_dark = 2131230832;
 			
 			// aapt resource value: 0x7F080071
-			public const int common_google_signin_btn_icon_dark_normal = 2131230833;
+			public const int common_google_signin_btn_icon_dark_focused = 2131230833;
 			
 			// aapt resource value: 0x7F080072
-			public const int common_google_signin_btn_icon_dark_normal_background = 2131230834;
+			public const int common_google_signin_btn_icon_dark_normal = 2131230834;
 			
 			// aapt resource value: 0x7F080073
-			public const int common_google_signin_btn_icon_disabled = 2131230835;
+			public const int common_google_signin_btn_icon_dark_normal_background = 2131230835;
 			
 			// aapt resource value: 0x7F080074
-			public const int common_google_signin_btn_icon_light = 2131230836;
+			public const int common_google_signin_btn_icon_disabled = 2131230836;
 			
 			// aapt resource value: 0x7F080075
-			public const int common_google_signin_btn_icon_light_focused = 2131230837;
+			public const int common_google_signin_btn_icon_light = 2131230837;
 			
 			// aapt resource value: 0x7F080076
-			public const int common_google_signin_btn_icon_light_normal = 2131230838;
+			public const int common_google_signin_btn_icon_light_focused = 2131230838;
 			
 			// aapt resource value: 0x7F080077
-			public const int common_google_signin_btn_icon_light_normal_background = 2131230839;
+			public const int common_google_signin_btn_icon_light_normal = 2131230839;
 			
 			// aapt resource value: 0x7F080078
-			public const int common_google_signin_btn_text_dark = 2131230840;
+			public const int common_google_signin_btn_icon_light_normal_background = 2131230840;
 			
 			// aapt resource value: 0x7F080079
-			public const int common_google_signin_btn_text_dark_focused = 2131230841;
+			public const int common_google_signin_btn_text_dark = 2131230841;
 			
 			// aapt resource value: 0x7F08007A
-			public const int common_google_signin_btn_text_dark_normal = 2131230842;
+			public const int common_google_signin_btn_text_dark_focused = 2131230842;
 			
 			// aapt resource value: 0x7F08007B
-			public const int common_google_signin_btn_text_dark_normal_background = 2131230843;
+			public const int common_google_signin_btn_text_dark_normal = 2131230843;
 			
 			// aapt resource value: 0x7F08007C
-			public const int common_google_signin_btn_text_disabled = 2131230844;
+			public const int common_google_signin_btn_text_dark_normal_background = 2131230844;
 			
 			// aapt resource value: 0x7F08007D
-			public const int common_google_signin_btn_text_light = 2131230845;
+			public const int common_google_signin_btn_text_disabled = 2131230845;
 			
 			// aapt resource value: 0x7F08007E
-			public const int common_google_signin_btn_text_light_focused = 2131230846;
+			public const int common_google_signin_btn_text_light = 2131230846;
 			
 			// aapt resource value: 0x7F08007F
-			public const int common_google_signin_btn_text_light_normal = 2131230847;
+			public const int common_google_signin_btn_text_light_focused = 2131230847;
 			
 			// aapt resource value: 0x7F080080
-			public const int common_google_signin_btn_text_light_normal_background = 2131230848;
+			public const int common_google_signin_btn_text_light_normal = 2131230848;
 			
 			// aapt resource value: 0x7F080081
-			public const int design_bottom_navigation_item_background = 2131230849;
+			public const int common_google_signin_btn_text_light_normal_background = 2131230849;
 			
 			// aapt resource value: 0x7F080082
-			public const int design_fab_background = 2131230850;
+			public const int design_bottom_navigation_item_background = 2131230850;
 			
 			// aapt resource value: 0x7F080083
-			public const int design_ic_visibility = 2131230851;
+			public const int design_fab_background = 2131230851;
 			
 			// aapt resource value: 0x7F080084
-			public const int design_ic_visibility_off = 2131230852;
+			public const int design_ic_visibility = 2131230852;
 			
 			// aapt resource value: 0x7F080085
-			public const int design_password_eye = 2131230853;
+			public const int design_ic_visibility_off = 2131230853;
 			
 			// aapt resource value: 0x7F080086
-			public const int design_snackbar_background = 2131230854;
+			public const int design_password_eye = 2131230854;
 			
 			// aapt resource value: 0x7F080087
-			public const int ear = 2131230855;
+			public const int design_snackbar_background = 2131230855;
 			
 			// aapt resource value: 0x7F080088
-			public const int fingerprint_dialog_error = 2131230856;
+			public const int ear = 2131230856;
 			
 			// aapt resource value: 0x7F080089
-			public const int fingerprint_dialog_fp_icon = 2131230857;
+			public const int fingerprint_dialog_error = 2131230857;
 			
 			// aapt resource value: 0x7F08008A
-			public const int googleg_disabled_color_18 = 2131230858;
+			public const int fingerprint_dialog_fp_icon = 2131230858;
 			
 			// aapt resource value: 0x7F08008B
-			public const int googleg_standard_color_18 = 2131230859;
+			public const int googleg_disabled_color_18 = 2131230859;
 			
 			// aapt resource value: 0x7F08008C
-			public const int gsm = 2131230860;
+			public const int googleg_standard_color_18 = 2131230860;
 			
 			// aapt resource value: 0x7F08008D
-			public const int headlight = 2131230861;
+			public const int gsm = 2131230861;
 			
 			// aapt resource value: 0x7F08008E
-			public const int help = 2131230862;
+			public const int headlight = 2131230862;
 			
 			// aapt resource value: 0x7F08008F
-			public const int ic_arrow_down_24dp = 2131230863;
+			public const int help = 2131230863;
 			
 			// aapt resource value: 0x7F080090
-			public const int ic_mtrl_checked_circle = 2131230864;
+			public const int ic_arrow_down_24dp = 2131230864;
 			
 			// aapt resource value: 0x7F080091
-			public const int ic_mtrl_chip_checked_black = 2131230865;
+			public const int ic_mtrl_checked_circle = 2131230865;
 			
 			// aapt resource value: 0x7F080092
-			public const int ic_mtrl_chip_checked_circle = 2131230866;
+			public const int ic_mtrl_chip_checked_black = 2131230866;
 			
 			// aapt resource value: 0x7F080093
-			public const int ic_mtrl_chip_close_circle = 2131230867;
+			public const int ic_mtrl_chip_checked_circle = 2131230867;
 			
 			// aapt resource value: 0x7F080094
-			public const int info = 2131230868;
+			public const int ic_mtrl_chip_close_circle = 2131230868;
 			
 			// aapt resource value: 0x7F080095
-			public const int logodark = 2131230869;
+			public const int img_circle = 2131230869;
 			
 			// aapt resource value: 0x7F080096
-			public const int logowhite = 2131230870;
+			public const int img_circle_filled = 2131230870;
 			
 			// aapt resource value: 0x7F080097
-			public const int material_ic_calendar_black_24dp = 2131230871;
+			public const int info = 2131230871;
 			
 			// aapt resource value: 0x7F080098
-			public const int material_ic_clear_black_24dp = 2131230872;
+			public const int logodark = 2131230872;
 			
 			// aapt resource value: 0x7F080099
-			public const int material_ic_edit_black_24dp = 2131230873;
+			public const int logowhite = 2131230873;
 			
 			// aapt resource value: 0x7F08009A
-			public const int material_ic_keyboard_arrow_left_black_24dp = 2131230874;
+			public const int material_ic_calendar_black_24dp = 2131230874;
 			
 			// aapt resource value: 0x7F08009B
-			public const int material_ic_keyboard_arrow_right_black_24dp = 2131230875;
+			public const int material_ic_clear_black_24dp = 2131230875;
 			
 			// aapt resource value: 0x7F08009C
-			public const int material_ic_menu_arrow_down_black_24dp = 2131230876;
+			public const int material_ic_edit_black_24dp = 2131230876;
 			
 			// aapt resource value: 0x7F08009D
-			public const int material_ic_menu_arrow_up_black_24dp = 2131230877;
+			public const int material_ic_keyboard_arrow_left_black_24dp = 2131230877;
 			
 			// aapt resource value: 0x7F08009E
-			public const int menu = 2131230878;
+			public const int material_ic_keyboard_arrow_right_black_24dp = 2131230878;
 			
 			// aapt resource value: 0x7F08009F
-			public const int menu_car = 2131230879;
+			public const int material_ic_menu_arrow_down_black_24dp = 2131230879;
 			
 			// aapt resource value: 0x7F0800A0
-			public const int menu_more = 2131230880;
+			public const int material_ic_menu_arrow_up_black_24dp = 2131230880;
 			
 			// aapt resource value: 0x7F0800A1
-			public const int menu_report = 2131230881;
+			public const int menu = 2131230881;
 			
 			// aapt resource value: 0x7F0800A2
-			public const int menu_round = 2131230882;
+			public const int menu_car = 2131230882;
 			
 			// aapt resource value: 0x7F0800A3
-			public const int menu_settings = 2131230883;
+			public const int menu_more = 2131230883;
 			
 			// aapt resource value: 0x7F0800A4
-			public const int mtrl_dialog_background = 2131230884;
+			public const int menu_report = 2131230884;
 			
 			// aapt resource value: 0x7F0800A5
-			public const int mtrl_dropdown_arrow = 2131230885;
+			public const int menu_round = 2131230885;
 			
 			// aapt resource value: 0x7F0800A6
-			public const int mtrl_ic_arrow_drop_down = 2131230886;
+			public const int menu_settings = 2131230886;
 			
 			// aapt resource value: 0x7F0800A7
-			public const int mtrl_ic_arrow_drop_up = 2131230887;
+			public const int mtrl_dialog_background = 2131230887;
 			
 			// aapt resource value: 0x7F0800A8
-			public const int mtrl_ic_cancel = 2131230888;
+			public const int mtrl_dropdown_arrow = 2131230888;
 			
 			// aapt resource value: 0x7F0800A9
-			public const int mtrl_ic_error = 2131230889;
+			public const int mtrl_ic_arrow_drop_down = 2131230889;
 			
 			// aapt resource value: 0x7F0800AA
-			public const int mtrl_popupmenu_background = 2131230890;
+			public const int mtrl_ic_arrow_drop_up = 2131230890;
 			
 			// aapt resource value: 0x7F0800AB
-			public const int mtrl_popupmenu_background_dark = 2131230891;
+			public const int mtrl_ic_cancel = 2131230891;
 			
 			// aapt resource value: 0x7F0800AC
-			public const int mtrl_tabs_default_indicator = 2131230892;
+			public const int mtrl_ic_error = 2131230892;
 			
 			// aapt resource value: 0x7F0800AD
-			public const int navigation_empty_icon = 2131230893;
+			public const int mtrl_popupmenu_background = 2131230893;
 			
 			// aapt resource value: 0x7F0800AE
-			public const int notification_action_background = 2131230894;
+			public const int mtrl_popupmenu_background_dark = 2131230894;
 			
 			// aapt resource value: 0x7F0800AF
-			public const int notification_bg = 2131230895;
+			public const int mtrl_tabs_default_indicator = 2131230895;
 			
 			// aapt resource value: 0x7F0800B0
-			public const int notification_bg_low = 2131230896;
+			public const int navigation_empty_icon = 2131230896;
 			
 			// aapt resource value: 0x7F0800B1
-			public const int notification_bg_low_normal = 2131230897;
+			public const int notification_action_background = 2131230897;
 			
 			// aapt resource value: 0x7F0800B2
-			public const int notification_bg_low_pressed = 2131230898;
+			public const int notification_bg = 2131230898;
 			
 			// aapt resource value: 0x7F0800B3
-			public const int notification_bg_normal = 2131230899;
+			public const int notification_bg_low = 2131230899;
 			
 			// aapt resource value: 0x7F0800B4
-			public const int notification_bg_normal_pressed = 2131230900;
+			public const int notification_bg_low_normal = 2131230900;
 			
 			// aapt resource value: 0x7F0800B5
-			public const int notification_icon_background = 2131230901;
+			public const int notification_bg_low_pressed = 2131230901;
 			
 			// aapt resource value: 0x7F0800B6
-			public const int notification_template_icon_bg = 2131230902;
+			public const int notification_bg_normal = 2131230902;
 			
 			// aapt resource value: 0x7F0800B7
-			public const int notification_template_icon_low_bg = 2131230903;
+			public const int notification_bg_normal_pressed = 2131230903;
 			
 			// aapt resource value: 0x7F0800B8
-			public const int notification_tile_bg = 2131230904;
+			public const int notification_icon_background = 2131230904;
 			
 			// aapt resource value: 0x7F0800B9
-			public const int notify_panel_notification_icon_bg = 2131230905;
+			public const int notification_template_icon_bg = 2131230905;
 			
 			// aapt resource value: 0x7F0800BA
-			public const int padlock = 2131230906;
+			public const int notification_template_icon_low_bg = 2131230906;
 			
 			// aapt resource value: 0x7F0800BB
-			public const int panel1 = 2131230907;
+			public const int notification_tile_bg = 2131230907;
 			
 			// aapt resource value: 0x7F0800BC
-			public const int preference_list_divider_material = 2131230908;
+			public const int notify_panel_notification_icon_bg = 2131230908;
 			
 			// aapt resource value: 0x7F0800BD
-			public const int satellite = 2131230909;
+			public const int padlock = 2131230909;
 			
 			// aapt resource value: 0x7F0800BE
-			public const int speedometer = 2131230910;
+			public const int panel1 = 2131230910;
 			
 			// aapt resource value: 0x7F0800BF
-			public const int stop = 2131230911;
-			
-			// aapt resource value: 0x7F0800C1
-			public const int testing = 2131230913;
+			public const int preference_list_divider_material = 2131230911;
 			
 			// aapt resource value: 0x7F0800C0
-			public const int test_custom_background = 2131230912;
+			public const int satellite = 2131230912;
+			
+			// aapt resource value: 0x7F0800C1
+			public const int speedometer = 2131230913;
 			
 			// aapt resource value: 0x7F0800C2
-			public const int tooltip_frame_dark = 2131230914;
-			
-			// aapt resource value: 0x7F0800C3
-			public const int tooltip_frame_light = 2131230915;
+			public const int stop = 2131230914;
 			
 			// aapt resource value: 0x7F0800C4
-			public const int trunkopen = 2131230916;
+			public const int testing = 2131230916;
+			
+			// aapt resource value: 0x7F0800C3
+			public const int test_custom_background = 2131230915;
 			
 			// aapt resource value: 0x7F0800C5
-			public const int unlock = 2131230917;
+			public const int tooltip_frame_dark = 2131230917;
 			
 			// aapt resource value: 0x7F0800C6
-			public const int user = 2131230918;
+			public const int tooltip_frame_light = 2131230918;
 			
 			// aapt resource value: 0x7F0800C7
-			public const int volume = 2131230919;
+			public const int trunkopen = 2131230919;
 			
 			// aapt resource value: 0x7F0800C8
-			public const int welcome1 = 2131230920;
+			public const int unlock = 2131230920;
 			
 			// aapt resource value: 0x7F0800C9
-			public const int welcome2 = 2131230921;
+			public const int user = 2131230921;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int welcome3 = 2131230922;
+			public const int volume = 2131230922;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int www = 2131230923;
+			public const int welcome1 = 2131230923;
+			
+			// aapt resource value: 0x7F0800CC
+			public const int welcome2 = 2131230924;
+			
+			// aapt resource value: 0x7F0800CD
+			public const int welcome3 = 2131230925;
+			
+			// aapt resource value: 0x7F0800CE
+			public const int www = 2131230926;
 			
 			static Drawable()
 			{
@@ -20937,160 +22476,163 @@ namespace hymax.Droid
 			public const int item_view_role_description = 2131689547;
 			
 			// aapt resource value: 0x7F0F004C
-			public const int material_slider_range_end = 2131689548;
+			public const int library_name = 2131689548;
 			
 			// aapt resource value: 0x7F0F004D
-			public const int material_slider_range_start = 2131689549;
+			public const int material_slider_range_end = 2131689549;
 			
 			// aapt resource value: 0x7F0F004E
-			public const int mtrl_badge_numberless_content_description = 2131689550;
+			public const int material_slider_range_start = 2131689550;
 			
 			// aapt resource value: 0x7F0F004F
-			public const int mtrl_chip_close_icon_content_description = 2131689551;
+			public const int mtrl_badge_numberless_content_description = 2131689551;
 			
 			// aapt resource value: 0x7F0F0050
-			public const int mtrl_exceed_max_badge_number_content_description = 2131689552;
+			public const int mtrl_chip_close_icon_content_description = 2131689552;
 			
 			// aapt resource value: 0x7F0F0051
-			public const int mtrl_exceed_max_badge_number_suffix = 2131689553;
+			public const int mtrl_exceed_max_badge_number_content_description = 2131689553;
 			
 			// aapt resource value: 0x7F0F0052
-			public const int mtrl_picker_a11y_next_month = 2131689554;
+			public const int mtrl_exceed_max_badge_number_suffix = 2131689554;
 			
 			// aapt resource value: 0x7F0F0053
-			public const int mtrl_picker_a11y_prev_month = 2131689555;
+			public const int mtrl_picker_a11y_next_month = 2131689555;
 			
 			// aapt resource value: 0x7F0F0054
-			public const int mtrl_picker_announce_current_selection = 2131689556;
+			public const int mtrl_picker_a11y_prev_month = 2131689556;
 			
 			// aapt resource value: 0x7F0F0055
-			public const int mtrl_picker_cancel = 2131689557;
+			public const int mtrl_picker_announce_current_selection = 2131689557;
 			
 			// aapt resource value: 0x7F0F0056
-			public const int mtrl_picker_confirm = 2131689558;
+			public const int mtrl_picker_cancel = 2131689558;
 			
 			// aapt resource value: 0x7F0F0057
-			public const int mtrl_picker_date_header_selected = 2131689559;
+			public const int mtrl_picker_confirm = 2131689559;
 			
 			// aapt resource value: 0x7F0F0058
-			public const int mtrl_picker_date_header_title = 2131689560;
+			public const int mtrl_picker_date_header_selected = 2131689560;
 			
 			// aapt resource value: 0x7F0F0059
-			public const int mtrl_picker_date_header_unselected = 2131689561;
+			public const int mtrl_picker_date_header_title = 2131689561;
 			
 			// aapt resource value: 0x7F0F005A
-			public const int mtrl_picker_day_of_week_column_header = 2131689562;
+			public const int mtrl_picker_date_header_unselected = 2131689562;
 			
 			// aapt resource value: 0x7F0F005B
-			public const int mtrl_picker_invalid_format = 2131689563;
+			public const int mtrl_picker_day_of_week_column_header = 2131689563;
 			
 			// aapt resource value: 0x7F0F005C
-			public const int mtrl_picker_invalid_format_example = 2131689564;
+			public const int mtrl_picker_invalid_format = 2131689564;
 			
 			// aapt resource value: 0x7F0F005D
-			public const int mtrl_picker_invalid_format_use = 2131689565;
+			public const int mtrl_picker_invalid_format_example = 2131689565;
 			
 			// aapt resource value: 0x7F0F005E
-			public const int mtrl_picker_invalid_range = 2131689566;
+			public const int mtrl_picker_invalid_format_use = 2131689566;
 			
 			// aapt resource value: 0x7F0F005F
-			public const int mtrl_picker_navigate_to_year_description = 2131689567;
+			public const int mtrl_picker_invalid_range = 2131689567;
 			
 			// aapt resource value: 0x7F0F0060
-			public const int mtrl_picker_out_of_range = 2131689568;
+			public const int mtrl_picker_navigate_to_year_description = 2131689568;
 			
 			// aapt resource value: 0x7F0F0061
-			public const int mtrl_picker_range_header_only_end_selected = 2131689569;
+			public const int mtrl_picker_out_of_range = 2131689569;
 			
 			// aapt resource value: 0x7F0F0062
-			public const int mtrl_picker_range_header_only_start_selected = 2131689570;
+			public const int mtrl_picker_range_header_only_end_selected = 2131689570;
 			
 			// aapt resource value: 0x7F0F0063
-			public const int mtrl_picker_range_header_selected = 2131689571;
+			public const int mtrl_picker_range_header_only_start_selected = 2131689571;
 			
 			// aapt resource value: 0x7F0F0064
-			public const int mtrl_picker_range_header_title = 2131689572;
+			public const int mtrl_picker_range_header_selected = 2131689572;
 			
 			// aapt resource value: 0x7F0F0065
-			public const int mtrl_picker_range_header_unselected = 2131689573;
+			public const int mtrl_picker_range_header_title = 2131689573;
 			
 			// aapt resource value: 0x7F0F0066
-			public const int mtrl_picker_save = 2131689574;
+			public const int mtrl_picker_range_header_unselected = 2131689574;
 			
 			// aapt resource value: 0x7F0F0067
-			public const int mtrl_picker_text_input_date_hint = 2131689575;
+			public const int mtrl_picker_save = 2131689575;
 			
 			// aapt resource value: 0x7F0F0068
-			public const int mtrl_picker_text_input_date_range_end_hint = 2131689576;
+			public const int mtrl_picker_text_input_date_hint = 2131689576;
 			
 			// aapt resource value: 0x7F0F0069
-			public const int mtrl_picker_text_input_date_range_start_hint = 2131689577;
+			public const int mtrl_picker_text_input_date_range_end_hint = 2131689577;
 			
 			// aapt resource value: 0x7F0F006A
-			public const int mtrl_picker_text_input_day_abbr = 2131689578;
+			public const int mtrl_picker_text_input_date_range_start_hint = 2131689578;
 			
 			// aapt resource value: 0x7F0F006B
-			public const int mtrl_picker_text_input_month_abbr = 2131689579;
+			public const int mtrl_picker_text_input_day_abbr = 2131689579;
 			
 			// aapt resource value: 0x7F0F006C
-			public const int mtrl_picker_text_input_year_abbr = 2131689580;
+			public const int mtrl_picker_text_input_month_abbr = 2131689580;
 			
 			// aapt resource value: 0x7F0F006D
-			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131689581;
+			public const int mtrl_picker_text_input_year_abbr = 2131689581;
 			
 			// aapt resource value: 0x7F0F006E
-			public const int mtrl_picker_toggle_to_day_selection = 2131689582;
+			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131689582;
 			
 			// aapt resource value: 0x7F0F006F
-			public const int mtrl_picker_toggle_to_text_input_mode = 2131689583;
+			public const int mtrl_picker_toggle_to_day_selection = 2131689583;
 			
 			// aapt resource value: 0x7F0F0070
-			public const int mtrl_picker_toggle_to_year_selection = 2131689584;
+			public const int mtrl_picker_toggle_to_text_input_mode = 2131689584;
 			
 			// aapt resource value: 0x7F0F0071
-			public const int nav_app_bar_navigate_up_description = 2131689585;
+			public const int mtrl_picker_toggle_to_year_selection = 2131689585;
 			
 			// aapt resource value: 0x7F0F0072
-			public const int nav_app_bar_open_drawer_description = 2131689586;
+			public const int nav_app_bar_navigate_up_description = 2131689586;
 			
 			// aapt resource value: 0x7F0F0073
-			public const int not_set = 2131689587;
+			public const int nav_app_bar_open_drawer_description = 2131689587;
 			
 			// aapt resource value: 0x7F0F0074
-			public const int overflow_tab_title = 2131689588;
+			public const int not_set = 2131689588;
 			
 			// aapt resource value: 0x7F0F0075
-			public const int password_toggle_content_description = 2131689589;
+			public const int overflow_tab_title = 2131689589;
 			
 			// aapt resource value: 0x7F0F0076
-			public const int path_password_eye = 2131689590;
+			public const int password_toggle_content_description = 2131689590;
 			
 			// aapt resource value: 0x7F0F0077
-			public const int path_password_eye_mask_strike_through = 2131689591;
+			public const int path_password_eye = 2131689591;
 			
 			// aapt resource value: 0x7F0F0078
-			public const int path_password_eye_mask_visible = 2131689592;
+			public const int path_password_eye_mask_strike_through = 2131689592;
 			
 			// aapt resource value: 0x7F0F0079
-			public const int path_password_strike_through = 2131689593;
+			public const int path_password_eye_mask_visible = 2131689593;
 			
 			// aapt resource value: 0x7F0F007A
-			public const int preference_copied = 2131689594;
+			public const int path_password_strike_through = 2131689594;
 			
 			// aapt resource value: 0x7F0F007B
-			public const int search_menu_title = 2131689595;
+			public const int preference_copied = 2131689595;
 			
 			// aapt resource value: 0x7F0F007C
-			public const int status_bar_notification_info_overflow = 2131689596;
+			public const int search_menu_title = 2131689596;
 			
 			// aapt resource value: 0x7F0F007D
-			public const int summary_collapsed_preference_list = 2131689597;
+			public const int status_bar_notification_info_overflow = 2131689597;
 			
 			// aapt resource value: 0x7F0F007E
-			public const int v7_preference_off = 2131689598;
+			public const int summary_collapsed_preference_list = 2131689598;
 			
 			// aapt resource value: 0x7F0F007F
-			public const int v7_preference_on = 2131689599;
+			public const int v7_preference_off = 2131689599;
+			
+			// aapt resource value: 0x7F0F0080
+			public const int v7_preference_on = 2131689600;
 			
 			static String()
 			{

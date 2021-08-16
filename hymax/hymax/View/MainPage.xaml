@@ -169,8 +169,15 @@
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="2" >
-                        <ImageButton Source="satellite.xml" HeightRequest="34" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
-                        <Label HorizontalOptions="Center" Text="31%" />
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding LocationCommandClick}" />
+                        </StackLayout.GestureRecognizers>
+                        <ImageButton Source="satellite.xml" HeightRequest="34" Command="{Binding LocationCommandClick}" WidthRequest="34" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
+                        <Label HorizontalOptions="Center" Text="31%">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LocationCommandClick}" />
+                            </Label.GestureRecognizers>
+                        </Label>
                     </StackLayout>
 
                     <StackLayout Grid.Row="0" Grid.Column="3"> 
