@@ -294,6 +294,27 @@
   <data name="MainMoreButton" xml:space="preserve">
     <value>پیشرفته</value>
   </data>
+  <data name="MainPageChildLockButton" xml:space="preserve">
+    <value>قفل‌کودک</value>
+  </data>
+  <data name="MainPageForceStopButton" xml:space="preserve">
+    <value>توقف‌فوری</value>
+  </data>
+  <data name="MainPageLockButton" xml:space="preserve">
+    <value>بسته</value>
+  </data>
+  <data name="MainPageOpenButton" xml:space="preserve">
+    <value>باز</value>
+  </data>
+  <data name="MainPageOpenTrunkButton" xml:space="preserve">
+    <value>صندوق</value>
+  </data>
+  <data name="MainPagePanicButton" xml:space="preserve">
+    <value>خودرویاب</value>
+  </data>
+  <data name="MainPageWindowsButton" xml:space="preserve">
+    <value>بستن‌پنجره‌ها</value>
+  </data>
   <data name="MainReportButton" xml:space="preserve">
     <value>گزارش‌گیری</value>
   </data>

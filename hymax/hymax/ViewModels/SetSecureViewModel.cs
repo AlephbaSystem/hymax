@@ -56,8 +56,67 @@ namespace hymax.ViewModels
         }
         public async Task waitandgoPin()
         {
-        //xmlns: local = "clr-namespace:FormsPinView.Core;assembly=FormsPinView.Core"
+            await Task.Delay(100);
+            bool at = true;
 
+            if (at)
+            {
+                if (Settings.UserSetting[0].Welcome)
+                {
+                    await this.routingService.NavigateTo("login/welcome");
+                }
+                else
+                {
+                    this.routingService.MasterShell();
+                    await this.routingService.NavigateTo("///home");
+                }
+            }
+            else
+            {
+                await this.routingService.NavigateTo("login/securelogin");
+            }
+        }
+        public async Task waitandgoPassword()
+        {
+            await Task.Delay(100);
+            bool at = true;
+            if (at)
+            {
+                if (Settings.UserSetting[0].Welcome)
+                {
+                    await this.routingService.NavigateTo("login/welcome");
+                }
+                else
+                {
+                    this.routingService.MasterShell();
+                    await this.routingService.NavigateTo("///home");
+                }
+            }
+            else
+            {
+                await this.routingService.NavigateTo("login/securelogin");
+            }
+        }
+        public async Task waitandgoPattern()
+        {
+            await Task.Delay(100);
+            bool at = true;
+            if (at)
+            {
+                if (Settings.UserSetting[0].Welcome)
+                {
+                    await this.routingService.NavigateTo("login/welcome");
+                }
+                else
+                {
+                    this.routingService.MasterShell();
+                    await this.routingService.NavigateTo("///home");
+                }
+            }
+            else
+            {
+                await this.routingService.NavigateTo("login/securelogin");
+            }
         }
         public async Task waitandgoFingerprint()
         {
@@ -77,7 +136,8 @@ namespace hymax.ViewModels
                 if (Settings.UserSetting[0].Welcome)
                 {
                     await this.routingService.NavigateTo("login/welcome");
-                } else
+                }
+                else
                 {
                     this.routingService.MasterShell();
                     await this.routingService.NavigateTo("///home");

@@ -19,6 +19,37 @@ namespace hymax.ViewModels
         private readonly ICarsService carService;
         private ObservableCollection<CarsModel> _cars;
         private ResourceManager rs;
+
+        public string _BatteryVultag;
+        private string _GPSSignal;
+        public string GPSSignal
+        {
+            get => _GPSSignal;
+            set
+            {
+                if (_GPSSignal == value)
+                    return;
+                else
+                {
+                    _GPSSignal = value + " %";
+                    OnPropertyChanged(nameof(GPSSignal));
+                }
+            }
+        }
+        public string BatteryVultag
+        {
+            get => _BatteryVultag;
+            set
+            {
+                if (_BatteryVultag == value)
+                    return;
+                else
+                {
+                    _BatteryVultag = value + " V";
+                    OnPropertyChanged(nameof(BatteryVultag));
+                }
+            }
+        }
         public ObservableCollection<CarsModel> Cars
         {
             get
@@ -46,6 +77,24 @@ namespace hymax.ViewModels
         public ICommand ChildLockCommand { get; }
         public ICommand PanicCommand { get; }
         public ICommand StartCommand { get; }
+        public ICommand WindowCommand { get; }
+
+        private async void WindowCommandClick(object obj)
+        {
+            string msg = rs.GetString("DisplayAlertWindow");
+            string first = rs.GetString("DisplayAlertWindowFirst");
+            string second = rs.GetString("DisplayAlertWindowSecond");
+            string third = rs.GetString("DisplayAlertWindowThird");
+            bool answer = await App.Current.MainPage.DisplayAlert(msg, third, first, second);
+
+            if (answer)
+            {
+                await new Services.ISMSHandler().SendSms("شیشه", DeviceNumber);
+            }
+            else
+            {
+            }
+        }
         private async void StartCommandClick(object obj)
         {
             string msg = rs.GetString("DisplayAlertForceStop");
@@ -250,6 +299,8 @@ namespace hymax.ViewModels
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
             this.carService = carService ?? Locator.Current.GetService<ICarsService>();
 
+            this.GPSSignal = new Random(222).Next(70, 95).ToString();
+            this.BatteryVultag = new Random(342).Next(10, 20).ToString();
             if (Settings.AccessToken == "")
             {
                 SetSecurePage.ViewModel.Reset();
@@ -271,6 +322,7 @@ namespace hymax.ViewModels
             this.ChildLockCommand = new Command(ChildLockCommandClick);
             this.PanicCommand = new Command(PanicCommandClick);
             this.StartCommand = new Command(StartCommandClick);
+            this.WindowCommand = new Command(WindowCommandClick);
         }
         private async void executeMap(object obj)
         {
@@ -321,6 +373,8 @@ namespace hymax.ViewModels
         }
         public async void UpdateCar(string id)
         {
+            this.GPSSignal = new Random(222).Next(70, 95).ToString();
+            this.BatteryVultag = new Random(342).Next(10, 20).ToString();
             for (int i = 0; i < this.Cars.Count; i++)
             {
                 CarsModel current = this._cars[i];

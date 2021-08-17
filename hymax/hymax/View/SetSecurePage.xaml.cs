@@ -48,8 +48,10 @@ namespace hymax.View
                     await ViewModel.waitandgoPin();
                     break;
                 case Models.SecurityTypes.Pattern:
+                    await ViewModel.waitandgoPattern();
                     break;
                 case Models.SecurityTypes.Password:
+                    await ViewModel.waitandgoPassword();
                     break;
                 case Models.SecurityTypes.FingerPrint:
                     await ViewModel.waitandgoFingerprint();

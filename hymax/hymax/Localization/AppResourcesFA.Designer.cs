@@ -592,6 +592,69 @@ namespace hymax.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to قفل‌کودک.
+        /// </summary>
+        internal static string MainPageChildLockButton {
+            get {
+                return ResourceManager.GetString("MainPageChildLockButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to توقف‌فوری.
+        /// </summary>
+        internal static string MainPageForceStopButton {
+            get {
+                return ResourceManager.GetString("MainPageForceStopButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بسته.
+        /// </summary>
+        internal static string MainPageLockButton {
+            get {
+                return ResourceManager.GetString("MainPageLockButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to باز.
+        /// </summary>
+        internal static string MainPageOpenButton {
+            get {
+                return ResourceManager.GetString("MainPageOpenButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to صندوق.
+        /// </summary>
+        internal static string MainPageOpenTrunkButton {
+            get {
+                return ResourceManager.GetString("MainPageOpenTrunkButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to خودرویاب.
+        /// </summary>
+        internal static string MainPagePanicButton {
+            get {
+                return ResourceManager.GetString("MainPagePanicButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بستن‌پنجره‌ها.
+        /// </summary>
+        internal static string MainPageWindowsButton {
+            get {
+                return ResourceManager.GetString("MainPageWindowsButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to گزارش‌گیری.
         /// </summary>
         internal static string MainReportButton {

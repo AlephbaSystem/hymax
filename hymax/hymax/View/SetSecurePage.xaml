@@ -40,8 +40,7 @@
                        Grid.RowSpan="4"
                        Grid.ColumnSpan="3"
                        Aspect="Fill" />
-                <Label Text="{Binding Header}" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" />
-
+                <Label Text="{Binding Header}" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" /> 
                 <Grid Grid.Row="4" Grid.Column="2">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="3"></RowDefinition>

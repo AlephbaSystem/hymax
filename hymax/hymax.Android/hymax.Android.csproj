@@ -31,10 +31,10 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
-    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidSupportedAbis />
     <AndroidKeyStore>false</AndroidKeyStore>
@@ -43,10 +43,13 @@
     <AndroidSigningKeyAlias>hycodebug</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>e833xsbf</AndroidSigningKeyPass>
     <MandroidI18n />
-    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
     <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
     <JavaMaximumHeapSize>
     </JavaMaximumHeapSize>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidLinkSkip>hymax.Android;hymax</AndroidLinkSkip>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -69,7 +72,9 @@
     <AndroidSigningKeyAlias>aplehbasystem</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>e833xsbf</AndroidSigningKeyPass>
     <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
-    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidLinkMode>Full</AndroidLinkMode>
+    <AndroidLinkSkip>hymax.Android;hymax</AndroidLinkSkip>
+    <AndroidLinkTool>r8</AndroidLinkTool>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -350,7 +355,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadWrongLinkerErrorInfoBarhymaxAndroidHideInfoBar="True" XamarinHotReloadUnhandledDeviceExceptionhymaxAndroidHideInfoBar="True" TriggeredFromHotReload="False" XamarinHotReloadDebuggerTimeoutExceptionhymaxAndroidHideInfoBar="True" XamarinHotReloadXFormsNugetUpgradeInfoBarhymaxAndroidHideInfoBar="True" />
+      <UserProperties XamarinHotReloadXFormsNugetUpgradeInfoBarhymaxAndroidHideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionhymaxAndroidHideInfoBar="True" TriggeredFromHotReload="False" XamarinHotReloadUnhandledDeviceExceptionhymaxAndroidHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarhymaxAndroidHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

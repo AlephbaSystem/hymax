@@ -17,8 +17,8 @@ namespace hymax.View
         public MainPage()
         { 
             InitializeComponent();
-            SizeChanged += MainPageSizeChanged; 
             BindingContext = ViewModel;
+            SizeChanged += MainPageSizeChanged;
         }
         void MainPageSizeChanged(object sender, EventArgs e)
         {
