@@ -11,6 +11,7 @@ using hymax.Controls;
 using hymax.Services;
 using hymax.Models;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace hymax
 {
@@ -18,14 +19,28 @@ namespace hymax
     {
         public App()
         {
+            InitializeDb();
             InitializeDi();
             InitializeComponent();
-            InitializeDb();
 
-            MainPage = new MasterShell();
-            return;
+            //MainPage = new MasterShell();
+            //return;
+            Settings.AccessToken = ""; 
 
-            if (Settings.UserSetting[0].Verified)
+            if (Settings.UserSetting.Count == 0)
+            {
+                SettingsModel sm = new SettingsModel();
+                sm.LastLogin = DateTime.Now;
+                sm.Verified = false;
+                sm.Username = Environment.MachineName;
+                sm.Phone = null;
+                sm.Welcome = true; 
+                sm.SecurityType = 0;
+                Settings.Database.SaveSettingsAsync(sm).Wait();
+                Settings.UserSetting = Settings.Database.GetSettings();
+                MainPage = new AppShell();
+            }
+            else if (Settings.UserSetting[0].Phone != null)
             {
                 MainPage = new MasterShell();
             }
@@ -33,11 +48,10 @@ namespace hymax
             {
                 MainPage = new AppShell();
             }
-
         }
-        private async void InitializeDb()
+        private void InitializeDb()
         {
-            Settings.UserSetting = await Settings.Database.GetSettingsAsync();
+            Settings.UserSetting = Settings.Database.GetSettings();
         }
         private void InitializeDi()
         {
@@ -45,7 +59,6 @@ namespace hymax
             Locator.CurrentMutable.RegisterLazySingleton<IRoutingService>(() => new ShellRoutingService());
             Locator.CurrentMutable.RegisterLazySingleton<IIdentityService>(() => new IdentityServiceStub());
             Locator.CurrentMutable.RegisterLazySingleton<ICarsService>(() => new CarsServiceStub());
-
 
             // ViewModels
             Locator.CurrentMutable.Register(() => new LoadingViewModel());

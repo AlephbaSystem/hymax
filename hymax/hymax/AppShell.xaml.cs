@@ -11,10 +11,10 @@ namespace hymax
 {
     public partial class AppShell : Xamarin.Forms.Shell
     {
-        public AppShell()
+        public AppShell(bool step = true)
         {
             InitializeComponent();
-            
+             
             Routing.RegisterRoute("main/login", typeof(LoginPage));
             Routing.RegisterRoute("login/loginverify", typeof(LoginVerifyPage));
             Routing.RegisterRoute("login/securelogin", typeof(SecureLoginPage));

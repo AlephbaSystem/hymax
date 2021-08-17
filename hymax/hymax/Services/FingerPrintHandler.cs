@@ -1,28 +1,36 @@
-﻿using System;
+﻿using Plugin.Fingerprint.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace hymax.Services
 {
     class FingerPrintHandler
     {
-        public static async Task<bool> CheckFingers()
-        {
-            _ = await Task.FromResult(false);
-            return true;
-            //var fpService = Mvx.Resolve<IFingerprint>(); 
-            //var rs = Localization.Localizations.GetResource();
-            //var request = new AuthenticationRequestConfiguration(rs.GetString("PutFingerHeader"), rs.GetString("PutFinger"));
-            //var result = await fpService.AuthenticateAsync(request);
-            //if (result.Authenticated)
-            //{
-            //    return true;
-            //}
-            //else
-            //{
-            //    return false;
-            //}
+        private CancellationTokenSource _cancel;
+        public async Task<bool> CheckFingers(string reason, string cancel = null, string fallback = null, string tooFast = null)
+        { 
+            _cancel = new CancellationTokenSource();
+            var dialogConfig = new AuthenticationRequestConfiguration("ورود با اثر انگشت", reason)
+            {
+                CancelTitle = cancel,
+                FallbackTitle = fallback,
+                AllowAlternativeAuthentication = true,
+                ConfirmationRequired = false
+            };
+
+            dialogConfig.HelpTexts.MovedTooFast = tooFast;
+            var result = await Plugin.Fingerprint.CrossFingerprint.Current.AuthenticateAsync(dialogConfig, _cancel.Token);
+
+            if (result.Authenticated)
+            {
+                Settings.AccessToken = _cancel.Token.ToString();
+                return true;
+            } 
+            return false;
         }
+
     }
 }

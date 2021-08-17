@@ -40,8 +40,7 @@
                        Grid.RowSpan="4"
                        Grid.ColumnSpan="3"
                        Aspect="Fill" />
-                <Label Text="{Binding Header}" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" />
-
+                <Label Text="{Binding Header}" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" /> 
                 <Grid Grid.Row="4" Grid.Column="2">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="3"></RowDefinition>
@@ -52,8 +51,11 @@
                 <Grid 
                     Grid.Row="5" Grid.Column="2">
                     <Image Style="{StaticResource IndicatorsIcons}" Source="{Binding Icon}"
-                       Aspect="AspectFill" > 
-                        </Image> 
+                       Aspect="AspectFill" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ResetClicked" />
+                        </Image.GestureRecognizers>
+                    </Image>
                 </Grid>
             </Grid>
         </StackLayout>

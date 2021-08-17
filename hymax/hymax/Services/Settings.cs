@@ -16,7 +16,7 @@ namespace hymax.Services
         private static ISettings AppSettings =>
     CrossSettings.Current;
 
-        static Database database;
+        static Database database = null;
         public static Database Database
         {
             get

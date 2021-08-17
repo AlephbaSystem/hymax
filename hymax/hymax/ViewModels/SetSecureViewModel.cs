@@ -7,36 +7,32 @@ using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using hymax.Localization;
+using Plugin.Fingerprint.Abstractions;
+using System.Threading;
 
 namespace hymax.ViewModels
 {
     class SetSecureViewModel : BaseViewModel
     {
-        private readonly IRoutingService routingService; 
+        private readonly IRoutingService routingService;
         public string Header { get; set; }
         public string Details { get; set; }
         public FontImageSource Icon { get; set; }
+
         public SetSecureViewModel(IRoutingService routingService = null)
         {
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
             Reset();
         }
-        public async void Reset()
+        public void Reset()
         {
             var currentResource = Localization.Localizations.GetResource();
             switch (Settings.Security)
             {
                 case Models.SecurityTypes.FingerPrint:
-                    if (await FingerPrintHandler.CheckFingers())
-                    {
-                        this.Details = currentResource.GetString("SetSecureDetailsFingerPrint");
-                        this.Header = currentResource.GetString("SecureFinger");
-                        this.Icon = (FontImageSource)IconServer.GetResource("FingerPrint");
-                    } else
-                    {
-                        await this.routingService.GoBack();
-                    }
-                  
+                    this.Details = currentResource.GetString("SetSecureDetailsFingerPrint");
+                    this.Header = currentResource.GetString("SecureFinger");
+                    this.Icon = (FontImageSource)IconServer.GetResource("FingerPrint");
                     break;
                 case Models.SecurityTypes.Password:
                     this.Details = currentResource.GetString("SetSecureDetailsPassword");
@@ -56,21 +52,108 @@ namespace hymax.ViewModels
                 default:
                     break;
             }
-            this.Icon.Size = 100; 
+            this.Icon.Size = 100;
         }
-
-        public async void waitandgo()
+        public async Task waitandgoPin()
         {
-            await Task.Delay(1037);
-            try
+            await Task.Delay(100);
+            bool at = true;
+
+            if (at)
             {
-                await this.routingService.NavigateTo("login/welcome");
+                if (Settings.UserSetting[0].Welcome)
+                {
+                    await this.routingService.NavigateTo("login/welcome");
+                }
+                else
+                {
+                    this.routingService.MasterShell();
+                    await this.routingService.NavigateTo("///home");
+                }
             }
-            catch (Exception ex)
+            else
             {
-                _ = ex;
-                throw;
+                await this.routingService.NavigateTo("login/securelogin");
             }
         }
+        public async Task waitandgoPassword()
+        {
+            await Task.Delay(100);
+            bool at = true;
+            if (at)
+            {
+                if (Settings.UserSetting[0].Welcome)
+                {
+                    await this.routingService.NavigateTo("login/welcome");
+                }
+                else
+                {
+                    this.routingService.MasterShell();
+                    await this.routingService.NavigateTo("///home");
+                }
+            }
+            else
+            {
+                await this.routingService.NavigateTo("login/securelogin");
+            }
+        }
+        public async Task waitandgoPattern()
+        {
+            await Task.Delay(100);
+            bool at = true;
+            if (at)
+            {
+                if (Settings.UserSetting[0].Welcome)
+                {
+                    await this.routingService.NavigateTo("login/welcome");
+                }
+                else
+                {
+                    this.routingService.MasterShell();
+                    await this.routingService.NavigateTo("///home");
+                }
+            }
+            else
+            {
+                await this.routingService.NavigateTo("login/securelogin");
+            }
+        }
+        public async Task waitandgoFingerprint()
+        {
+            await Task.Delay(100);
+
+            //try
+            //{
+            bool at = false;
+            FingerPrintHandler fp = new FingerPrintHandler();
+            var authType = await Plugin.Fingerprint.CrossFingerprint.Current.GetAuthenticationTypeAsync();
+            if (authType == AuthenticationType.Fingerprint)
+            {
+                at = await fp.CheckFingers("ورود با اثر انگشت فعال است. برای ورود به برنامه می بایست احراز هویت اثر انگشت انجام شود");
+            }
+            if (at)
+            {
+                if (Settings.UserSetting[0].Welcome)
+                {
+                    await this.routingService.NavigateTo("login/welcome");
+                }
+                else
+                {
+                    this.routingService.MasterShell();
+                    await this.routingService.NavigateTo("///home");
+                }
+            }
+            else
+            {
+                await this.routingService.NavigateTo("login/securelogin");
+            }
+        }
+        //catch (Exception ex)
+        //{
+
+        //    _ = ex;
+        //    throw;
+        //}
+        //}
     }
 }

@@ -8,7 +8,8 @@ using Xamarin.Forms;
 using hymax.Models;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
-using System;
+using System; 
+using hymax.Services;
 
 namespace hymax.ViewModels
 {
@@ -47,15 +48,19 @@ namespace hymax.ViewModels
         public ICommand ExecuteSkip { get; set; }
         private async void Skip()
         {
-            try
-            {
+            //try
+            //{
+                SettingsModel sm = Settings.UserSetting[0];
+                sm.Welcome = false;
+                await Settings.Database.UpdateSettingsAsync(sm);
+                Settings.UserSetting = Settings.Database.GetSettings();
                 this.routingService.MasterShell();
-                await this.routingService.NavigateTo("main/home");
-            }
-            catch (Exception ex)
-            {
-                _ = ex;
-            }
+                await this.routingService.NavigateTo("///home"); //main/
+            //}
+            //catch (Exception ex)
+            //{
+            //    _ = ex;
+            //}
         }
     }
 }

@@ -12,8 +12,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Dirooz.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\Dirooz.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FormsPinView" Version="2.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Plugin.Fingerprint" Version="2.1.4" />
     <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
+    <PackageReference Include="SkiaSharp" Version="2.80.3" />
     <PackageReference Include="Splat" Version="11.1.1" />
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
     <PackageReference Include="Xam.Plugins.Messaging" Version="5.2.0" />

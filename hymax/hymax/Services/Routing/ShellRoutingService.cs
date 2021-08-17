@@ -49,6 +49,7 @@ namespace hymax.Services.Routing
         }
         public async Task PopToRoot()
         {
+            
             await Shell.Current.Navigation.PopToRootAsync(false);
         }
         public void CleanModalStack()

@@ -15,8 +15,8 @@ namespace hymax.ViewModels
         public MapViewModel(IRoutingService routingService = null, IIdentityService identityService = null)
         {
             Title = "Map";
-            this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
-        } 
+            this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>(); 
+        }
 
     }
 }

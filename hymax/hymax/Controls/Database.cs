@@ -16,15 +16,24 @@ namespace hymax.Controls
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<SettingsModel>().Wait();
         }
-
         public Task<List<SettingsModel>> GetSettingsAsync()
         {
-            return _database.Table<SettingsModel>().ToListAsync();
+            var sm = _database.QueryAsync<SettingsModel>("SELECT * FROM Settings");
+            return sm;
+            //return _database.Table<SettingsModel>().ToListAsync();
         }
-
+        public List<SettingsModel> GetSettings()
+        {
+            var sm = GetSettingsAsync().Result;
+            return sm;
+        }
         public Task<int> SaveSettingsAsync(SettingsModel person)
         {
             return _database.InsertAsync(person);
+        }
+        public Task<int> UpdateSettingsAsync(SettingsModel person)
+        {
+            return _database.UpdateAsync(person);
         }
     }
 }

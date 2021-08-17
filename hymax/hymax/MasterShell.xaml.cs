@@ -15,9 +15,11 @@ namespace hymax
         {
             InitializeComponent();
 
+            Routing.RegisterRoute("login/securelogin", typeof(SecureLoginPage));
             Routing.RegisterRoute("main/setsecure", typeof(SetSecurePage));
             Routing.RegisterRoute("main/settings", typeof(SettingsMenu));
             Routing.RegisterRoute("main/advance", typeof(AdvancePage));
+            Routing.RegisterRoute("main/welcome", typeof(WelcomePage));
             BindingContext = this;
         }
         public ICommand ExecuteLogout => new Command(async () => await GoToAsync("main/login"));
