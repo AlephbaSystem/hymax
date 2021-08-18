@@ -281,7 +281,7 @@ namespace hymax.ViewModels
             if (action == first)
             {
                 await new Services.ISMSHandler().SendSms("25", DeviceNumber);
-            } 
+            }
             else if (action == second)
             {
                 await new Services.ISMSHandler().SendSms("250", DeviceNumber);
@@ -293,8 +293,15 @@ namespace hymax.ViewModels
             {
             }
         }
+        private Services.SMS.SMSReceiver iSMSReciver;
+        private void SMSReciveHandler(string body, string number)
+        {
+            _ = body;
+        }
         public MainViewModel(IRoutingService routingService = null)
         {
+            iSMSReciver = new Services.SMS.SMSReceiver();
+            iSMSReciver.Recived += new Action<string, string>(SMSReciveHandler);
             this.BackgroundColor = Services.ColorServer.GetResource("MainTernaryColor");
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
             this.carService = carService ?? Locator.Current.GetService<ICarsService>();
@@ -326,36 +333,15 @@ namespace hymax.ViewModels
         }
         private async void executeMap(object obj)
         {
-            try
-            {
-                await this.routingService.NavigateTo("///map");
-            }
-            catch (Exception ex)
-            {
-                _ = ex;
-            }
+            await this.routingService.NavigateTo("main/map");
         }
         private async void executeSettings(object obj)
         {
-            try
-            {
-                await this.routingService.NavigateTo("main/settings");
-            }
-            catch (Exception ex)
-            {
-                _ = ex;
-            }
+            await this.routingService.NavigateTo("main/settings");
         }
         private async void executeAdvance(object obj)
         {
-            try
-            {
-                await this.routingService.NavigateTo("main/advance");
-            }
-            catch (Exception ex)
-            {
-                _ = ex;
-            }
+            await this.routingService.NavigateTo("main/advance");
         }
 
         public void OnSettingsTapped(object sender, EventArgs args)

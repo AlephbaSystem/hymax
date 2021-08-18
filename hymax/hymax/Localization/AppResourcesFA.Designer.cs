@@ -538,6 +538,15 @@ namespace hymax.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to بازگشت.
+        /// </summary>
+        internal static string LoginVerifyButton2 {
+            get {
+                return ResourceManager.GetString("LoginVerifyButton2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to کد ۶ رقمی به شماره شما پیامک شد.
         /// </summary>
         internal static string LoginVerifyDetails {
@@ -840,6 +849,15 @@ namespace hymax.Localization {
         internal static string SettingsVersionMenu {
             get {
                 return ResourceManager.GetString("SettingsVersionMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to شماره قبول نشد.
+        /// </summary>
+        internal static string VerifyLoginFailedMessage {
+            get {
+                return ResourceManager.GetString("VerifyLoginFailedMessage", resourceCulture);
             }
         }
         

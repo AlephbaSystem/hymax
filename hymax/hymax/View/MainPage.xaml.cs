@@ -38,5 +38,9 @@ namespace hymax.View
         {
             ViewModel.OnCarTapped(sender, args);
         }
+        void OpenMapCommand(object sender, EventArgs args)
+        {
+            ViewModel.OpenMapCommand.Execute(sender);
+        }
     }
 }

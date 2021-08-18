@@ -5,13 +5,17 @@ using Android.Runtime;
 using Android.OS;
 using Plugin.Permissions;
 using Android;
-using Plugin.Fingerprint; 
+using Plugin.Fingerprint;
+using Android.Content;
+using Acr.UserDialogs;
 
 namespace hymax.Droid
 {
     [Activity(Label = "hymax", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        SMSReceiver sMSReceiver;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {   
             TabLayoutResource = Resource.Layout.Tabbar;
@@ -22,7 +26,14 @@ namespace hymax.Droid
              
             global::Xamarin.Forms.Forms.SetFlags(new string[] { "IndicatorView_Experimental", "CollectionView_Experimental" });
 
+            sMSReceiver = new SMSReceiver();
+            var intentFilter = new IntentFilter("android.provider.Telephony.SMS_RECEIVED");
+            intentFilter.Priority = 999;
+            RegisterReceiver(sMSReceiver, intentFilter);
+
             CrossFingerprint.SetCurrentActivityResolver(() => this);
+            UserDialogs.Init(this);
+
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             Xamarin.FormsGoogleMaps.Init(this, savedInstanceState); 
@@ -59,5 +70,12 @@ namespace hymax.Droid
             PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+        protected override void OnDestroy()
+        {
+            base.OnDestroy();
+            //UnregisterReceiver(sMSReceiver);
+        }
+
     }
 }

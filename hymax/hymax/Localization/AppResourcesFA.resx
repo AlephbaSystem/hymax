@@ -276,6 +276,9 @@
   <data name="LoginVerifyButton" xml:space="preserve">
     <value>ارسال</value>
   </data>
+  <data name="LoginVerifyButton2" xml:space="preserve">
+    <value>بازگشت</value>
+  </data>
   <data name="LoginVerifyDetails" xml:space="preserve">
     <value>کد ۶ رقمی به شماره شما پیامک شد</value>
   </data>
@@ -377,6 +380,9 @@
   </data>
   <data name="SettingsVersionMenu" xml:space="preserve">
     <value>ورژن دستگاه</value>
+  </data>
+  <data name="VerifyLoginFailedMessage" xml:space="preserve">
+    <value>شماره قبول نشد</value>
   </data>
   <data name="Welcome1Description" xml:space="preserve">
     <value>خودروتو هروقت و هرجا کنترل کن</value>

@@ -20,6 +20,7 @@ namespace hymax
             Routing.RegisterRoute("main/settings", typeof(SettingsMenu));
             Routing.RegisterRoute("main/advance", typeof(AdvancePage));
             Routing.RegisterRoute("main/welcome", typeof(WelcomePage));
+            Routing.RegisterRoute("main/map", typeof(MapPage));
             BindingContext = this;
         }
         public ICommand ExecuteLogout => new Command(async () => await GoToAsync("main/login"));

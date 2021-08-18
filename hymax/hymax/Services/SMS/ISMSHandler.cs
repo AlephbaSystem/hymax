@@ -4,7 +4,8 @@ using Plugin.Permissions.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace hymax.Services
 {
@@ -37,7 +38,8 @@ namespace hymax.Services
                 }
             }
             catch (Exception ex)
-            {
+            { 
+
                 _ = ex;
                 //Something went wrong
             }

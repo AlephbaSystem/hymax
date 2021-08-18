@@ -19,10 +19,6 @@
     <ShellItem Route="home">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </ShellItem>
-    <ShellItem Route="map">
-        <ShellContent ContentTemplate="{DataTemplate local:MapPage}" />
-    </ShellItem>
- 
     <MenuItem Text="Logout"
               Command="{Binding ExecuteLogout}" />
 </Shell>

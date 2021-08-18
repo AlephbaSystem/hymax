@@ -21,7 +21,7 @@ namespace hymax.View
         }
         static internal LoginVerifyViewModel ViewModel { get; set; } = Locator.Current.GetService<LoginVerifyViewModel>();
         public static void InitPage(string phonenumber)
-        {
+        { 
             ViewModel.PhoneNumber = phonenumber;
         }
     }
