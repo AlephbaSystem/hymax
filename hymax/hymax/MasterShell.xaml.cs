@@ -14,6 +14,7 @@ namespace hymax
         public MasterShell()
         {
             InitializeComponent();
+             
 
             Routing.RegisterRoute("login/securelogin", typeof(SecureLoginPage));
             Routing.RegisterRoute("main/setsecure", typeof(SetSecurePage));

@@ -11,6 +11,7 @@
              Shell.PresentationMode="ModalAnimated"
              Title="Verify"
              x:Class="hymax.View.LoginVerifyPage"
+             IsBusy="{Binding isBusy}"
              BackgroundColor="{Binding BackgroundColor}"
              xmlns:localization="clr-namespace:hymax.Localization">
     <ContentPage.Content>

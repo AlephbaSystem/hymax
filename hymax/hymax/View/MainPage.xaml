@@ -8,6 +8,7 @@
              Shell.PresentationMode="ModalAnimated" 
              xmlns:localization="clr-namespace:hymax.Localization"
              BackgroundColor="{Binding BackgroundColor}"
+             IsBusy="{Binding isBusy}"
              Title="{Binding Title}" 
              x:Class="hymax.View.MainPage">
     <ContentPage.Resources>
@@ -44,7 +45,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*" />
                 <RowDefinition Height="2*" />
-                <RowDefinition Height="1.4*" />
+                <RowDefinition Height="1.5*" />
             </Grid.RowDefinitions>
             <CarouselView Grid.Row="0" ItemsSource="{Binding Cars}" CurrentItemChanged="carouselView_CurrentItemChanged">
                 <CarouselView.ItemTemplate>
@@ -76,11 +77,12 @@
                             <ColumnDefinition Width=".5*" />
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="1" />
                             <RowDefinition Height="*" />
+                            <RowDefinition Height="4*" />
                         </Grid.RowDefinitions>
- 
-                        <StackLayout Grid.Row="1" Grid.Column="1">
+                        
+
+                    <StackLayout Grid.Row="1" Grid.Column="1">
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding StartCommand}" />
                             </StackLayout.GestureRecognizers>
@@ -185,7 +187,7 @@
                             <TapGestureRecognizer Command="{Binding WindowCommand}" />
                         </StackLayout.GestureRecognizers>
                         <ImageButton Source="car.xml" HeightRequest="34" WidthRequest="34" Command="{Binding WindowCommand}" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center" />
-                        <Label HorizontalOptions="Center" Text="{localization:Translate MainPageWindowsButton}">
+                        <Label HorizontalOptions="Center" FontSize="10" Text="{localization:Translate MainPageWindowsButton}">
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding WindowCommand}" />
                             </Label.GestureRecognizers>

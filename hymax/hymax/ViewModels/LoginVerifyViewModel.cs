@@ -22,6 +22,7 @@ namespace hymax.ViewModels
         private ResourceManager rs;
         public LoginVerifyViewModel(IRoutingService navigationService = null)
         {
+            this.IsBusy = true;
             this.routingService = navigationService ?? Locator.Current.GetService<IRoutingService>();
             this.ExecuteVerfiy = new Command(() => Verfiy());
             this.ExecuteBack = new Command(() => Back());
@@ -32,6 +33,7 @@ namespace hymax.ViewModels
             iSMSReciver.Recived += new Action<string, string>(SMSReciveHandler);
 
             _ = this.CodeSend();
+            this.IsBusy = false;
         }
         private async Task CodeSend()
         {
@@ -46,16 +48,20 @@ namespace hymax.ViewModels
 
         private async void Back()
         {
+            this.IsBusy = true;
             await this.routingService.GoBack();
+            this.IsBusy = false;
         }
         private void SMSReciveHandler(string body, string number)
         {
+            this.IsBusy = true;
             if (number == this.PhoneNumber)
             {
                 if (body.Contains("مالک اصلی"))
                 {
                     Verified = true;
                     ExecuteVerfiy.Execute(this);
+                    this.IsBusy = false;
                 }
                 else
                 {
@@ -66,6 +72,7 @@ namespace hymax.ViewModels
 
         private async void Verfiy()
         {
+            this.IsBusy = true;
             await Task.Delay(100);
             if (!Verified) return;
             SettingsModel sm = Settings.UserSetting[0];

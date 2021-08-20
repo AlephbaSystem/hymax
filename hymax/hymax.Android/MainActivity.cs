@@ -13,32 +13,34 @@ namespace hymax.Droid
 {
     [Activity(Label = "hymax", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
-    {
-        SMSReceiver sMSReceiver;
+    { 
+        //GlobalServices iGlobalServices;
 
         protected override void OnCreate(Bundle savedInstanceState)
-        {   
+        {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            base.OnCreate(savedInstanceState); 
+            base.OnCreate(savedInstanceState);
             //TypefaceUtil.overrideFont(base.ApplicationContext, "Dirooz", "Dirooz.ttf");
-             
+
             global::Xamarin.Forms.Forms.SetFlags(new string[] { "IndicatorView_Experimental", "CollectionView_Experimental" });
 
-            sMSReceiver = new SMSReceiver();
-            var intentFilter = new IntentFilter("android.provider.Telephony.SMS_RECEIVED");
-            intentFilter.Priority = 999;
-            RegisterReceiver(sMSReceiver, intentFilter);
+            //iGlobalServices = new GlobalServices();
+            //var intentFilter = new IntentFilter("android.provider.Telephony.SMS_RECEIVED");
+            //intentFilter.Priority = 999;
+            //RegisterReceiver(iGlobalServices.mReceiver, intentFilter);
 
             CrossFingerprint.SetCurrentActivityResolver(() => this);
             UserDialogs.Init(this);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            Xamarin.FormsGoogleMaps.Init(this, savedInstanceState); 
+            Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
             LoadApplication(new App());
-             
+
+            var serviceToStart = new Intent(this, typeof(GlobalServices));
+            StartService(serviceToStart);
         }
         protected override void OnStart()
         {

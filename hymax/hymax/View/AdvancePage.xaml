@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="hymax.View.AdvancePage"
              FlowDirection="RightToLeft"
+             IsBusy="{Binding isBusy}"
              Title="تنظیمات پیشرفته"
              xmlns:localization="clr-namespace:hymax.Localization">
     <ContentPage.Content>
@@ -10,8 +11,7 @@
             <StackLayout>
                 <TableView Intent="Settings" Margin="20,0,20,0">
                     <TableRoot>
-                        <TableSection>
-                            <EntryCell Label="جستجو" Placeholder="" />
+                        <TableSection> 
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal">
                                     <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 

@@ -11,6 +11,7 @@
              Shell.PresentationMode="ModalAnimated"
              Title="Login"
              x:Class="hymax.View.LoginPage"
+             IsBusy="{Binding isBusy}"
              BackgroundColor="{Binding BackgroundColor}"
              xmlns:localization="clr-namespace:hymax.Localization"> 
         <ContentPage.Content>

@@ -21,9 +21,11 @@ namespace hymax.ViewModels
 
         public LoginViewModel(IRoutingService navigationService = null)
         {
+            this.IsBusy = true;
             this.routingService = navigationService ?? Locator.Current.GetService<IRoutingService>();
             this.ExecuteLogin = new Command(() => Login());
             rs = hymax.Localization.Localizations.GetResource();
+            this.IsBusy = false;
         }
 
         public string PhoneNumber { get; set; }
@@ -45,6 +47,7 @@ namespace hymax.ViewModels
 
         private async void Login()
         {
+            this.IsBusy = true;
             if (IsValidPhone(PhoneNumber))
             {
                 if (this.PhoneNumber.StartsWith("0"))
@@ -57,6 +60,7 @@ namespace hymax.ViewModels
             else
             {
                 Acr.UserDialogs.UserDialogs.Instance.Toast(rs.GetString("VerifyLoginFailedMessage"), new TimeSpan(3));
+                                this.IsBusy = false;
             }
         }
     }

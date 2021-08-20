@@ -17,6 +17,13 @@
         <Setter Property="Shell.ForegroundColor" Value="{StaticResource MainTextTernaryColor}"/>
         <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource MainTernaryColor}" />
         <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource MainTextTernaryColor}"/>
+
+        <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource MainTernaryColor}" />
+        <Setter Property="Shell.TabBarForegroundColor"  Value="{StaticResource MainTextTernaryColor}" />
+        <Setter Property="Shell.TabBarUnselectedColor"  Value="{StaticResource MainButtomNormalBorder}" />
+        <Setter Property="Shell.TabBarTitleColor"  Value="{StaticResource MainTextTernaryColor}" />
+ 
+        <Setter Property="NavigationPage.BackgroundColor" Value="{StaticResource MainTernaryColor}" />
     </Style>
     <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
     <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />

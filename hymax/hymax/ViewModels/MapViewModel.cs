@@ -9,9 +9,12 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Http;
 using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin.Forms.Xaml;
@@ -21,52 +24,96 @@ namespace hymax.ViewModels
     class MapViewModel : BaseViewModel
     {
         private Services.SMS.SMSReceiver iSMSReciver;
-        private ResourceManager rs;
+        public ResourceManager rs;
         private readonly IRoutingService routingService;
-
+        private string PhoneNumber = string.Empty;
         public MapViewModel(IRoutingService routingService = null, IIdentityService identityService = null)
         {
+            this.IsBusy = true;
             Title = "Map";
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
 
             rs = hymax.Localization.Localizations.GetResource();
-            iSMSReciver = new Services.SMS.SMSReceiver();
-            iSMSReciver.Recived += new Action<string, string>(SMSReciveHandler);
+            Settings.UserSetting = Settings.Database.GetSettings();
+            if (Settings.UserSetting.Count <= 0)
+            {
+                Acr.UserDialogs.UserDialogs.Instance.Toast(rs.GetString("PanicError"), new TimeSpan(3));
+                this.routingService.GoBack().Wait();
+                return;
+            }
+            PhoneNumber = Settings.UserSetting[0].Phone;
 
-            _ = this.CodeSend();
+            iSMSReciver = new Services.SMS.SMSReceiver();
+            iSMSReciver.Recived += new Action<string, string>(iReciver);
+
+            this.CodeSend();
         }
 
-        private async Task CodeSend()
+        public event Action<Position, string> RecivedPosition;
+        public async void CodeSend()
         {
             await Task.Delay(100);
             ISMSHandler ismsh = new ISMSHandler();
-            //await ismsh.SendSms("حافظه", this.PhoneNumber);
+            await ismsh.SendSms("موقعیت", this.PhoneNumber);
         }
-        private void SMSReciveHandler(string body, string number)
+        private bool isrunning;
+        private async void iReciver(string body, string number)
         {
-            Settings.UserSetting = Settings.Database.GetSettings();
-            if (number == Settings.UserSetting[0].Phone)
+            await SMSReciveHandler(body, number);
+        }
+        private async Task SMSReciveHandler(string body, string number)
+        {
+            if (isrunning) return;
+            if (number == PhoneNumber)
             {
-                if (body.Contains("مالک اصلی"))
+                if (body.Contains("maps.google.com"))
                 {
-                    var geocoder = new Xamarin.Forms.GoogleMaps.Geocoder();
+                    isrunning = true;
+                    string[] msg = body.Split('\n');
+                    string DoorStatus = msg[0];
+                    string CarStatus = msg[1];
+                    string MapStatus = msg[2];
+                    string[] loc = MapStatus.Replace("maps.google.com/?q=", string.Empty).Split(',');
+                    double lat = Math.Round(double.Parse(loc[0]), 3);
+                    double lon = Math.Round(double.Parse(loc[1]), 3);
+                    Position startPos = new Position(lat, lon);
+                    var addresss = string.Empty;
 
-                    Position startPos = new Position(41.9027835, 12.4963655);
-                    var addresss = geocoder.GetAddressesForPositionAsync(startPos).Result;
-                    if (addresss.Count() > 0)
+                    try
                     {
-                        // With EVENT IN MAIN PAGE I SHOULD CREATE NAVIGATION
-                        //var pos = addresss.First();
-                        //MapPage.map.MoveToRegion(MapSpan.FromCenterAndRadius(startPos, Distance.FromMeters(5000)));
-                        //var reg = MapPage.map.Region;
-                        //MapPage.loc.Text = pos;
+                        string iURL = $"https://nominatim.openstreetmap.org/reverse?lat={startPos.Latitude}&lon={startPos.Longitude}";
+                        var client = new HttpClient();
+                        var response = await client.GetAsync(iURL);
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            var responseContent = await response.Content.ReadAsStringAsync();
+                            XDocument xd = XDocument.Parse(responseContent);
+                            addresss = xd.Root.Element("result").Value;
+                                }
+                        else
+                        {
+                            addresss = string.Empty;
+                        }
                     }
+                    catch
+                    {
+                        addresss = string.Empty;
+                    }
+
+
+                    RecivedPosition(startPos, addresss);
+                    isrunning = false;
+                    this.IsBusy = false;
                 }
                 else
                 {
+                    this.IsBusy = true;
                     Acr.UserDialogs.UserDialogs.Instance.Toast(rs.GetString("VerifyLoginFailedMessage"), new TimeSpan(3));
+                    this.CodeSend();
                 }
             }
+
         }
     }
 }

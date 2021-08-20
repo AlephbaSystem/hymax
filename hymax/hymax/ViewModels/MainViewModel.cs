@@ -81,6 +81,7 @@ namespace hymax.ViewModels
 
         private async void WindowCommandClick(object obj)
         {
+            this.IsBusy = true;
             string msg = rs.GetString("DisplayAlertWindow");
             string first = rs.GetString("DisplayAlertWindowFirst");
             string second = rs.GetString("DisplayAlertWindowSecond");
@@ -90,6 +91,7 @@ namespace hymax.ViewModels
             if (answer)
             {
                 await new Services.ISMSHandler().SendSms("شیشه", DeviceNumber);
+                this.IsBusy = false;
             }
             else
             {
@@ -299,10 +301,11 @@ namespace hymax.ViewModels
             _ = body;
         }
         public MainViewModel(IRoutingService routingService = null)
-        {
+        { 
+            this.IsBusy = true;
             iSMSReciver = new Services.SMS.SMSReceiver();
             iSMSReciver.Recived += new Action<string, string>(SMSReciveHandler);
-            this.BackgroundColor = Services.ColorServer.GetResource("MainTernaryColor");
+            this.BackgroundColor = Services.ColorServer.GetResource("MainSecondaryColor");
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
             this.carService = carService ?? Locator.Current.GetService<ICarsService>();
 
@@ -330,35 +333,43 @@ namespace hymax.ViewModels
             this.PanicCommand = new Command(PanicCommandClick);
             this.StartCommand = new Command(StartCommandClick);
             this.WindowCommand = new Command(WindowCommandClick);
+            this.IsBusy = false;
         }
         private async void executeMap(object obj)
         {
+            this.IsBusy = true;
             await this.routingService.NavigateTo("main/map");
         }
         private async void executeSettings(object obj)
         {
+            this.IsBusy = true;
             await this.routingService.NavigateTo("main/settings");
         }
         private async void executeAdvance(object obj)
         {
+            this.IsBusy = true;
             await this.routingService.NavigateTo("main/advance");
         }
 
         public void OnSettingsTapped(object sender, EventArgs args)
         {
+            this.IsBusy = true;
             executeSettings(sender);
         }
         public async void UpdateCar()
         {
+            this.IsBusy = true;
             for (int i = 0; i < this.Cars.Count; i++)
             {
                 CarsModel current = await this.carService.Status(this._cars[i]);
                 //this._cars.Remove(this._cars[i]);
                 this._cars.Add(current);
             }
+            this.IsBusy = false;
         }
         public async void UpdateCar(string id)
         {
+            this.IsBusy = true;
             this.GPSSignal = new Random(222).Next(70, 95).ToString();
             this.BatteryVultag = new Random(342).Next(10, 20).ToString();
             for (int i = 0; i < this.Cars.Count; i++)
@@ -380,6 +391,7 @@ namespace hymax.ViewModels
                     break;
                 }
             }
+            this.IsBusy = false;
         }
         public void OnCarTapped(object sender, EventArgs args)
         {

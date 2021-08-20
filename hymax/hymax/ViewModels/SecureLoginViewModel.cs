@@ -16,11 +16,14 @@ namespace hymax.ViewModels
 
         public SecureLoginViewModel(IRoutingService routingService = null)
         {
+            this.IsBusy = true;
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
+            this.IsBusy = false;
         }
 
         private async void setDB()
         {
+            this.IsBusy = true;
             SettingsModel sm = Settings.UserSetting[0];
             sm.SecurityType = ((int)Settings.Security);
             await Settings.Database.UpdateSettingsAsync(sm);
@@ -30,6 +33,7 @@ namespace hymax.ViewModels
         {
             try
             {
+                this.IsBusy = true;
                 Settings.Security = Models.SecurityTypes.Pin;
                 SetSecurePage.ViewModel.Reset();
                 setDB();
@@ -37,6 +41,7 @@ namespace hymax.ViewModels
             }
             catch (Exception ex)
             {
+                this.IsBusy = false;
                 throw ex;
             }
         }
@@ -46,7 +51,8 @@ namespace hymax.ViewModels
             
 
             try
-            { 
+            {
+                this.IsBusy = true;
                 Settings.Security = Models.SecurityTypes.FingerPrint;
                 SetSecurePage.ViewModel.Reset();
                 setDB();
@@ -54,13 +60,15 @@ namespace hymax.ViewModels
             }
             catch (Exception ex)
             {
+                this.IsBusy = false;
                 throw ex;
             }
         }
         public async void OnPasswordTapped(object sender, EventArgs args)
         {
             try
-            { 
+            {
+                this.IsBusy = true;
                 Settings.Security = Models.SecurityTypes.Password;
                 SetSecurePage.ViewModel.Reset();
                 setDB();
@@ -68,13 +76,15 @@ namespace hymax.ViewModels
             }
             catch (Exception ex)
             {
+                this.IsBusy = false;
                 throw ex;
             }
         }
         public async void OnPatternTapped(object sender, EventArgs args)
         {
             try
-            { 
+            {
+                this.IsBusy = true;
                 Settings.Security = Models.SecurityTypes.Pattern;
                 SetSecurePage.ViewModel.Reset();
                 setDB();
@@ -82,6 +92,7 @@ namespace hymax.ViewModels
             }
             catch (Exception ex)
             {
+                this.IsBusy = false;
                 throw ex;
             }
         }

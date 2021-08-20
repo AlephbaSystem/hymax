@@ -493,6 +493,15 @@ namespace hymax.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to در انتظار پاسخ دستگاه.
+        /// </summary>
+        internal static string LocationAddressWaiting {
+            get {
+                return ResourceManager.GetString("LocationAddressWaiting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to دریافت کد.
         /// </summary>
         internal static string LoginButton {
@@ -678,6 +687,15 @@ namespace hymax.Localization {
         internal static string MainSettingsButton {
             get {
                 return ResourceManager.GetString("MainSettingsButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to خطای پیش آمده لطفا با شرکت تماس بگیرید.
+        /// </summary>
+        internal static string PanicError {
+            get {
+                return ResourceManager.GetString("PanicError", resourceCulture);
             }
         }
         

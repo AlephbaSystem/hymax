@@ -21,5 +21,27 @@ namespace hymax.ViewModels
             this.BackgroundColor = Services.ColorServer.GetResource("MainSecondaryColor");
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
         }
+
+
+        //public ICommand WindowCommand { get; }
+
+        //private async void WindowCommandClick(object obj)
+        //{
+        //    this.IsBusy = true;
+        //    string msg = rs.GetString("DisplayAlertWindow");
+        //    string first = rs.GetString("DisplayAlertWindowFirst");
+        //    string second = rs.GetString("DisplayAlertWindowSecond");
+        //    string third = rs.GetString("DisplayAlertWindowThird");
+        //    bool answer = await App.Current.MainPage.DisplayAlert(msg, third, first, second);
+
+        //    if (answer)
+        //    {
+        //        await new Services.ISMSHandler().SendSms("شیشه", DeviceNumber);
+        //        this.IsBusy = false;
+        //    }
+        //    else
+        //    {
+        //    }
+        //}
     }
 }
