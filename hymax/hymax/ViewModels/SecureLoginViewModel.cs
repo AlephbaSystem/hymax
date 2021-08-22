@@ -1,5 +1,6 @@
 ﻿using hymax.Models;
 using hymax.Services;
+using hymax.Services.Database;
 using hymax.Services.Identity;
 using hymax.Services.Routing;
 using hymax.View;
@@ -13,11 +14,13 @@ namespace hymax.ViewModels
     class SecureLoginViewModel : BaseViewModel
     {
         private readonly IRoutingService routingService;
+        private readonly IDatabaseService db;
 
         public SecureLoginViewModel(IRoutingService routingService = null)
         {
             this.IsBusy = true;
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
+            this.db = this.db ?? Locator.Current.GetService<IDatabaseService>();
             this.IsBusy = false;
         }
 
@@ -26,8 +29,8 @@ namespace hymax.ViewModels
             this.IsBusy = true;
             SettingsModel sm = Settings.UserSetting[0];
             sm.SecurityType = ((int)Settings.Security);
-            await Settings.Database.UpdateSettingsAsync(sm);
-            Settings.UserSetting = Settings.Database.GetSettings();
+            await this.db.UpdateSettingsAsync(sm);
+            Settings.UserSetting = this.db.GetSettings();
         }
         public async void OnPinTapped(object sender, EventArgs args)
         {
@@ -48,7 +51,7 @@ namespace hymax.ViewModels
         public async void OnFingerPrintTapped(object sender, EventArgs args)
         {
             Plugin.Fingerprint.CrossFingerprint fph = new Plugin.Fingerprint.CrossFingerprint();
-            
+
 
             try
             {

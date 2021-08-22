@@ -38,5 +38,11 @@ namespace hymax.View
         {
             ViewModel.OnPatternTapped(sender, args);
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Services.Settings.LastPage = "SLPage";
+        }
     }
 }

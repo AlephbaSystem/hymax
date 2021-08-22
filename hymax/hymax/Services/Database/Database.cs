@@ -4,17 +4,35 @@ using System.Collections.Generic;
 using System.Text;
 using hymax.Models;
 using System.Threading.Tasks;
+using hymax.Services;
+using System.IO;
 
-namespace hymax.Controls
+namespace hymax.Services.Database
 {
-    class Database
+    class Database : IDatabaseService
     {
         readonly SQLiteAsyncConnection _database;
 
-        public Database(string dbPath)
+        public Database()
         {
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "hymax.db3");
+
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<SettingsModel>().Wait();
+        }
+        public async Task Reset()
+        {
+            SettingsModel sm = new SettingsModel();
+            sm.LastLogin = DateTime.Now;
+            sm.Verified = false;
+            sm.Username = Environment.MachineName;
+            sm.Phone = null;
+            sm.Welcome = true;
+            sm.SecurityType = 0;
+            await _database.QueryAsync<SettingsModel>("DELETE FROM Settings");
+            await _database.CreateTableAsync<SettingsModel>();
+
+            await this.SaveSettingsAsync(sm);
         }
         public Task<List<SettingsModel>> GetSettingsAsync()
         {

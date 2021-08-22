@@ -1,7 +1,9 @@
 ﻿using hymax.Models;
 using hymax.Services;
+using hymax.Services.Database;
 using hymax.Services.Identity;
 using hymax.Services.Routing;
+using hymax.Services.SMS;
 using hymax.View;
 using hymax.ViewModels;
 using Splat;
@@ -23,18 +25,21 @@ namespace hymax.ViewModels
 {
     class MapViewModel : BaseViewModel
     {
-        private Services.SMS.SMSReceiver iSMSReciver;
         public ResourceManager rs;
         private readonly IRoutingService routingService;
+        private readonly ISMSService smsService;
+        private readonly IDatabaseService db;
         private string PhoneNumber = string.Empty;
         public MapViewModel(IRoutingService routingService = null, IIdentityService identityService = null)
         {
             this.IsBusy = true;
             Title = "Map";
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
+            this.smsService = smsService ?? Locator.Current.GetService<ISMSService>();
+            this.db = this.db ?? Locator.Current.GetService<IDatabaseService>();
 
             rs = hymax.Localization.Localizations.GetResource();
-            Settings.UserSetting = Settings.Database.GetSettings();
+            Settings.UserSetting = this.db.GetSettingsAsync().Result;
             if (Settings.UserSetting.Count <= 0)
             {
                 Acr.UserDialogs.UserDialogs.Instance.Toast(rs.GetString("PanicError"), new TimeSpan(3));
@@ -42,19 +47,15 @@ namespace hymax.ViewModels
                 return;
             }
             PhoneNumber = Settings.UserSetting[0].Phone;
-
-            iSMSReciver = new Services.SMS.SMSReceiver();
-            iSMSReciver.Recived += new Action<string, string>(iReciver);
-
-            this.CodeSend();
+            this.smsService.Recived += new Action<string, string>(iReciver);
+            //this.CodeSend();
         }
 
         public event Action<Position, string> RecivedPosition;
         public async void CodeSend()
         {
-            await Task.Delay(100);
-            ISMSHandler ismsh = new ISMSHandler();
-            await ismsh.SendSms("موقعیت", this.PhoneNumber);
+            await Task.Delay(500);
+            await this.smsService.SendSms("موقعیت", this.PhoneNumber);
         }
         private bool isrunning;
         private async void iReciver(string body, string number)
@@ -64,7 +65,7 @@ namespace hymax.ViewModels
         private async Task SMSReciveHandler(string body, string number)
         {
             if (isrunning) return;
-            if (number == PhoneNumber)
+            if (number == PhoneNumber && Settings.UserSetting[0].Verified)
             {
                 if (body.Contains("maps.google.com"))
                 {
@@ -90,7 +91,7 @@ namespace hymax.ViewModels
                             var responseContent = await response.Content.ReadAsStringAsync();
                             XDocument xd = XDocument.Parse(responseContent);
                             addresss = xd.Root.Element("result").Value;
-                                }
+                        }
                         else
                         {
                             addresss = string.Empty;
@@ -110,7 +111,6 @@ namespace hymax.ViewModels
                 {
                     this.IsBusy = true;
                     Acr.UserDialogs.UserDialogs.Instance.Toast(rs.GetString("VerifyLoginFailedMessage"), new TimeSpan(3));
-                    this.CodeSend();
                 }
             }
 

@@ -25,6 +25,12 @@ namespace hymax.View
         {
             return true;
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Services.Settings.LastPage = "Welcome";
+        }
         public void carouselView_CurrentItemChanged(object sender, CurrentItemChangedEventArgs e)
         {
             var item = e.CurrentItem as WelcomeModel;

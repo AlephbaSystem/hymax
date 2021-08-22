@@ -8,20 +8,23 @@ using Xamarin.Forms;
 using hymax.Models;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
-using System; 
+using System;
 using hymax.Services;
+using hymax.Services.Database;
 
 namespace hymax.ViewModels
 {
     class WelcomeViewModel : BaseViewModel
     {
         private readonly IRoutingService routingService;
+        private readonly IDatabaseService db;
         private ObservableCollection<WelcomeModel> _welcomes;
         public WelcomeViewModel(IRoutingService routingService = null)
         {
             //Xamarin.Forms.SetFlags("IndicatorView_Experimental");
             this.BackgroundColor = Services.ColorServer.GetResource("MainSecondaryColor");
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
+            this.db = this.db ?? Locator.Current.GetService<IDatabaseService>();
             var rs = hymax.Localization.Localizations.GetResource();
             this._welcomes = new ObservableCollection<WelcomeModel>();
             this._welcomes.Add(new WelcomeModel { Description = rs.GetString("Welcome1Description"), Title = rs.GetString("Welcome1Header"), ImagePath = "welcome1.png" });
@@ -50,17 +53,13 @@ namespace hymax.ViewModels
         {
             //try
             //{
-                SettingsModel sm = Settings.UserSetting[0];
-                sm.Welcome = false;
-                await Settings.Database.UpdateSettingsAsync(sm);
-                Settings.UserSetting = Settings.Database.GetSettings();
-                this.routingService.MasterShell();
-                await this.routingService.NavigateTo("///home"); //main/
-            //}
-            //catch (Exception ex)
-            //{
-            //    _ = ex;
-            //}
+            SettingsModel sm = Settings.UserSetting[0];
+            sm.Welcome = false;
+            await this.db.UpdateSettingsAsync(sm);
+            Settings.UserSetting = this.db.GetSettings();
+            this.routingService.MasterShell();
+            await this.routingService.NavigateTo("///home");
+            //await Application.Current.MainPage.Navigation.PushAsync(new MainPage());
         }
     }
 }

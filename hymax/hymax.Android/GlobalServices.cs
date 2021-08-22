@@ -22,12 +22,7 @@ namespace hymax.Droid
         }
         public override void OnCreate()
         {
-            base.OnCreate();
-            PowerManager powerManager = (PowerManager)GetSystemService("POWER_SERVICE");
-            WakeLock wakeLock = powerManager?.NewWakeLock(WakeLockFlags.Partial,
-                    "hymax::Client Lock");
-            wakeLock?.Acquire();
-
+            base.OnCreate(); 
             var intentFilter = new IntentFilter("android.provider.Telephony.SMS_RECEIVED");
             intentFilter.Priority = 999;
             mReceiver = new SMSReceiver();
@@ -67,35 +62,32 @@ namespace hymax.Droid
                         //Toast.MakeText(context, sb.ToString(), ToastLength.Long).Show();
                         //Log.Error("Vahid", sb.ToString());
 
-                        var msgBody = msgs[i].MessageBody;
-
-                        //if (!sender.Contains(Sender)) return;
-
-                        //bool foundKeyword = OtpMessageBodyKeywordSet.Any(k => msgBody.Contains(k));
-
+                        var msgBody = msgs[i].MessageBody; 
+                        //if (!sender.Contains(Sender)) return; 
+                        //bool foundKeyword = OtpMessageBodyKeywordSet.Any(k => msgBody.Contains(k)); 
                         //if (!foundKeyword) return;
 
                         if (msgBody.Contains("ضربه به ماشین"))
                         {
-                            var currentContext = Android.App.Application.Context; 
+                            var currentContext = Android.App.Application.Context;
                             var NxtAct = new Intent(currentContext, typeof(AlertActivity));
-                            NxtAct.SetFlags(ActivityFlags.NewTask); 
+                            NxtAct.SetFlags(ActivityFlags.NewTask);
                             currentContext.StartActivity(NxtAct);
                             //currentContext.StartActivity(typeof(AlertActivity));
                             return;
                         }
 
                         System.Tuple<string, string> tpl = new System.Tuple<string, string>(msgBody, sender);
-                        MessagingCenter.Send<hymax.Services.SMS.SMSReceiver, System.Tuple<string, string>>(new hymax.Services.SMS.SMSReceiver(), "OtpReceived", tpl);
+                        MessagingCenter.Send<hymax.Services.SMS.SMSHandler, System.Tuple<string, string>>(new hymax.Services.SMS.SMSHandler(), "HymaxOtpReceived", tpl);
 
                     }
                 }
                 catch (System.Exception ex)
                 {
-                    Toast.MakeText(context, ex.Message, ToastLength.Long).Show();
+                    //Toast.MakeText(context, ex.Message, ToastLength.Long).Show();
                 }
             }
-           
+
             private static string ExtractNumber(string text)
             {
                 if (string.IsNullOrEmpty(text)) return "";

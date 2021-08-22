@@ -1,7 +1,9 @@
 ﻿using hymax.Models;
 using hymax.Services;
+using hymax.Services.Database;
 using hymax.Services.Identity;
 using hymax.Services.Routing;
+using hymax.Services.SMS;
 using hymax.View;
 using Splat;
 using System;
@@ -17,36 +19,38 @@ namespace hymax.ViewModels
     class LoginVerifyViewModel : BaseViewModel
     {
         private IRoutingService routingService;
-        private Services.SMS.SMSReceiver iSMSReciver;
+        private readonly ISMSService smsService;
+        private readonly IDatabaseService db;
         private bool Verified = false;
         private ResourceManager rs;
         public LoginVerifyViewModel(IRoutingService navigationService = null)
         {
             this.IsBusy = true;
             this.routingService = navigationService ?? Locator.Current.GetService<IRoutingService>();
+            this.smsService = smsService ?? Locator.Current.GetService<ISMSService>();
+            this.smsService.Setrecipient(this.PhoneNumber);
+            this.db = this.db ?? Locator.Current.GetService<IDatabaseService>();
+
             this.ExecuteVerfiy = new Command(() => Verfiy());
             this.ExecuteBack = new Command(() => Back());
 
 
             rs = hymax.Localization.Localizations.GetResource();
-            iSMSReciver = new Services.SMS.SMSReceiver();
-            iSMSReciver.Recived += new Action<string, string>(SMSReciveHandler);
+            this.smsService.Recived += new Action<string, string>(SMSReciveHandler);
 
-            _ = this.CodeSend();
             this.IsBusy = false;
         }
-        private async Task CodeSend()
+        public async Task CodeSend()
         {
             await Task.Delay(100);
-            ISMSHandler ismsh = new Services.ISMSHandler();
-            await ismsh.SendSms("حافظه", this.PhoneNumber);
+            await this.smsService.SendSms("حافظه", this.PhoneNumber);
         }
         public string VerifyCode { get; set; }
         public string PhoneNumber { get; set; }
         public ICommand ExecuteVerfiy { get; set; }
         public ICommand ExecuteBack { get; set; }
 
-        private async void Back()
+        public async void Back()
         {
             this.IsBusy = true;
             await this.routingService.GoBack();
@@ -75,11 +79,14 @@ namespace hymax.ViewModels
             this.IsBusy = true;
             await Task.Delay(100);
             if (!Verified) return;
+            //await this.db.Reset();
+            Settings.UserSetting = this.db.GetSettingsAsync().Result;
+            await Task.Delay(100);
             SettingsModel sm = Settings.UserSetting[0];
             sm.Phone = this.PhoneNumber;
             sm.Verified = true;
-            await Settings.Database.UpdateSettingsAsync(sm);
-            Settings.UserSetting = Settings.Database.GetSettings();
+            await this.db.UpdateSettingsAsync(sm);
+            Settings.UserSetting = await this.db.GetSettingsAsync();
             await this.routingService.NavigateTo("login/securelogin");
         }
     }

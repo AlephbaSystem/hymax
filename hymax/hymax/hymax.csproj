@@ -89,6 +89,9 @@
     <EmbeddedResource Update="View\MapPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="View\PDFViewer.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="View\SecureLoginPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

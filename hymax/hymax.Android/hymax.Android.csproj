@@ -149,6 +149,7 @@
     <AndroidAsset Include="Assets\MaterialIconsOutlined.otf" />
     <AndroidAsset Include="Assets\MaterialIconsRegular.ttf" />
     <AndroidAsset Include="Assets\Dirooz.ttf" />
+    <AndroidAsset Include="Assets\help.pdf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

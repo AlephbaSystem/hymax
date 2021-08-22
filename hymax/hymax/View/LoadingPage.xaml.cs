@@ -24,6 +24,7 @@ namespace hymax.View
         {
             base.OnAppearing();
             ViewModel.Init();
-        }
+            Services.Settings.LastPage = "Loading";
+        } 
     }
 }

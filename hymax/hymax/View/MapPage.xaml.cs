@@ -31,13 +31,14 @@ namespace hymax.View
             this.loc.Text = ViewModel.rs.GetString("LocationAddressWaiting");
             ViewModel.RecivedPosition += new Action<Position, string>(NewLocation);
             this.map.MoveToRegion(
-            MapSpan.FromCenterAndRadius(new Position(36.2824,59.5959), new Distance(300d))
+            MapSpan.FromCenterAndRadius(new Position(36.2824, 59.5959), new Distance(300d))
 );
 
         }
         internal MapViewModel ViewModel { get; set; } = Locator.Current.GetService<MapViewModel>();
         private async void NewLocation(Position startPos, string address)
         {
+            await Task.Delay(100);
             this.map.Pins.Clear();
             this.loc.Text = address;
             Pin p = new Pin();
@@ -46,16 +47,12 @@ namespace hymax.View
             p.Type = PinType.Place;
             this.map.Pins?.Add(p);
             this.map.MoveToRegion(MapSpan.FromCenterAndRadius(startPos, Distance.FromMeters(500)));
-
-
-            //var bounds = Xamarin.Forms.GoogleMaps.Bounds.FromPositions(this.map.Polylines.SelectMany(poly => poly.Positions));
-            //var newBoundsArea = CameraUpdateFactory.NewBounds(bounds, 5);
-            //await this.map.MoveCamera(newBoundsArea);
         }
         protected override void OnAppearing()
         {
             ViewModel.CodeSend();
             base.OnAppearing();
+            Services.Settings.LastPage = "Map";
         }
     }
 }

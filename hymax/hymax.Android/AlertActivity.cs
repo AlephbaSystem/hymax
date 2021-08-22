@@ -21,8 +21,7 @@ namespace hymax.Droid
 {
     [Activity(Label = "AlertActivity", LaunchMode = Android.Content.PM.LaunchMode.SingleTask)]
     public class AlertActivity : Activity
-    {
-        private static string TAG = "AlertActivity";
+    { 
         ImageView car;
         int howMuch = 0;
         ImageButton icon;
@@ -57,9 +56,15 @@ namespace hymax.Droid
             income = FindViewById<TextView>(Resource.Id.alert_text);
             icon = FindViewById<ImageButton>(Resource.Id.alert_icon);
             car = FindViewById<ImageView>(Resource.Id.alert_car);
-
-            //ButterKnife.bind((Activity)this);
-            this.f96v = (Vibrator)GetSystemService("vibrator");
+            PowerManager pm = (PowerManager)this.GetSystemService(Context.PowerService);
+            bool isScreenOn = pm.IsInteractive;
+            if (!isScreenOn)
+            {
+                PowerManager.WakeLock wl = pm.NewWakeLock(WakeLockFlags.ScreenDim | WakeLockFlags.AcquireCausesWakeup, "myApp:notificationLock");
+                wl.Acquire(3000);
+            }
+            //ButterKnife.bind((Activity)this); 
+            this.f96v = (Vibrator)this.GetSystemService(Context.VibratorService);
             //SetAudio();
             this.msg = "";
             //if (this.state.contains("ضربه"))
@@ -144,7 +149,9 @@ namespace hymax.Droid
                     return;
                 }
                 this.howMuch++;
-                this.f96v.Vibrate(500);
+
+                long[] vbf = { 100, 100, 100, 500, 500, 500, 100, 100, 100 };
+                this.f96v.Vibrate(VibrationEffect.CreateWaveform(vbf, 1));
             }
         }
 

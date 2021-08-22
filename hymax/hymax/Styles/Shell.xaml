@@ -6,6 +6,11 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
+    
+    <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="{StaticResource MainTernaryColor}"/>
+        <Setter Property="BarTextColor" Value="{StaticResource MainTextTernaryColor}"/>
+    </Style>
 
     <Style x:Key="BaseStyle" TargetType="Element">
         <!--<Setter Property="Shell.BackgroundColor" Value="{StaticResource MainPrimaryColor}" />
@@ -17,7 +22,7 @@
         <Setter Property="Shell.ForegroundColor" Value="{StaticResource MainTextTernaryColor}"/>
         <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource MainTernaryColor}" />
         <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource MainTextTernaryColor}"/>
-
+        <Setter Property="Shell.FlyoutBackground" Value="{StaticResource MainTernaryColor}" />
         <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource MainTernaryColor}" />
         <Setter Property="Shell.TabBarForegroundColor"  Value="{StaticResource MainTextTernaryColor}" />
         <Setter Property="Shell.TabBarUnselectedColor"  Value="{StaticResource MainButtomNormalBorder}" />

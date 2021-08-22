@@ -156,6 +156,12 @@
   <data name="AdvanceStartMenu" xml:space="preserve">
     <value>استارت هوشمند</value>
   </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>نرم افزار ردیاب ماشین HyMax</value>
+  </data>
+  <data name="AppVersionHeader" xml:space="preserve">
+    <value>درباره نرم افزار</value>
+  </data>
   <data name="CarDateLabel" xml:space="preserve">
     <value>تاریخ وضعیت:</value>
   </data>
@@ -332,6 +338,18 @@
   </data>
   <data name="Password" xml:space="preserve">
     <value>رمز عبور</value>
+  </data>
+  <data name="PopupAction" xml:space="preserve">
+    <value>دستور انجام شود؟</value>
+  </data>
+  <data name="PopupClose" xml:space="preserve">
+    <value>بستن</value>
+  </data>
+  <data name="PopupHeader" xml:space="preserve">
+    <value>انجام دستور</value>
+  </data>
+  <data name="PopupOk" xml:space="preserve">
+    <value>باشه</value>
   </data>
   <data name="PutFinger" xml:space="preserve">
     <value>لطفا اثر انگشت خود را وارد کنید</value>
