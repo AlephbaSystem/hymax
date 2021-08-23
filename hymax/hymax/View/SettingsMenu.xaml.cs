@@ -18,6 +18,11 @@ namespace hymax.View
             InitializeComponent();
             BindingContext = ViewModel;
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Services.Settings.LastPage = "Settings";
+        }
         static internal SettingsMenuViewModel ViewModel { get; set; } = Locator.Current.GetService<SettingsMenuViewModel>();
     }
 }

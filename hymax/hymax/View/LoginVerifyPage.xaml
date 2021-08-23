@@ -11,6 +11,7 @@
              Shell.PresentationMode="ModalAnimated"
              Title="Verify"
              x:Class="hymax.View.LoginVerifyPage"
+             IsBusy="{Binding isBusy}"
              BackgroundColor="{Binding BackgroundColor}"
              xmlns:localization="clr-namespace:hymax.Localization">
     <ContentPage.Content>
@@ -61,12 +62,12 @@
         HorizontalOptions="Center" 
         BackgroundColor="Transparent"  TextColor="Black"
         Text="{Binding PhoneNumber}" />
-                </Frame> 
-                
-                <Entry Style="{StaticResource LoginEntry}" Grid.Row="7" Grid.Column="2" x:Name="UsernameEntry" Text="{Binding VerifyCode}" />
-                <Grid Grid.Row="8" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="End" >
+                </Frame>
+                <Button Grid.Row="8" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="End" x:Name="LoginButton" Style="{StaticResource LoginGetCode}" Text="{localization:Translate LoginVerifyButton2}"  Command="{Binding ExecuteBack}" />
+                <!--<Entry Style="{StaticResource LoginEntry}" Grid.Row="7" Grid.Column="2" x:Name="UsernameEntry" Text="{Binding VerifyCode}" />-->
+                <!--<Grid Grid.Row="8" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="End" >
                     <Button x:Name="LoginButton" Style="{StaticResource LoginGetCode}" Text="{localization:Translate LoginVerifyButton}"  Command="{Binding ExecuteVerfiy}" />
-                </Grid>
+                </Grid>-->
             </Grid>
         </StackLayout>
     </ContentPage.Content>

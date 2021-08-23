@@ -3,28 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="hymax.View.SettingsMenu"
              FlowDirection="RightToLeft"
+             IsBusy="{Binding isBusy}"
+             Shell.FlyoutBehavior="Disabled"
              Title="تنظیمات"
              xmlns:localization="clr-namespace:hymax.Localization">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="18" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
             <TableView Intent="Settings" Margin="20,0,20,0">
                 <TableRoot>
                     <TableSection>
-                        <EntryCell Label="جستجو" Placeholder="" />
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Info}" />
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding OpenInfoCommand}" />
+                                </StackLayout.GestureRecognizers>
+                                
+                                <Image Source="info.xml" />
                                 <Label Text="{localization:Translate SettingsAboutMenu}" VerticalOptions="Center" />
- 
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
                                Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand" />
                             </StackLayout>
                         </ViewCell>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Account_tree}" />
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding OpenVersionCommand}" />
+                                </StackLayout.GestureRecognizers>
+                                
+                                <Image Source="testing.xml" />
                                 <Label Text="{localization:Translate SettingsVersionMenu}" VerticalOptions="Center" />
 
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
@@ -33,8 +46,11 @@
                         </ViewCell>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Book}" />
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding OpenCatalogCommand}" />
+                                </StackLayout.GestureRecognizers>
+
+                                <Image Source="catalog.xml" />
                                 <Label Text="{localization:Translate SettingsCatalogeMenu}" VerticalOptions="Center" />
 
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
@@ -43,8 +59,11 @@
                         </ViewCell>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Language}" />
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding OpenWWWCommand}" />
+                                </StackLayout.GestureRecognizers>
+                                
+                                <Image Source="www.xml" />
                                 <Label Text="{localization:Translate SettingsOpenwebMenu}" VerticalOptions="Center"/>
 
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
@@ -53,8 +72,11 @@
                         </ViewCell>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Support_agent}" />
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding OpenSupportCommand}" />
+                                </StackLayout.GestureRecognizers>
+
+                                <Image Source="help.xml" />
                                 <Label Text="{localization:Translate SettingsSupportMenu}" VerticalOptions="Center"/>
 
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
@@ -63,8 +85,11 @@
                         </ViewCell>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Account_circle}" />
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding OpenUsersSettingsCommand}" />
+                                </StackLayout.GestureRecognizers>
+
+                                <Image Source="user.xml" />
                                 <Label Text="{localization:Translate SettingsUsersMenu}" VerticalOptions="Center"/>
 
                                 <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 

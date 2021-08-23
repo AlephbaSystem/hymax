@@ -11,6 +11,7 @@
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              BackgroundColor="{Binding BackgroundColor}"
              Title="{Binding Title}"
+             IsBusy="{Binding isBusy}"
              x:Class="hymax.View.MapPage" >
     <ContentPage.Content>
         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
@@ -18,7 +19,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="20"/>
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="80"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -34,9 +35,7 @@
                     Grid.Row="1"
                     Grid.Column="4"
                     BackgroundColor="{StaticResource MainPrimaryColor}">
-                <StackLayout>
-                    <Label TextColor="White" Text="0 k/m" ></Label>
-                </StackLayout>
+                <Label TextColor="{StaticResource MainTextSecondaryColor}" Text="0 k/m" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="Center" ></Label>
             </pancake:PancakeView>
 
             <Frame CornerRadius="40"
@@ -44,9 +43,7 @@
                    Grid.ColumnSpan="5"
                    Margin="30,0,30,0"
        BackgroundColor="{StaticResource MainPrimaryColor}">
-                <StackLayout>
-                    <Label x:Name="loc" TextColor="White" Text="" ></Label>
-                </StackLayout>
+                <Label x:Name="loc" TextColor="{StaticResource MainTextSecondaryColor}" Text=""  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="Center"></Label> 
             </Frame>
         </Grid>
     </ContentPage.Content>

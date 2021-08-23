@@ -3,19 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="hymax.View.AdvancePage"
              FlowDirection="RightToLeft"
+             IsBusy="{Binding isBusy}"
+             Shell.FlyoutBehavior="Disabled"
              Title="تنظیمات پیشرفته"
              xmlns:localization="clr-namespace:hymax.Localization">
-    <ContentPage.Content>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="18" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content> 
         <StackLayout>
             <StackLayout>
                 <TableView Intent="Settings" Margin="20,0,20,0">
                     <TableRoot>
-                        <TableSection>
-                            <EntryCell Label="جستجو" Placeholder="" />
+                        <TableSection> 
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal">
-                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Info}" />
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding OpenCommand}" />
+                                    </StackLayout.GestureRecognizers>
+                                    
+                                    <Image Source="unlock.xml" />
                                     <Label Text="{localization:Translate AdvanceOpenDoorMenu}" VerticalOptions="Center" />
 
                                     <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
@@ -24,8 +35,11 @@
                             </ViewCell>
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal">
-                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Account_tree}" />
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding LockCommand}" />
+                                    </StackLayout.GestureRecognizers>
+
+                                    <Image Source="padlock.xml" />
                                     <Label Text="{localization:Translate AdvanceCloseDoorMenu}" VerticalOptions="Center" />
 
                                     <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}"
@@ -34,8 +48,11 @@
                             </ViewCell>
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal">
-                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}"
-                               Source="{StaticResource Book}" />
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding OpenTrunkCommand}" />
+                                    </StackLayout.GestureRecognizers>
+
+                                    <Image Source="trunkopen.xml" />
                                     <Label Text="{localization:Translate AdvanceOpenTrunkMenu}" VerticalOptions="Center" />
 
                                     <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}"
@@ -44,31 +61,12 @@
                             </ViewCell>
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal">
-                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Language}" />
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding PanicCommand}" />
+                                    </StackLayout.GestureRecognizers>
+
+                                    <Image Source="volume.xml" />
                                     <Label Text="{localization:Translate AdvanceAlarmMenu}" VerticalOptions="Center"/>
-
-                                    <Switch Grid.Row="0" IsToggled="true" HorizontalOptions="EndAndExpand" />
-                                    <!--<Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>-->
-                                </StackLayout>
-                            </ViewCell>
-                            <ViewCell>
-                                <StackLayout Orientation="Horizontal">
-                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Support_agent}" />
-                                    <Label Text="{localization:Translate AdvanceChildLockMenu}" VerticalOptions="Center"/>
-
-                                    <Switch Grid.Row="0" IsToggled="true" HorizontalOptions="EndAndExpand" />
-                                    <!--<Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>-->
-                                </StackLayout>
-                            </ViewCell>
-                            <ViewCell>
-                                <StackLayout Orientation="Horizontal">
-                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Account_circle}" />
-                                    <Label Text="{localization:Translate AdvanceStartMenu}" VerticalOptions="Center"/>
 
                                     <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
                                Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
@@ -76,8 +74,37 @@
                             </ViewCell>
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding ChildLockCommand}" />
+                                    </StackLayout.GestureRecognizers>
+
+                                    <Image Source="children.xml" />
+                                    <Label Text="{localization:Translate AdvanceChildLockMenu}" VerticalOptions="Center"/>
+
                                     <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Account_circle}" />
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                            <!--<ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding StartCommand}" />
+                                    </StackLayout.GestureRecognizers>
+
+                                    <Image Source="carkey.xml" />
+                                    <Label Text="{localization:Translate AdvanceStartMenu}" VerticalOptions="Center"/>
+
+                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
+                               Source="{StaticResource Arrow_back_ios}" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>-->
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding WindowCommand}" />
+                                    </StackLayout.GestureRecognizers>
+
+                                    <Image Source="car.xml" />
                                     <Label Text="{localization:Translate AdvanceCloseWindowsMenu}" VerticalOptions="Center"/>
 
                                     <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
@@ -86,8 +113,11 @@
                             </ViewCell>
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal">
-                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Account_circle}" />
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding VoiceRequestCommand}" />
+                                    </StackLayout.GestureRecognizers>
+
+                                    <Image Source="ear.xml" />
                                     <Label Text="{localization:Translate AdvanceRequestVoiceMenu}" VerticalOptions="Center"/>
 
                                     <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
@@ -96,8 +126,11 @@
                             </ViewCell>
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal">
-                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Account_circle}" />
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding SpeedMetterCommand}" />
+                                    </StackLayout.GestureRecognizers>
+
+                                    <Image Source="speedometer.xml" />
                                     <Label Text="{localization:Translate AdvanceRequestSpeedMenu}" VerticalOptions="Center"/>
 
                                     <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
@@ -106,8 +139,11 @@
                             </ViewCell>
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal">
-                                    <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 
-                               Source="{StaticResource Account_circle}" />
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding ForceStopCommand}" />
+                                    </StackLayout.GestureRecognizers>
+
+                                    <Image Source="stop.xml" />
                                     <Label Text="{localization:Translate AdvanceForceStopMenu}" VerticalOptions="Center"/>
 
                                     <Image Grid.Row="0" Style="{StaticResource IndicatorsIcons}" 

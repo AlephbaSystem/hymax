@@ -30,6 +30,7 @@ namespace hymax.View
         public static void InitPage()
         {
         }
+         
         protected virtual void OnResume()
         {
             ViewModel.Reset();
@@ -42,6 +43,7 @@ namespace hymax.View
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+            Services.Settings.LastPage = "SSPage";
             switch (Settings.Security)
             {
                 case Models.SecurityTypes.Pin:

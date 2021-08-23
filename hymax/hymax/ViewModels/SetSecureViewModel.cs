@@ -21,6 +21,7 @@ namespace hymax.ViewModels
 
         public SetSecureViewModel(IRoutingService routingService = null)
         {
+            this.IsBusy = true;
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
             Reset();
         }
@@ -53,9 +54,11 @@ namespace hymax.ViewModels
                     break;
             }
             this.Icon.Size = 100;
+            this.IsBusy = false;
         }
         public async Task waitandgoPin()
         {
+            this.IsBusy = true;
             await Task.Delay(100);
             bool at = true;
 
@@ -78,6 +81,7 @@ namespace hymax.ViewModels
         }
         public async Task waitandgoPassword()
         {
+            this.IsBusy = true;
             await Task.Delay(100);
             bool at = true;
             if (at)
@@ -99,6 +103,7 @@ namespace hymax.ViewModels
         }
         public async Task waitandgoPattern()
         {
+            this.IsBusy = true;
             await Task.Delay(100);
             bool at = true;
             if (at)
@@ -120,6 +125,7 @@ namespace hymax.ViewModels
         }
         public async Task waitandgoFingerprint()
         {
+            this.IsBusy = true;
             await Task.Delay(100);
 
             //try

@@ -10,6 +10,7 @@
              Shell.TabBarIsVisible="False"
              Shell.PresentationMode="ModalAnimated"
              Title="{Binding Title}"
+             IsBusy="{Binding isBusy}"
              BackgroundColor="{Binding BackgroundColor}"
              xmlns:localization="clr-namespace:hymax.Localization"
              x:Class="hymax.View.SetSecurePage">

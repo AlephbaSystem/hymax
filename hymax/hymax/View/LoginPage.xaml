@@ -11,6 +11,7 @@
              Shell.PresentationMode="ModalAnimated"
              Title="Login"
              x:Class="hymax.View.LoginPage"
+             IsBusy="{Binding isBusy}"
              BackgroundColor="{Binding BackgroundColor}"
              xmlns:localization="clr-namespace:hymax.Localization"> 
         <ContentPage.Content>
@@ -51,7 +52,7 @@
                 </Grid>
 
                 <Label Text="{localization:Translate LoginDetails}" Grid.Row="5" Grid.Column="2" HorizontalOptions="Center" />
-                <Entry Style="{StaticResource LoginEntry}" Keyboard="Numeric" Grid.Row="6" Grid.Column="2" Placeholder="{localization:Translate LoginEntry}" x:Name="UsernameEntry" Text="{Binding PhoneNumber}" />
+                <Entry Style="{StaticResource LoginEntry}" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.Row="6" Grid.Column="2" Placeholder="{localization:Translate LoginEntry}" x:Name="UsernameEntry" Text="{Binding PhoneNumber}" />
                 <Grid Grid.Row="7" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="End" >
                     <Button x:Name="LoginButton" Style="{StaticResource LoginGetCode}" Text="{localization:Translate LoginButton}" Command="{Binding ExecuteLogin}" />
                 </Grid>

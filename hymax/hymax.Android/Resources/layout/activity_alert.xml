@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/mainbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/alert_car"
+        android:paddingTop="85dp"
+        android:paddingBottom="85dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/alert_bg" />
+    <ImageButton
+        android:id="@+id/alert_icon"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_alert_warning"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#777"
+        android:gravity="center"
+        android:id="@+id/alert_text"
+        android:padding="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

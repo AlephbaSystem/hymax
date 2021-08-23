@@ -12,32 +12,27 @@ using hymax.Services;
 using hymax.Models;
 using System.Collections.Generic;
 using System.Threading;
+using hymax.Services.SMS;
+using hymax.Services.Database;
 
 namespace hymax
 {
     public partial class App : Application
     {
+        private readonly IDatabaseService db;
         public App()
         {
-            InitializeDb();
             InitializeDi();
             InitializeComponent();
 
-            //MainPage = new MasterShell();
-            //return;
-            Settings.AccessToken = ""; 
+            this.db = this.db ?? Locator.Current.GetService<IDatabaseService>();
 
-            if (Settings.UserSetting.Count == 0)
+            Settings.AccessToken = "";
+
+            if (Settings.UserSetting == null || Settings.UserSetting.Count == 0)
             {
-                SettingsModel sm = new SettingsModel();
-                sm.LastLogin = DateTime.Now;
-                sm.Verified = false;
-                sm.Username = Environment.MachineName;
-                sm.Phone = null;
-                sm.Welcome = true; 
-                sm.SecurityType = 0;
-                Settings.Database.SaveSettingsAsync(sm).Wait();
-                Settings.UserSetting = Settings.Database.GetSettings();
+                db.Reset();
+                Settings.UserSetting = this.db.GetSettingsAsync().Result;
                 MainPage = new AppShell();
             }
             else if (Settings.UserSetting[0].Phone != null)
@@ -49,16 +44,15 @@ namespace hymax
                 MainPage = new AppShell();
             }
         }
-        private void InitializeDb()
-        {
-            Settings.UserSetting = Settings.Database.GetSettings();
-        }
+
         private void InitializeDi()
-        {
+        { 
             // Services
             Locator.CurrentMutable.RegisterLazySingleton<IRoutingService>(() => new ShellRoutingService());
             Locator.CurrentMutable.RegisterLazySingleton<IIdentityService>(() => new IdentityServiceStub());
             Locator.CurrentMutable.RegisterLazySingleton<ICarsService>(() => new CarsServiceStub());
+            Locator.CurrentMutable.RegisterLazySingleton<ISMSService>(() => new SMSHandler());
+            Locator.CurrentMutable.RegisterLazySingleton<IDatabaseService>(() => new Database());
 
             // ViewModels
             Locator.CurrentMutable.Register(() => new LoadingViewModel());

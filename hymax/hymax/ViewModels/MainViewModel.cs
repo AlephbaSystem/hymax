@@ -10,6 +10,9 @@ using hymax.Services;
 using System.Threading.Tasks;
 using hymax.View;
 using System.Resources;
+using hymax.Services.SMS;
+using System.Linq;
+using hymax.Services.Database;
 
 namespace hymax.ViewModels
 {
@@ -17,8 +20,14 @@ namespace hymax.ViewModels
     {
         private readonly IRoutingService routingService;
         private readonly ICarsService carService;
+        private readonly ISMSService smsService;
+        private readonly IDatabaseService db; 
         private ObservableCollection<CarsModel> _cars;
         private ResourceManager rs;
+
+        public ImageSource xImagePath;
+        public string xStatus;
+        public string xUpdateTimeLabel;
 
         public string _BatteryVultag;
         private string _GPSSignal;
@@ -65,10 +74,12 @@ namespace hymax.ViewModels
                 }
             }
         }
+        public string DeviceNumber { get; set; }
+        public ICommand OpenAddCarCommand { get; }
+        public ICommand OpenReportCommand { get; }
         public ICommand OpenSettingsCommand { get; }
         public ICommand OpenAdvanceCommand { get; }
         public ICommand OpenMapCommand { get; }
-        public string DeviceNumber { get; set; }
         public ICommand LockCommand { get; }
         public ICommand OpenCommand { get; }
         public ICommand ForceStopCommand { get; }
@@ -81,15 +92,17 @@ namespace hymax.ViewModels
 
         private async void WindowCommandClick(object obj)
         {
-            string msg = rs.GetString("DisplayAlertWindow");
-            string first = rs.GetString("DisplayAlertWindowFirst");
-            string second = rs.GetString("DisplayAlertWindowSecond");
-            string third = rs.GetString("DisplayAlertWindowThird");
+            this.IsBusy = true;
+            string msg = rs.GetString("DisplayAlertWindows");
+            string first = rs.GetString("DisplayAlertWindowsFirst");
+            string second = rs.GetString("DisplayAlertWindowsSecond");
+            string third = rs.GetString("DisplayAlertWindowsThird");
             bool answer = await App.Current.MainPage.DisplayAlert(msg, third, first, second);
 
             if (answer)
             {
-                await new Services.ISMSHandler().SendSms("شیشه", DeviceNumber);
+                await this.smsService.SendSms("شیشه", DeviceNumber);
+                this.IsBusy = false;
             }
             else
             {
@@ -108,11 +121,11 @@ namespace hymax.ViewModels
                                                                           second);
             if (action == first)
             {
-                await new Services.ISMSHandler().SendSms("خاموش", DeviceNumber);
+                await this.smsService.SendSms("خاموش", DeviceNumber);
             }
             else if (action == second)
             {
-                await new Services.ISMSHandler().SendSms("روشن", DeviceNumber);
+                await this.smsService.SendSms("روشن", DeviceNumber);
             }
             else if (action == third)
             {
@@ -131,7 +144,7 @@ namespace hymax.ViewModels
 
             if (answer)
             {
-                await new Services.ISMSHandler().SendSms("جستجو", DeviceNumber);
+                await this.smsService.SendSms("جستجو", DeviceNumber);
             }
             else
             {
@@ -150,11 +163,11 @@ namespace hymax.ViewModels
                                                                           second);
             if (action == first)
             {
-                await new Services.ISMSHandler().SendSms("قفل", DeviceNumber);
+                await this.smsService.SendSms("قفل", DeviceNumber);
             }
             else if (action == second)
             {
-                await new Services.ISMSHandler().SendSms("0000F", DeviceNumber);
+                await this.smsService.SendSms("0000F", DeviceNumber);
             }
             else if (action == third)
             {
@@ -176,11 +189,11 @@ namespace hymax.ViewModels
                                                                           second);
             if (action == first)
             {
-                await new Services.ISMSHandler().SendSms("باز", DeviceNumber);
+                await this.smsService.SendSms("باز", DeviceNumber);
             }
             else if (action == second)
             {
-                await new Services.ISMSHandler().SendSms("0000O", DeviceNumber);
+                await this.smsService.SendSms("0000O", DeviceNumber);
             }
             else if (action == third)
             {
@@ -202,11 +215,11 @@ namespace hymax.ViewModels
                                                                           second);
             if (action == first)
             {
-                await new Services.ISMSHandler().SendSms("خاموش", DeviceNumber);
+                await this.smsService.SendSms("خاموش", DeviceNumber);
             }
             else if (action == second)
             {
-                await new Services.ISMSHandler().SendSms("روشن", DeviceNumber);
+                await this.smsService.SendSms("روشن", DeviceNumber);
             }
             else if (action == third)
             {
@@ -228,11 +241,11 @@ namespace hymax.ViewModels
                                                                           second);
             if (action == first)
             {
-                await new Services.ISMSHandler().SendSms("صندوق", DeviceNumber);
+                await this.smsService.SendSms("صندوق", DeviceNumber);
             }
             else if (action == second)
             {
-                await new Services.ISMSHandler().SendSms("0000H", DeviceNumber);
+                await this.smsService.SendSms("0000H", DeviceNumber);
             }
             else if (action == third)
             {
@@ -254,11 +267,11 @@ namespace hymax.ViewModels
                                                                           second);
             if (action == first)
             {
-                await new Services.ISMSHandler().SendSms("موقعیت", DeviceNumber);
+                await this.smsService.SendSms("موقعیت", DeviceNumber);
             }
             else if (action == second)
             {
-                await new Services.ISMSHandler().SendSms("محدوده", DeviceNumber);
+                await this.smsService.SendSms("محدوده", DeviceNumber);
             }
             else if (action == third)
             {
@@ -280,11 +293,11 @@ namespace hymax.ViewModels
                                                                           second);
             if (action == first)
             {
-                await new Services.ISMSHandler().SendSms("25", DeviceNumber);
-            } 
+                await this.smsService.SendSms("25", DeviceNumber);
+            }
             else if (action == second)
             {
-                await new Services.ISMSHandler().SendSms("250", DeviceNumber);
+                await this.smsService.SendSms("250", DeviceNumber);
             }
             else if (action == third)
             {
@@ -293,11 +306,27 @@ namespace hymax.ViewModels
             {
             }
         }
+        private async void SMSReciveHandler(string body, string number)
+        { 
+            if (number == this.DeviceNumber && Settings.UserSetting[0].Verified && Settings.LastPage != "Map")
+            {
+                string[] msgs = body.Split('\n');
+                string msg = rs.GetString("PopupClose");
+                await App.Current.MainPage.DisplayAlert(msgs[0], string.Join("\n", msgs.Skip(1).ToArray()), msg);
+            }
+        }
         public MainViewModel(IRoutingService routingService = null)
         {
-            this.BackgroundColor = Services.ColorServer.GetResource("MainTernaryColor");
+            this.IsBusy = true;
+
+            this.BackgroundColor = Services.ColorServer.GetResource("MainSecondaryColor");
             this.routingService = routingService ?? Locator.Current.GetService<IRoutingService>();
             this.carService = carService ?? Locator.Current.GetService<ICarsService>();
+            this.smsService = smsService ?? Locator.Current.GetService<ISMSService>();
+            this.db = this.db ?? Locator.Current.GetService<IDatabaseService>();
+
+            this.smsService.Recived += new Action<string, string>(SMSReciveHandler);
+
 
             this.GPSSignal = new Random(222).Next(70, 95).ToString();
             this.BatteryVultag = new Random(342).Next(10, 20).ToString();
@@ -307,12 +336,21 @@ namespace hymax.ViewModels
                 this.routingService.NavigateTo("main/setsecure");
             }
 
+            this.Cars = this.carService.CarLists();
+
+
+            this.xImagePath = this.Cars[0].ImagePath;
+            this.xStatus = this.Cars[0].Status;
+            this.xUpdateTimeLabel = this.Cars[0].UpdateTimeLabel;
+
             rs = hymax.Localization.Localizations.GetResource();
-            this._cars = this.carService.CarLists();
 
             this.OpenSettingsCommand = new Command(executeSettings);
             this.OpenAdvanceCommand = new Command(executeAdvance);
             this.OpenMapCommand = new Command(executeMap);
+            this.OpenAddCarCommand = new Command(OpenAddCarCommandClick);
+            this.OpenReportCommand = new Command(OpenReportCommandClick);
+
             this.DeviceNumber = Settings.UserSetting[0].Phone;
             this.LockCommand = new Command(LockCommandClick);
             this.OpenCommand = new Command(OpenCommandClick);
@@ -323,61 +361,79 @@ namespace hymax.ViewModels
             this.PanicCommand = new Command(PanicCommandClick);
             this.StartCommand = new Command(StartCommandClick);
             this.WindowCommand = new Command(WindowCommandClick);
+            this.smsService.Setrecipient(this.DeviceNumber);
+            this.IsBusy = false;
+        }
+        private async void OpenAddCarCommandClick(object obj)
+        {
+            this.IsBusy = true;
+            await this.db.Reset();
+            Settings.UserSetting = this.db.GetSettingsAsync().Result;
+            await Application.Current.MainPage.Navigation.PopToRootAsync();
+            this.routingService.NewShell();
+            await this.routingService.NavigateTo("main/login");
+        }
+        private async void OpenReportCommandClick(object obj)
+        {
+            this.IsBusy = true;
+            await this.routingService.NavigateTo("main/settings");
         }
         private async void executeMap(object obj)
         {
-            try
+            this.IsBusy = true;
+            string msg = rs.GetString("PopupHeader");
+            string first = rs.GetString("DisplayAlertWindowsFirst");
+            string second = rs.GetString("DisplayAlertWindowsSecond");
+            string third = rs.GetString("PopupAction");
+            bool answer = await App.Current.MainPage.DisplayAlert(msg, third, first, second);
+
+            if (answer)
             {
-                await this.routingService.NavigateTo("///map");
+                await this.routingService.NavigateTo("main/map");
+                this.IsBusy = false;
             }
-            catch (Exception ex)
+            else
             {
-                _ = ex;
             }
         }
         private async void executeSettings(object obj)
         {
-            try
-            {
-                await this.routingService.NavigateTo("main/settings");
-            }
-            catch (Exception ex)
-            {
-                _ = ex;
-            }
+            this.IsBusy = true;
+            await this.routingService.NavigateTo("main/settings");
         }
         private async void executeAdvance(object obj)
         {
-            try
-            {
-                await this.routingService.NavigateTo("main/advance");
-            }
-            catch (Exception ex)
-            {
-                _ = ex;
-            }
+            this.IsBusy = true;
+            await this.routingService.NavigateTo("main/advance");
         }
 
         public void OnSettingsTapped(object sender, EventArgs args)
         {
+            this.IsBusy = true;
             executeSettings(sender);
         }
         public async void UpdateCar()
         {
+            this.IsBusy = true;
             for (int i = 0; i < this.Cars.Count; i++)
             {
-                CarsModel current = await this.carService.Status(this._cars[i]);
-                //this._cars.Remove(this._cars[i]);
-                this._cars.Add(current);
+                CarsModel current = await this.carService.Status(this.Cars[i]);
+                this.Cars.Add(current);
             }
+
+            this.xImagePath = this.Cars[0].ImagePath;
+            this.xStatus = this.Cars[0].Status;
+            this.xUpdateTimeLabel = this.Cars[0].UpdateTimeLabel;
+            this.IsBusy = false;
         }
         public async void UpdateCar(string id)
         {
+            this.IsBusy = true;
             this.GPSSignal = new Random(222).Next(70, 95).ToString();
             this.BatteryVultag = new Random(342).Next(10, 20).ToString();
             for (int i = 0; i < this.Cars.Count; i++)
             {
-                CarsModel current = this._cars[i];
+                CarsModel current = this.Cars[i];
                 await Task.Run(() =>
                 {
                     current.ImagePath = "caron.png";
@@ -387,13 +443,15 @@ namespace hymax.ViewModels
                 if (current.ID == id)
                 {
                     current = await this.carService.Status(current);
-                    //this._cars.Remove(this._cars[i]);
-                    this._cars.Add(current);
-
-
+                    this.Cars.Add(current); 
                     break;
                 }
             }
+
+            this.xImagePath = this.Cars[0].ImagePath;
+            this.xStatus = this.Cars[0].Status;
+            this.xUpdateTimeLabel = this.Cars[0].UpdateTimeLabel;
+            this.IsBusy = false;
         }
         public void OnCarTapped(object sender, EventArgs args)
         {

@@ -178,6 +178,24 @@ namespace hymax.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to نرم افزار ردیاب ماشین HyMax.
+        /// </summary>
+        internal static string AppVersion {
+            get {
+                return ResourceManager.GetString("AppVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to درباره نرم افزار.
+        /// </summary>
+        internal static string AppVersionHeader {
+            get {
+                return ResourceManager.GetString("AppVersionHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تاریخ وضعیت:.
         /// </summary>
         internal static string CarDateLabel {
@@ -493,6 +511,15 @@ namespace hymax.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to در انتظار پاسخ دستگاه.
+        /// </summary>
+        internal static string LocationAddressWaiting {
+            get {
+                return ResourceManager.GetString("LocationAddressWaiting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to دریافت کد.
         /// </summary>
         internal static string LoginButton {
@@ -534,6 +561,15 @@ namespace hymax.Localization {
         internal static string LoginVerifyButton {
             get {
                 return ResourceManager.GetString("LoginVerifyButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بازگشت.
+        /// </summary>
+        internal static string LoginVerifyButton2 {
+            get {
+                return ResourceManager.GetString("LoginVerifyButton2", resourceCulture);
             }
         }
         
@@ -673,11 +709,56 @@ namespace hymax.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to خطای پیش آمده لطفا با شرکت تماس بگیرید.
+        /// </summary>
+        internal static string PanicError {
+            get {
+                return ResourceManager.GetString("PanicError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to رمز عبور.
         /// </summary>
         internal static string Password {
             get {
                 return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to دستور انجام شود؟.
+        /// </summary>
+        internal static string PopupAction {
+            get {
+                return ResourceManager.GetString("PopupAction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بستن.
+        /// </summary>
+        internal static string PopupClose {
+            get {
+                return ResourceManager.GetString("PopupClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انجام دستور.
+        /// </summary>
+        internal static string PopupHeader {
+            get {
+                return ResourceManager.GetString("PopupHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to باشه.
+        /// </summary>
+        internal static string PopupOk {
+            get {
+                return ResourceManager.GetString("PopupOk", resourceCulture);
             }
         }
         
@@ -840,6 +921,15 @@ namespace hymax.Localization {
         internal static string SettingsVersionMenu {
             get {
                 return ResourceManager.GetString("SettingsVersionMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to شماره قبول نشد.
+        /// </summary>
+        internal static string VerifyLoginFailedMessage {
+            get {
+                return ResourceManager.GetString("VerifyLoginFailedMessage", resourceCulture);
             }
         }
         

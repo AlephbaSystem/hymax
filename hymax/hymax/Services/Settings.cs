@@ -14,21 +14,7 @@ namespace hymax.Services
     class Settings
     {
         private static ISettings AppSettings =>
-    CrossSettings.Current;
-
-        static Database database = null;
-        public static Database Database
-        {
-            get
-            {
-                if (database == null)
-                {
-                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "hymax.db3"));
-                }
-                return database;
-            }
-        }
-
+    CrossSettings.Current; 
         public static List<SettingsModel> UserSetting
         {
             get
@@ -42,6 +28,11 @@ namespace hymax.Services
                 return model;
             }
             set => AppSettings.AddOrUpdateValue(nameof(UserSetting), JsonConvert.SerializeObject(value));
+        }
+        public static string LastPage
+        {
+            get => AppSettings.GetValueOrDefault(nameof(LastPage), string.Empty);
+            set => AppSettings.AddOrUpdateValue(nameof(LastPage), value);
         }
         public static string AccessToken
         {
