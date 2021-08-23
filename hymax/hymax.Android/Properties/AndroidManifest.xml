@@ -1,15 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.1" package="com.alephbasys.hymax" android:installLocation="auto">
-  <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="29" />
-  <application
-        android:allowBackup="true"
-        android:name="android.support.multidex.MultiDexApplication"
-        android:label="hymax.Android"
-        android:theme="@style/MainTheme"
-        android:icon="@mipmap/icon"
-        android:supportsRtl="true">
-
-    <!--<activity
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="1.0" package="com.alephbasys.hymax" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="29" />
+	<application android:allowBackup="true" android:name="android.support.multidex.MultiDexApplication" android:label="hymax.Android" android:theme="@style/MainTheme" android:icon="@mipmap/icon" android:supportsRtl="true">
+		<!--<activity
         android:name="com.alephbasys.hymax.MainActivity"
         android:launchMode="singleTask"
         android:label="hymax.Android" >
@@ -31,40 +24,29 @@
         <category android:name="android.intent.category.HOME" />
       </intent-filter>
     </activity>-->
-
-
-    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-    <uses-library android:name="org.apache.http.legacy" android:required="false" />
-    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyA7jvfpQ6pQu9Aeii0qKJqYOpAGiPYCPGg" />
-
-    <service
-             android:name=".GlobalServices"
-             android:enabled="true"
-             android:exported="true"
-             android:process=":externalProcess">
-    </service>
-  </application>
-  
-  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-  <uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-  <uses-permission android:name="android.permission.SEND_SMS" />
-  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-  <uses-permission android:name="android.permission.RECEIVE_SMS" />
-  <uses-permission android:name="android.permission.READ_SMS" />
-  <uses-permission android:name="android.permission.BROADCAST_SMS" />
-  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
-  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-  <uses-permission android:name="android.permission.CALL_PHONE"/>
-  <uses-permission android:name="android.permission.VIBRATE"/>
-  <uses-permission android:name="android.permission.WAKE_LOCK"/>
-
-
-  <uses-feature android:name="android.hardware.location" android:required="false" />
-  <uses-feature android:name="android.hardware.location.gps" android:required="false" />
-  <uses-feature android:name="android.hardware.location.network" android:required="false" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<uses-library android:name="org.apache.http.legacy" android:required="false" />
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyA7jvfpQ6pQu9Aeii0qKJqYOpAGiPYCPGg" />
+		<service android:name=".GlobalServices" android:enabled="true" android:exported="true" android:process=":externalProcess"></service>
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.SEND_SMS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.USE_FINGERPRINT" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.READ_SMS" />
+	<uses-permission android:name="android.permission.BROADCAST_SMS" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-feature android:name="android.hardware.location" android:required="false" />
+	<uses-feature android:name="android.hardware.location.gps" android:required="false" />
+	<uses-feature android:name="android.hardware.location.network" android:required="false" />
 </manifest>

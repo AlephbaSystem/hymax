@@ -43,7 +43,7 @@ namespace hymax.ViewModels
         public async Task CodeSend()
         {
             await Task.Delay(100);
-            await this.smsService.SendSms("حافظه", this.PhoneNumber);
+            await this.smsService.SendSms("نسخه", this.PhoneNumber);
         }
         public string VerifyCode { get; set; }
         public string PhoneNumber { get; set; }
@@ -61,7 +61,7 @@ namespace hymax.ViewModels
             this.IsBusy = true;
             if (number == this.PhoneNumber)
             {
-                if (body.Contains("مالک اصلی"))
+                if (body.Contains("درباره"))
                 {
                     Verified = true;
                     ExecuteVerfiy.Execute(this);

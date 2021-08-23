@@ -385,7 +385,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadXFormsNugetUpgradeInfoBarhymaxAndroidHideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionhymaxAndroidHideInfoBar="True" TriggeredFromHotReload="False" XamarinHotReloadUnhandledDeviceExceptionhymaxAndroidHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarhymaxAndroidHideInfoBar="True" />
+      <UserProperties XamarinHotReloadWrongLinkerErrorInfoBarhymaxAndroidHideInfoBar="True" XamarinHotReloadUnhandledDeviceExceptionhymaxAndroidHideInfoBar="True" TriggeredFromHotReload="False" XamarinHotReloadDebuggerTimeoutExceptionhymaxAndroidHideInfoBar="True" XamarinHotReloadXFormsNugetUpgradeInfoBarhymaxAndroidHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
